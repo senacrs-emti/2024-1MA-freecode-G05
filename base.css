@@ -91,7 +91,7 @@ header a:hover:after {
 
 .main {
     display: grid;
-    height: 7600px;
+    height: 4570px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
 
@@ -129,12 +129,13 @@ footer h1 {
 
 .base {
     width: 1200px;
-    height: 7500px;
+    height: 4500px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: 74.5px;
     margin-top: 20px;
     box-shadow: 10px 10px 8px 10px #888888;
+    display: grid;
 }
 
 .Nomedosistema {
@@ -143,13 +144,14 @@ footer h1 {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
+    text-shadow: 2px 0px 2px white;
 
 
 }
 
 .Nomedosistema h1 {
     color: white;
-    margin-left: 320px;
+    margin-left: 300px;
     margin-top: 15px;
     font-size: 60px;
     height: 60px;
@@ -160,18 +162,18 @@ footer h1 {
 }
 
 .Nomedosistema img {
-height: 90px;
-width: 100px;
-margin-top: -90px;
-margin-left: 740px;
+    height: 90px;
+    width: 100px;
+    margin-top: -90px;
+    margin-left: 740px;
 }
 
 .sistemasfoto {
     height: 570px;
     width: 300px;
     margin-top: 30px;
-margin-left: 440px;
-display: grid;
+    margin-left: 440px;
+    display: grid;
 
 }
 
@@ -220,23 +222,26 @@ main .introducao {
 
 .basedasimagens p {
     height: 200px;
-    width: 500px;
+    width: 550px;
     margin-left: 26px;
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
 }
+
 .basedasimagens a {
     height: 27px;
     width: 80px;
     margin-top: -20px;
     margin-left: 20px;
-    color: #008b17;
+    color: #ffffff;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #c9e3ae;
+    background-color: #a70000;
+    padding-left: 4px;
 }
+
 .modelo3d {
     display: grid;
     height: 350px;
@@ -269,9 +274,26 @@ main .introducao {
     width: 280px;
     margin-top: -20px;
     margin-left: 20px;
-    color: #008b17;
+    padding-left: 4px;
+    color: #ffffff;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #c9e3ae;
+    background-color: #a70000;
+}
+
+.quiz {
+    width: 300px;
+    height: 80px;
+    background-color: #be0000;
+    font-size: 55px;
+    margin-top: 50px;
+    margin-left: 420px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 1px solid darkred;
 }
