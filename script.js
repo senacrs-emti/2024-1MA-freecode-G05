@@ -1,7 +1,7 @@
 var header = document.getElementById("meuElemento");
 var atras = document.getElementById("branco")
 const btn2 = document.getElementById('btn2');
- 
+
  btn2.addEventListener('click', () => {
     if(header.className === "header"){
         header.classList.add("header2")
@@ -21,5 +21,4 @@ const btn2 = document.getElementById('btn2');
         
     }
  console.log(header.className);
- 
  });
