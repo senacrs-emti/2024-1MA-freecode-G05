@@ -75,7 +75,7 @@ header a {
 header a:after {
     content: "";
     position: absolute;
-    background-color: #008b17;
+    background-color: #ffd700;
     height: 3px;
     width: 0;
     left: 0;
@@ -187,7 +187,7 @@ main .introducao {
     background-color: #ffffff;
     letter-spacing: 2px;
     margin-top: 60px;
-    text-decoration: underline double rgb(211, 0, 0);
+    text-decoration: underline double #e4e4e4;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
 
@@ -195,9 +195,10 @@ main .introducao {
     height: 400px;
     width: 400px;
     display: grid;
-    margin-left: 20px;
+    margin-left: 100px;
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
+
 
 }
 
@@ -254,11 +255,11 @@ position: relative;
 }
 
 .basedasimagens {
-     display: grid;
+    display: grid;
     height: 350px;
     width: 600px;
     margin-top: -375px;
-    margin-left: 422px;
+    margin-left: 502px;
     background-color: #e4e4e4;
 
 }
@@ -290,8 +291,8 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #ffd700;
-    padding-left: 4px;
+    background-color  
+        padding-left: 4px;
 }
 
 .modelo3d {
@@ -312,7 +313,7 @@ position: relative;
     border-top-left-radius: 5px;
     padding-top: 10px;
     padding-left: 25px;
-    background-color: #ffd700;
+    background-color: #e4e4e4;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -336,22 +337,22 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #ffd700;
+    background-color: #e4e4e4;
 }
 
 .quiz {
     width: 300px;
     height: 80px;
-    background-color: #ffd700;
+    background-color: #e4e4e4;
     font-size: 55px;
     margin-top: 100px;
     margin-left: 420px;
-    color: white;
+    color: #ffd700;
     text-shadow: 0px 0px 2px black;
     text-decoration: none;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid #ffd700;
+    border: 1px solid darkred;
     display: grid;
 }
