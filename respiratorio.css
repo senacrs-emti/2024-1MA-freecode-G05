@@ -132,7 +132,7 @@ footer h1 {
     height: 4700px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    margin-left: 34.5px;
+    margin-left: 74.5px;
     margin-top: 20px;
     box-shadow: 10px 10px 8px 10px #888888;
     display: grid;
@@ -151,7 +151,7 @@ footer h1 {
 
 .Nomedosistema h1 {
     color: white;
-    margin-left: 300px;
+    margin-left: 340px;
     margin-top: 15px;
     font-size: 60px;
     height: 60px;
@@ -170,9 +170,9 @@ footer h1 {
 
 .sistemasfoto {
     height: 570px;
-    width: 300px;
+    width: 350px;
     margin-top: 30px;
-    margin-left: 180px;
+    margin-left: 130px;
     display: grid;
 
 }
@@ -195,9 +195,10 @@ main .introducao {
     height: 400px;
     width: 400px;
     display: grid;
-    margin-left: 20px;
+    margin-left: 100px;
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
+
 
 }
 
@@ -238,7 +239,7 @@ position: relative;
 .ladodomodelo3d img{
 width: 280px;
 height: 480px;
-margin-top: -380px;
+margin-top: -370px;
 z-index: 999;
 margin-left: 310px;
 position: relative;
@@ -258,7 +259,7 @@ position: relative;
     height: 350px;
     width: 600px;
     margin-top: -375px;
-    margin-left: 422px;
+    margin-left: 502px;
     background-color: #e4e4e4;
 
 }
