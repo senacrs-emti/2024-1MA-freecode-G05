@@ -91,7 +91,7 @@ header a:hover:after {
 
 .main {
     display: grid;
-    height: 4770px;
+    height: 5070px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
 
@@ -129,7 +129,7 @@ footer h1 {
 
 .base {
     width: 1200px;
-    height: 4700px;
+    height: 5000px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: 74.5px;
@@ -172,7 +172,7 @@ footer h1 {
     height: 570px;
     width: 200px;
     margin-top: 30px;
-    margin-left: 280px;
+    margin-left: 220px;
     display: grid;
 
 }
@@ -195,7 +195,7 @@ main .introducao {
     height: 400px;
     width: 400px;
     display: grid;
-    margin-left: 20px;
+    margin-left: 120px;
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
 
@@ -229,18 +229,18 @@ position: relative;
 .ladodomodelo3d p{
 color: rgb(0, 0, 0);
 margin-left: 20px;
-margin-top: 20px;
-width: 400px;
+margin-top: 10px;
+width: 428px;
 font-size: 24px;
 z-index: 0;
 position: relative;
 }
 .ladodomodelo3d img{
-width: 280px;
-height: 588px;
-margin-top: -460px;
+width: 200px;
+height: 388px;
+margin-top: -400px;
 z-index: 999;
-margin-left: 296px;
+margin-left: 360px;
 position: relative;
 }
 
@@ -258,7 +258,7 @@ position: relative;
     height: 350px;
     width: 600px;
     margin-top: -375px;
-    margin-left: 422px;
+    margin-left: 522px;
     background-color: #e4e4e4;
 
 }
@@ -298,7 +298,7 @@ position: relative;
     display: grid;
     height: 350px;
     width: 660px;
-    margin-top: -1335px;
+    margin-top: -1241px;
     margin-left: 470px;
     background-color: #e4e4e4;
 
@@ -344,7 +344,7 @@ position: relative;
     height: 80px;
     background-color: #ab3130;
     font-size: 55px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 420px;
     color: white;
     text-shadow: 0px 0px 2px black;
