@@ -91,7 +91,7 @@ header a:hover:after {
 
 .main {
     display: grid;
-    height: 4770px;
+    height: 5100px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
 
@@ -129,7 +129,7 @@ footer h1 {
 
 .base {
     width: 1200px;
-    height: 4700px;
+    height: 5000px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: 74.5px;
@@ -140,7 +140,7 @@ footer h1 {
 
 .Nomedosistema {
     height: 100px;
-    background-color: rgb(187, 0, 0);
+    background-color: #9370db;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
@@ -187,7 +187,7 @@ main .introducao {
     background-color: #ffffff;
     letter-spacing: 2px;
     margin-top: 60px;
-    text-decoration: underline double rgb(211, 0, 0);
+    text-decoration: underline double #9370db;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
 
@@ -209,7 +209,7 @@ main .introducao {
     margin-left: 50px;
     margin-top: 50px;
     display: grid;
-    background-color: #be0000;
+    background-color: #9370db;
     padding-left: 10px;
     padding-top: 10px;
     border-top-right-radius: 5px;
@@ -291,7 +291,7 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #a70000;
+    background-color: #9370db;
     padding-left: 4px;
 }
 
@@ -299,7 +299,7 @@ position: relative;
     display: grid;
     height: 350px;
     width: 660px;
-    margin-top: -1335px;
+    margin-top: -1100px;
     margin-left: 470px;
     background-color: #e4e4e4;
 
@@ -313,7 +313,7 @@ position: relative;
     border-top-left-radius: 5px;
     padding-top: 10px;
     padding-left: 25px;
-    background-color: #a70000;
+    background-color: #9370db;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -337,13 +337,13 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #a70000;
+    background-color: #9370db;
 }
 
 .quiz {
     width: 300px;
     height: 80px;
-    background-color: #be0000;
+    background-color: #9370db;
     font-size: 55px;
     margin-top: 100px;
     margin-left: 420px;
@@ -353,6 +353,9 @@ position: relative;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid darkred;
+    border: 1px solid darkmagenta;
     display: grid;
+}
+ .img-hipofise{
+    margin-top: 750px;
 }
