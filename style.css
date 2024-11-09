@@ -165,7 +165,6 @@ header a {
 header a:after {
     content: "";
     position: absolute;
-    background-color: #008b17;
     height: 3px;
     width: 0;
     left: 0;
@@ -173,6 +172,72 @@ header a:after {
     transition: 0.3s;
 }
 
+header .card:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: rgb(187, 0, 0);
+}
+header .resp:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #87CEEB;
+}
+header .dige:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #FFA500;
+}
+header .nerv:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
+header .endo:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #9370db;
+}
+header .excr:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #aa8f15;
+}
+header .urin:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: rgb(187, 0, 0);
+}
+header .esqu:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: rgb(148, 148, 148);
+
+}
+header .musc:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color:  #ab3130;
+
+}
+header .imun:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
+header .linf:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
+header .sens:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
+header .repr:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
+header .tegu:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
 header a:hover:after {
     width: 120px;
     margin-left: 10px;
@@ -257,6 +322,7 @@ main .introducao {
     height: 50px;
     background-color: #ffffff;
     letter-spacing: 2px;
+    text-decoration: underline double;
 
 }
 
