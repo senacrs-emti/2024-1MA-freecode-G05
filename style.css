@@ -347,9 +347,10 @@ main .introducao {
 }
 
 .basedasimagens h1 {
-    font-size: 25px;
+    font-size: 27px;
     margin-left: 20px;
     margin-top: 40px;
+    text-decoration: underline;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -374,4 +375,9 @@ main .introducao {
     background-color: #c9e3ae;
     padding-left: 15px;
     padding-top: 3px;
+}
+.basedasimagens a:hover {
+    height: 32px;
+    width: 400px;
+    font-size: 24px;
 }
