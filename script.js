@@ -22,3 +22,4 @@ const btn2 = document.getElementById('btn2');
     }
  console.log(header.className);
  });
+
