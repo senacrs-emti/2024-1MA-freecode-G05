@@ -2,11 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
 .headerdefundo {
     height: 170px;
 }
-
 .header {
     height: 170px;
     width: 100%;
@@ -14,13 +12,7 @@
     border-radius: 2px;
     display: grid;
     z-index: 1;
-
-
-
-
 }
-
-
 header h1 {
     color: #04a31e;
     font-size: 42px;
@@ -36,7 +28,6 @@ header h1 {
     padding-left: 10px;
     letter-spacing: 1px;
 }
-
 header ul {
     height: 80px;
     width: 1014px;
@@ -45,9 +36,7 @@ header ul {
     border-radius: 4px;
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
-
 }
-
 header ul li {
     display: grid;
     height: 38px;
@@ -55,10 +44,7 @@ header ul li {
     float: left;
     background-color: #ffffff;
     border: 1px solid #008b17;
-
-
 }
-
 header a {
     position: relative;
     text-decoration: none;
@@ -69,9 +55,7 @@ header a {
     letter-spacing: 0.5px;
     padding: 10px;
     margin-top: -4px;
-
 }
-
 header a:after {
     content: "";
     position: absolute;
@@ -82,35 +66,27 @@ header a:after {
     bottom: 10px;
     transition: 0.3s;
 }
-
 header a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
-
-
 .main {
     display: grid;
     height: 4370px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
-
 }
-
-
 footer {
     height: 150px;
     background-color: #c9e3ae;
     display: grid;
 }
-
 footer img {
     height: 100px;
     width: 200px;
     margin-top: 20px;
     margin-left: 20px;
 }
-
 footer h1 {
     color: #004a8d;
     margin-left: 260px;
@@ -118,7 +94,6 @@ footer h1 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .participantes {
     color: #004a8d;
     margin-left: 260px;
@@ -126,7 +101,6 @@ footer h1 {
     margin-top: -70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .base {
     width: 1200px;
     height: 4300px;
@@ -137,7 +111,6 @@ footer h1 {
     box-shadow: 10px 10px 8px 10px #888888;
     display: grid;
 }
-
 .Nomedosistema {
     height: 100px;
     background-color:#aa8f15;
@@ -145,10 +118,7 @@ footer h1 {
     border-top-right-radius: 5px;
     display: grid;
     text-shadow: 2px 0px 2px white;
-
-
 }
-
 .Nomedosistema h1 {
     color: white;
     margin-left: 380px;
@@ -156,27 +126,19 @@ footer h1 {
     font-size: 60px;
     height: 60px;
     width: 700px;
-
-
-
 }
-
 .Nomedosistema img {
     height: 90px;
     width: 100px;
     margin-top: -90px;
     margin-left: 740px;
 }
-
 .sistemasfoto {
     height: 570px;
     width: 380px;
     margin-left: 120px;
     display: grid;
-
 }
-
-
 main .introducao {
     color: #000000;
     font-size: 42px;
@@ -185,11 +147,9 @@ main .introducao {
     height: 50px;
     background-color: #ffffff;
     letter-spacing: 2px;
-
     text-decoration: underline double #aa8f15;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
-
 .imagens {
     height: 400px;
     width: 400px;
@@ -197,10 +157,7 @@ main .introducao {
     margin-left: 100px;
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
-
-
 }
-
 .sketchfab {
     height: 570px;
     width: 570px;
@@ -243,16 +200,9 @@ z-index: 999;
 margin-left: 286px;
 position: relative;
 }
-
 .imageminicial {
     margin-top: 100px;
-
-
-
-
-
 }
-
 .basedasimagens {
     display: grid;
     height: 350px;
@@ -260,18 +210,13 @@ position: relative;
     margin-top: -375px;
     margin-left: 502px;
     background-color: #e4e4e4;
-
 }
-
 .basedasimagens h1 {
     font-size: 35px;
     margin-left: 20px;
     margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
-
-
 .basedasimagens p {
     height: 200px;
     width: 550px;
@@ -280,7 +225,6 @@ position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
 }
-
 .basedasimagens a {
     height: 27px;
     width: 80px;
@@ -293,7 +237,6 @@ position: relative;
     background-color:#aa8f15;
     padding-left: 4px;
 }
-
 .modelo3d {
     display: grid;
     height: 350px;
@@ -301,9 +244,7 @@ position: relative;
     margin-top: -1370px;
     margin-left: 470px;
     background-color: #e4e4e4;
-
 }
-
 .modelo3d h1 {
     font-size: 35px;
     height: 55px;
@@ -314,9 +255,7 @@ position: relative;
     padding-left: 25px;
     background-color: #aa8f15;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
-
 .modelo3d p {
     height: 200px;
     width: 600px;
@@ -325,7 +264,6 @@ position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -16px;
 }
-
 .modelo3d a {
     height: 27px;
     width: 280px;
@@ -338,7 +276,6 @@ position: relative;
     text-decoration: none;
     background-color: #aa8f15;
 }
-
 .quiz {
     width: 300px;
     height: 80px;

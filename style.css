@@ -16,7 +16,6 @@
     margin-top: 120px;
     border-color: #008b17;
 }
-
 #btn2:hover{
     background-color: #00c020;
     border-color:  rgb(5, 54, 0);
@@ -25,7 +24,6 @@
     img{
 height: 22px;
 width: 22px;
-
     }
     transition: 0.2s;
 }
@@ -40,7 +38,6 @@ width: 22px;
     background-color: #d3ebbb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .btn2cima {
     width: 30px;
     position: fixed;
@@ -53,19 +50,16 @@ width: 22px;
     border-bottom-right-radius: 18px;
     border-color: #04a31e;
 }
-
 .btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
-
 #btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
-
 .btn2cima img {
     width: 20px;
     height: 20px;
@@ -84,7 +78,6 @@ width: 22px;
     display: grid;
     position: fixed;
 }
-
 .header2 {
     height: 170px;
     width: 100%;
@@ -93,7 +86,6 @@ width: 22px;
     display: grid;
     transition: 3s;
 }
-
 /*Link para o index no header*/
 header .Siste {
     color: #04a31e;
@@ -113,7 +105,6 @@ header .Siste {
     position: relative;
     text-decoration: none;
 }
-
 header .Siste:after {
     content: "";
     position: absolute;
@@ -124,7 +115,6 @@ header .Siste:after {
     bottom: 5px;
     transition: 0.3s;
 }
-
 header .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
@@ -138,9 +128,7 @@ header ul {
     border-radius: 4px;
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
-
 }
-
 header ul li {
     display: grid;
     height: 38px;
@@ -149,7 +137,6 @@ header ul li {
     background-color: #ffffff;
     border: 1px solid #008b17;
 }
-
 header a {
     position: relative;
     text-decoration: none;
@@ -160,9 +147,7 @@ header a {
     letter-spacing: 0.5px;
     padding: 10px;
     margin-top: -4px;
-
 }
-
 header a:after {
     content: "";
     position: absolute;
@@ -172,7 +157,6 @@ header a:after {
     bottom: 10px;
     transition: 0.3s;
 }
-
 header .card:hover:after {
     width: 120px;
     margin-left: 10px;
@@ -250,9 +234,7 @@ header a:hover:after {
     height: 7600px;
     background-color: rgb(233, 235, 235);
     width: 100%;
-
 }
-
 .maindepois {
     display: grid;
     height: 7600px;
@@ -266,14 +248,12 @@ footer {
     background-color: #c9e3ae;
     display: grid;
 }
-
 footer img {
     height: 100px;
     width: 200px;
     margin-top: 20px;
     margin-left: 20px;
 }
-
 footer h1 {
     color: #004a8d;
     margin-left: 260px;
@@ -304,7 +284,6 @@ footer h1 {
     height: 500px;
     width: 1000px;
     margin-top: 30px;
-
 }
 /*primeiro texto do site*/
 .base .textoinicial {
@@ -325,7 +304,6 @@ main .introducao {
     background-color: #ffffff;
     letter-spacing: 2px;
     text-decoration: underline double;
-
 }
 /*cada uma das imagens de cada sistema*/
 .imagens {
@@ -335,7 +313,6 @@ main .introducao {
     margin-left: 20px;
     box-shadow: 0px 0px 3px 1px black;
     margin-top: 100px;
-
 }
 /*tudo que acompanha as imagens de cada sistema*/
 .basedasimagens {
@@ -345,16 +322,13 @@ main .introducao {
     margin-top: -375px;
     margin-left: 422px;
     background-color: #e4e4e4;
-
 }
-
 .basedasimagens h1 {
     font-size: 27px;
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: underline;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .basedasimagens h1:hover {
     font-size: 29px;
@@ -363,10 +337,7 @@ main .introducao {
     text-decoration: underline;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.3s;
-
 }
-
-
 .basedasimagens p {
     height: 200px;
     width: 500px;
@@ -380,7 +351,6 @@ main .introducao {
     font-size: 20.5px;
     transition: 0.2s;
 }
-
 .basedasimagens a {
     height: 30px;
     width: 370px;
@@ -415,7 +385,6 @@ height: 20px;
 letter-spacing: 1px;
 position: relative;
 }
-    
 footer ul a:after{
     content: "";
     position: absolute;
@@ -426,33 +395,25 @@ footer ul a:after{
     bottom: -3px;
     transition: 0.3s;
 }
-
 footer .j:hover:after {
     width: 160px;
     margin-left: 5px;
     margin-top: 5px;
-    
 }
-
 footer .m:hover:after {
     width: 90px;
     margin-left: 5px;
     margin-top: 5px;
-    
 }
-
 footer .g:hover:after {
     width: 210px;
     margin-left: 5px;
     margin-top: 5px;
-    
 }
-
 footer .gu:hover:after {
     width: 240px;
     margin-left: 5px;
     margin-top: 5px;
-    
 }
 footer ul li{
 text-decoration: none;
