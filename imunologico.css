@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headerdefundo {
+    height: 170px;
+}
+
+.header {
+    height: 170px;
+    width: 100%;
+    background-color: #c9e3ae;
+    border-radius: 2px;
+    display: grid;
+    z-index: 1;
+
+
+
+
+}
+
+
+header h1 {
+    color: #04a31e;
+    font-size: 42px;
+    margin-left: 167.5px;
+    margin-top: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+    width: 550px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+header ul {
+    height: 80px;
+    width: 1014px;
+    background-color: #008b17;
+    border: 2px solid #008b17;
+    border-radius: 4px;
+    margin-left: 167.5px;
+    box-shadow: 2px 2px 3px #008b17;
+
+}
+
+header ul li {
+    display: grid;
+    height: 38px;
+    width: 142.857142857px;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #008b17;
+
+
+}
+
+header a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    margin-top: -4px;
+
+}
+
+header a:after {
+    content: "";
+    position: absolute;
+    background-color: #008b17;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+header a:hover:after {
+    width: 120px;
+    margin-left: 10px;
+}
+
+
+.main {
+    display: grid;
+    height: 4770px;
+    background-color: rgb(233, 235, 235);
+    width: 1349px;
+
+}
+
+
+footer {
+    height: 150px;
+    background-color: #c9e3ae;
+    display: grid;
+}
+
+footer img {
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer h1 {
+    color: #004a8d;
+    margin-left: 260px;
+    margin-top: -100px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.participantes {
+    color: #004a8d;
+    margin-left: 260px;
+    font-size: 30px;
+    margin-top: -70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.base {
+    width: 1200px;
+    height: 4700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 74.5px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    display: grid;
+}
+
+.Nomedosistema {
+    height: 100px;
+    background-color: #006400;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: grid;
+    text-shadow: 2px 0px 2px white;
+
+
+}
+
+.Nomedosistema h1 {
+    color: white;
+    margin-left: 300px;
+    margin-top: 15px;
+    font-size: 60px;
+    height: 60px;
+    width: 700px;
+
+
+
+}
+
+.Nomedosistema img {
+    height: 90px;
+    width: 100px;
+    margin-top: -90px;
+    margin-left: 740px;
+}
+
+.sistemasfoto {
+    height: 570px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 180px;
+    display: grid;
+
+}
+
+
+main .introducao {
+    color: #000000;
+    font-size: 42px;
+    margin-left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+    background-color: #ffffff;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    text-decoration: underline double rgb(211, 0, 0);
+    text-shadow: 2px 1px 1px rgb(177, 177, 177);
+}
+
+.imagens {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    margin-left: 20px;
+    box-shadow: 0px 0px 2px 1px black;
+    margin-top: 100px;
+
+}
+
+.sketchfab {
+    height: 570px;
+    width: 570px;
+    display: grid;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: grid;
+    background-color: #006400;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.ladodomodelo3d{
+height: 400px;
+width: 500px;
+background-color: #ffffff;
+box-shadow: 0px 1px 5px black;
+display: grid;
+margin-left: 600px;
+margin-top: -500px;
+z-index: 1;
+position: relative;
+}
+.ladodomodelo3d p{
+color: rgb(0, 0, 0);
+margin-left: 20px;
+margin-top: 20px;
+width: 400px;
+font-size: 24px;
+z-index: 0;
+position: relative;
+}
+.ladodomodelo3d img{
+width: 280px;
+height: 588px;
+margin-top: -460px;
+z-index: 999;
+margin-left: 296px;
+position: relative;
+}
+
+.imageminicial {
+    margin-top: 100px;
+
+
+
+
+
+}
+
+.basedasimagens {
+    display: grid;
+    height: 350px;
+    width: 600px;
+    margin-top: -375px;
+    margin-left: 422px;
+    background-color: #e4e4e4;
+
+}
+
+.basedasimagens h1 {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.basedasimagens p {
+    height: 200px;
+    width: 550px;
+    margin-left: 26px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+
+.basedasimagens a {
+    height: 27px;
+    width: 80px;
+    margin-top: -20px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: #006400;
+    padding-left: 4px;
+}
+
+.modelo3d {
+    display: grid;
+    height: 350px;
+    width: 660px;
+    margin-top: -1335px;
+    margin-left: 470px;
+    background-color: #e4e4e4;
+
+}
+
+.modelo3d h1 {
+    font-size: 35px;
+    height: 55px;
+    width: 635px;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    padding-top: 10px;
+    padding-left: 25px;
+    background-color: #006400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.modelo3d p {
+    height: 200px;
+    width: 600px;
+    margin-left: 26px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+
+.modelo3d a {
+    height: 27px;
+    width: 280px;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding-left: 4px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: #006400;
+}
+
+.quiz {
+    width: 300px;
+    height: 80px;
+    background-color: #006400;
+    background-color: 
+    font-size: 55px;
+    margin-top: 100px;
+    margin-left: 420px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    display: grid;
+}
