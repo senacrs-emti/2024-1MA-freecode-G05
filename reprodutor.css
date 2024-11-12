@@ -140,7 +140,7 @@ footer h1 {
 
 .Nomedosistema {
     height: 100px;
-    background-color: rgb(187, 0, 0);
+    background-color: pink;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
@@ -187,7 +187,7 @@ main .introducao {
     background-color: #ffffff;
     letter-spacing: 2px;
     margin-top: 60px;
-    text-decoration: underline double rgb(211, 0, 0);
+    text-decoration: underline double pink;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
 
@@ -208,7 +208,7 @@ main .introducao {
     margin-left: 50px;
     margin-top: 50px;
     display: grid;
-    background-color: #be0000;
+    background-color: pink;
     padding-left: 10px;
     padding-top: 10px;
     border-top-right-radius: 5px;
@@ -290,7 +290,7 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #a70000;
+    background-color: pink;
     padding-left: 4px;
 }
 
@@ -312,7 +312,7 @@ position: relative;
     border-top-left-radius: 5px;
     padding-top: 10px;
     padding-left: 25px;
-    background-color: #a70000;
+    background-color: pink;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -336,13 +336,13 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #a70000;
+    background-color: pink;
 }
 
 .quiz {
     width: 300px;
     height: 80px;
-    background-color: #be0000;
+    background-color: pink;
     font-size: 55px;
     margin-top: 100px;
     margin-left: 420px;
@@ -352,6 +352,6 @@ position: relative;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid darkred;
+    border: 1px solid palevioletred;
     display: grid;
 }
