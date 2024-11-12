@@ -2,99 +2,23 @@
     padding: 0;
     margin: 0;
 }
-/*Botões de subir/descer o header*/
-#btn2 {
-    width: 30px;
-    position: fixed;
-    z-index: 2;
-    height: 30px;
-    font-size: 20px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #c9e3ae;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 120px;
-    border-color: #008b17;
-}
 
-#btn2:hover{
-    background-color: #00c020;
-    border-color:  rgb(5, 54, 0);
-    height: 32px;
-    width: 32px;
-    img{
-height: 22px;
-width: 22px;
-
-    }
-    transition: 0.2s;
-}
-.btn2 {
-    width: 30px;
-    position: fixed;
-    z-index: 2;
-    height: 30px;
-    font-size: 30px;
-    border-bottom-right-radius: 18px;
-    border-color: #04a31e;
-    background-color: #d3ebbb;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.btn2cima {
-    width: 30px;
-    position: fixed;
-    z-index: 2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 30px;
-    background-color: #d3ebbb;
-    font-size: 30px;
-    margin-top: -170px;
-    border-bottom-right-radius: 18px;
-    border-color: #04a31e;
-}
-
-.btn2 img {
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-}
-
-#btn2 img {
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-}
-
-.btn2cima img {
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-}
-/*Header que aparece quando se clica no botão para manter a página estática*/
 .headerdefundo {
     height: 170px;
 }
-/*Cabeçario da página*/
+
 .header {
     height: 170px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
     display: grid;
-    position: fixed;
-}
+    z-index: 1;
 
-.header2 {
-    height: 170px;
-    width: 100%;
-    background-color: #c9e3ae;
-    border-radius: 2px;
-    display: grid;
-    transition: 3s;
-}
 
-/*Link para o index no header*/
+
+
+}
 header .Siste {
     color: #04a31e;
     font-size: 40px;
@@ -129,7 +53,8 @@ header .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
-/*Menu de sistemas*/
+
+
 header ul {
     height: 80px;
     width: 1014px;
@@ -148,6 +73,8 @@ header ul li {
     float: left;
     background-color: #ffffff;
     border: 1px solid #008b17;
+
+
 }
 
 header a {
@@ -166,6 +93,7 @@ header a {
 header a:after {
     content: "";
     position: absolute;
+    background-color: #008b17;
     height: 3px;
     width: 0;
     left: 0;
@@ -244,23 +172,17 @@ header a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
-/*maior parte do site e maindepois, para quando o botão ser apertado o site permanecer estático*/
+
+
 .main {
     display: grid;
-    height: 7600px;
-    background-color: rgb(233, 235, 235);
-    width: 100%;
-
-}
-
-.maindepois {
-    display: grid;
-    height: 7600px;
+    height: 4770px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
-    margin-top: -170px;
+
 }
-/*descrição da feira, link pros githubs*/
+
+
 footer {
     height: 150px;
     background-color: #c9e3ae;
@@ -281,41 +203,66 @@ footer h1 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/*nomes no footer*/
+
 .participantes {
     color: #004a8d;
-    margin-left: 250px;
+    margin-left: 260px;
     font-size: 30px;
-    margin-top: -50px;
+    margin-top: -70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/*Dentro da main*/
+
 .base {
-    width: 1000px;
-    height: 7500px;
+    width: 1200px;
+    height: 4700px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    margin-left: 174.5px;
+    margin-left: 74.5px;
     margin-top: 20px;
     box-shadow: 10px 10px 8px 10px #888888;
+    display: grid;
 }
-/*Foto de todos os sistemas*/
-.sistemasfoto {
-    height: 500px;
-    width: 1000px;
-    margin-top: 30px;
+
+.Nomedosistema {
+    height: 100px;
+    background-color: rgb(187, 0, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: grid;
+    text-shadow: 2px 0px 2px white;
+
 
 }
-/*primeiro texto do site*/
-.base .textoinicial {
-    font-size: 26px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100px;
-    width: 1000px;
-    margin-left: 10px;
-    margin-top: 10px;
+
+.Nomedosistema h1 {
+    color: white;
+    margin-left: 390px;
+    margin-top: 15px;
+    font-size: 60px;
+    height: 60px;
+    width: 700px;
+
+
+
 }
-/*apresenta todos os sistemas, debaixo da imagem dos sistemas*/
+
+.Nomedosistema img {
+    height: 90px;
+    width: 100px;
+    margin-top: -90px;
+    margin-left: 740px;
+}
+
+.sistemasfoto {
+    height: 570px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 180px;
+    display: grid;
+
+}
+
+
 main .introducao {
     color: #000000;
     font-size: 42px;
@@ -324,139 +271,189 @@ main .introducao {
     height: 50px;
     background-color: #ffffff;
     letter-spacing: 2px;
-    text-decoration: underline double;
-
+    margin-top: 60px;
+    text-decoration: underline double rgb(187, 0, 0);
+    text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
-/*cada uma das imagens de cada sistema*/
+
 .imagens {
     height: 400px;
     width: 400px;
     display: grid;
-    margin-left: 20px;
-    box-shadow: 0px 0px 3px 1px black;
+    margin-left: 120px;
+    box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
 
 }
-/*tudo que acompanha as imagens de cada sistema*/
+
+.sketchfab {
+    height: 570px;
+    width: 570px;
+    display: grid;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: grid;
+    background-color: rgb(187, 0, 0);
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.ladodomodelo3d{
+height: 400px;
+width: 500px;
+background-color: #ffffff;
+box-shadow: 0px 1px 5px black;
+display: grid;
+margin-left: 600px;
+margin-top: -500px;
+z-index: 1;
+position: relative;
+}
+.ladodomodelo3d p{
+color: rgb(0, 0, 0);
+margin-left: 20px;
+margin-top: 20px;
+width: 400px;
+font-size: 24px;
+z-index: 0;
+position: relative;
+}
+.ladodomodelo3d img{
+width: 300px;
+height: 570px;
+margin-top: -450px;
+z-index: 999;
+margin-left: 286px;
+position: relative;
+}
+
+.imageminicial {
+    margin-top: 100px;
+
+
+
+
+
+}
+
 .basedasimagens {
     display: grid;
     height: 350px;
-    width: 560px;
+    width: 600px;
     margin-top: -375px;
-    margin-left: 422px;
+    margin-left: 522px;
     background-color: #e4e4e4;
 
 }
 
 .basedasimagens h1 {
-    font-size: 27px;
+    font-size: 35px;
     margin-left: 20px;
-    margin-top: 20px;
-    text-decoration: underline;
+    margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.basedasimagens h1:hover {
-    font-size: 29px;
-    margin-left: 20px;
-    margin-top: 20px;
-    text-decoration: underline;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: 0.3s;
 
 }
 
 
 .basedasimagens p {
     height: 200px;
-    width: 500px;
-    margin-left: 20px;
-    font-size: 20px;
+    width: 550px;
+    margin-left: 26px;
+    font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.basedasimagens p:hover {
-    height: 200px;
-    width: 530px;
-    font-size: 20.5px;
-    transition: 0.2s;
+    margin-top: -10px;
 }
 
 .basedasimagens a {
-    height: 30px;
-    width: 370px;
-    margin-top: -50px;
+    height: 27px;
+    width: 80px;
+    margin-top: -20px;
     margin-left: 20px;
-    color: #000000;
+    color: #ffffff;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: #c9e3ae;
-    padding-left: 15px;
-    padding-top: 3px;
+    background-color: rgb(187, 0, 0);
+    padding-left: 4px;
 }
-.basedasimagens a:hover {
-    height: 31px;
-    width: 400px;
-    font-size: 23px;
-transition: 0.2s;
+
+.modelo3d {
+    display: grid;
+    height: 350px;
+    width: 660px;
+    margin-top: -1335px;
+    margin-left: 470px;
+    background-color: #e4e4e4;
+
 }
-footer ul{
-width: 800px;
-margin-top: 20px;
+
+.modelo3d h1 {
+    font-size: 35px;
+    height: 55px;
+    width: 635px;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    padding-top: 10px;
+    padding-left: 25px;
+    background-color: rgb(187, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
-footer ul a{
-color: #004a8d;
-text-decoration: none;
-list-style-type: none;
-margin-top: 10px;
-font-weight: bold;
-position: relative;
-height: 20px;
-letter-spacing: 1px;
-position: relative;
+
+.modelo3d p {
+    height: 200px;
+    width: 600px;
+    margin-left: 26px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
 }
-    
-footer ul a:after{
-    content: "";
-    position: absolute;
-    background-color: #004a8d;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -3px;
+
+.modelo3d a {
+    height: 27px;
+    width: 290px;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding-left: 4px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: rgb(187, 0, 0);
+}
+
+.quiz {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(187, 0, 0);
+    font-size: 55px;
+    margin-top: 100px;
+    margin-left: 420px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    display: grid;
+}
+.quiz:hover {
+    width: 310px;
+    height: 82px;
+    background-color: rgb(145, 0, 0);
+    font-size: 56px;
+    margin-top: 90px;
+    margin-left: 410px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(78, 0, 0);
+    display: grid;
     transition: 0.3s;
-}
-
-footer .j:hover:after {
-    width: 160px;
-    margin-left: 5px;
-    margin-top: 5px;
-    
-}
-
-footer .m:hover:after {
-    width: 90px;
-    margin-left: 5px;
-    margin-top: 5px;
-    
-}
-
-footer .g:hover:after {
-    width: 210px;
-    margin-left: 5px;
-    margin-top: 5px;
-    
-}
-
-footer .gu:hover:after {
-    width: 240px;
-    margin-left: 5px;
-    margin-top: 5px;
-    
-}
-footer ul li{
-text-decoration: none;
-list-style-type: none;
-float: left;
-margin-left: 10px;
 }
