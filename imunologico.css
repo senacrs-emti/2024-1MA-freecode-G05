@@ -91,7 +91,7 @@ header a:hover:after {
 
 .main {
     display: grid;
-    height: 4770px;
+    height: 4370px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
 
@@ -129,7 +129,7 @@ footer h1 {
 
 .base {
     width: 1200px;
-    height: 4700px;
+    height: 4300px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: 74.5px;
@@ -151,7 +151,7 @@ footer h1 {
 
 .Nomedosistema h1 {
     color: white;
-    margin-left: 300px;
+    margin-left: 350px;
     margin-top: 15px;
     font-size: 60px;
     height: 60px;
@@ -187,7 +187,7 @@ main .introducao {
     background-color: #ffffff;
     letter-spacing: 2px;
     margin-top: 60px;
-    text-decoration: underline double rgb(211, 0, 0);
+    text-decoration: underline double #006400;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
 
@@ -195,7 +195,7 @@ main .introducao {
     height: 400px;
     width: 400px;
     display: grid;
-    margin-left: 20px;
+    margin-left: 120px;
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
 
@@ -228,17 +228,17 @@ position: relative;
 }
 .ladodomodelo3d p{
 color: rgb(0, 0, 0);
-margin-left: 20px;
-margin-top: 20px;
-width: 400px;
+margin-left: 10px;
+margin-top: 10px;
+width: 485px;
 font-size: 24px;
 z-index: 0;
 position: relative;
 }
 .ladodomodelo3d img{
-width: 280px;
-height: 588px;
-margin-top: -460px;
+width: 200px;
+height: 200px;
+margin-top: -230px;
 z-index: 999;
 margin-left: 296px;
 position: relative;
@@ -258,7 +258,7 @@ position: relative;
     height: 350px;
     width: 600px;
     margin-top: -375px;
-    margin-left: 422px;
+    margin-left: 522px;
     background-color: #e4e4e4;
 
 }
@@ -298,7 +298,7 @@ position: relative;
     display: grid;
     height: 350px;
     width: 660px;
-    margin-top: -1335px;
+    margin-top: -1347px;
     margin-left: 470px;
     background-color: #e4e4e4;
 
@@ -328,7 +328,7 @@ position: relative;
 
 .modelo3d a {
     height: 27px;
-    width: 280px;
+    width: 230px;
     margin-top: -20px;
     margin-left: 20px;
     padding-left: 4px;
@@ -343,7 +343,6 @@ position: relative;
     width: 300px;
     height: 80px;
     background-color: #006400;
-    background-color: 
     font-size: 55px;
     margin-top: 100px;
     margin-left: 420px;

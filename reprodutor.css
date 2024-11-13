@@ -121,7 +121,7 @@ footer h1 {
 }
 .Nomedosistema h1 {
     color: white;
-    margin-left: 300px;
+    margin-left: 370px;
     margin-top: 15px;
     font-size: 60px;
     height: 60px;
@@ -134,10 +134,10 @@ footer h1 {
     margin-left: 740px;
 }
 .sistemasfoto {
-    height: 570px;
-    width: 300px;
-    margin-top: 30px;
-    margin-left: 180px;
+    height: 530px;
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 70px;
     display: grid;
 }
 main .introducao {
@@ -187,19 +187,19 @@ position: relative;
 }
 .ladodomodelo3d p{
 color: rgb(0, 0, 0);
-margin-left: 20px;
-margin-top: 20px;
-width: 400px;
+margin-left: 10px;
+margin-top: 10px;
+width: 375px;
 font-size: 24px;
 z-index: 0;
 position: relative;
 }
 .ladodomodelo3d img{
-width: 280px;
-height: 588px;
-margin-top: -460px;
+width: 220px;
+height: 398px;
+margin-top: -388px;
 z-index: 999;
-margin-left: 296px;
+margin-left: 326px;
 position: relative;
 }
 .imageminicial {
@@ -243,7 +243,7 @@ position: relative;
     display: grid;
     height: 350px;
     width: 660px;
-    margin-top: -1335px;
+    margin-top: -1252px;
     margin-left: 470px;
     background-color: #e4e4e4;
 }
@@ -283,7 +283,7 @@ position: relative;
     height: 80px;
     background-color: pink;
     font-size: 55px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 420px;
     color: white;
     text-shadow: 0px 0px 2px black;
@@ -297,9 +297,9 @@ position: relative;
 .quiz:hover {
     width: 310px;
     height: 82px;
-    background-color: #a50000;
+    background-color:  rgb(250, 173, 186);
     font-size: 56px;
-    margin-top: 90px;
+    margin-top: 40px;
     margin-left: 410px;
     color: white;
     text-shadow: 0px 0px 2px black;
@@ -307,7 +307,7 @@ position: relative;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(110, 0, 0);
+    border: 1px solid  rgb(255, 140, 159);
     display: grid;
     transition: 0.3s;
 }
