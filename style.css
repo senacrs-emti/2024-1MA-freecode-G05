@@ -155,7 +155,7 @@ header a:after {
     height: 3px;
     width: 0;
     left: 0;
-    bottom: 10px;
+    bottom: 7px;
     transition: 0.3s;
 }
 header .card:hover:after {
@@ -208,10 +208,12 @@ header .musc:hover:after {
 header .imun:hover:after {
     width: 120px;
     margin-left: 10px;
+    background-color: #006400;
 }
 header .linf:hover:after {
     width: 120px;
     margin-left: 10px;
+    background-color: #556B2F;
 }
 header .sens:hover:after {
     width: 120px;
@@ -220,10 +222,12 @@ header .sens:hover:after {
 header .repr:hover:after {
     width: 120px;
     margin-left: 10px;
+    background-color: pink;
 }
 header .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
+    background-color: #f1d299;
 }
 header a:hover:after {
     width: 120px;
