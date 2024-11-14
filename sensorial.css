@@ -196,7 +196,7 @@ footer h1 {
 }
 .Nomedosistema {
     height: 100px;
-    background-color: rgb(187, 0, 0);
+    background-color: #DA70D6;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
@@ -218,7 +218,7 @@ footer h1 {
     margin-left: 740px;
 }
 .sistemasfoto {
-    height: 570px;
+    height: 300px;
     width: 300px;
     margin-top: 30px;
     margin-left: 180px;
@@ -233,7 +233,7 @@ main .introducao {
     background-color: #ffffff;
     letter-spacing: 2px;
     margin-top: 60px;
-    text-decoration: underline double rgb(187, 0, 0);
+    text-decoration: underline double #DA70D6;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
 .imagens {
@@ -251,7 +251,7 @@ main .introducao {
     margin-left: 50px;
     margin-top: 50px;
     display: grid;
-    background-color: rgb(187, 0, 0);
+    background-color:#DA70D6;
     padding-left: 10px;
     padding-top: 10px;
     border-top-right-radius: 5px;
@@ -283,7 +283,7 @@ width: 300px;
 height: 570px;
 margin-top: -450px;
 z-index: 999;
-margin-left: 286px;
+margin-left: 350px;
 position: relative;
 }
 .imageminicial {
@@ -321,7 +321,7 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: rgb(187, 0, 0);
+    background-color: #DA70D6;
     padding-left: 4px;
 }
 .basedasimagens h1:hover {
@@ -370,7 +370,7 @@ position: relative;
     border-top-left-radius: 5px;
     padding-top: 10px;
     padding-left: 25px;
-    background-color: rgb(187, 0, 0);
+    background-color:#DA70D6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .modelo3d p {
@@ -391,12 +391,12 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: rgb(187, 0, 0);
+    background-color: #DA70D6;
 }
 .quiz {
     width: 300px;
     height: 80px;
-    background-color: rgb(187, 0, 0);
+    background-color: #DA70D6;
     font-size: 55px;
     margin-top: 100px;
     margin-left: 420px;
@@ -406,13 +406,13 @@ position: relative;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid #000000;
+    border: 1px solid rebeccapurple;
     display: grid;
 }
 .quiz:hover {
     width: 310px;
     height: 82px;
-    background-color: rgb(145, 0, 0);
+    background-color: rebeccapurple;
     font-size: 56px;
     margin-top: 90px;
     margin-left: 410px;
@@ -422,7 +422,7 @@ position: relative;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(78, 0, 0);
+    border: 1px solid darkviolet;
     display: grid;
     transition: 0.3s;
 }
