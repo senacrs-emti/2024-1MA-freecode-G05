@@ -3,6 +3,15 @@
     margin: 0;
     cursor: url(./imagens/my-mouse-pointerindex.cur),auto;
 }
+a{
+    cursor: url(./imagens/my-mouse-pointerindexpointer.cur),pointer;
+}
+p{
+    cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+}
+h1{
+    cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+}
 /*Botões de subir/descer o header*/
 #btn2 {
     width: 30px;
@@ -155,7 +164,7 @@ header a:after {
     height: 3px;
     width: 0;
     left: 0;
-    bottom: 7px;
+    bottom: 6px;
     transition: 0.3s;
 }
 header .card:hover:after {
@@ -176,7 +185,7 @@ header .dige:hover:after {
 header .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color: #dbbb01;
+    background-color: #ffd700;
 }
 header .endo:hover:after {
     width: 120px;
@@ -218,6 +227,7 @@ header .linf:hover:after {
 header .sens:hover:after {
     width: 120px;
     margin-left: 10px;
+    background-color: #DA70D6;
 }
 header .repr:hover:after {
     width: 120px;

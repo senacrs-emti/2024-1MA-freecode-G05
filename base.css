@@ -1,16 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    cursor: url(./imagens/my-mouse-pointeresquye.cur),auto;
+    cursor: url(./imagens/my-mouse-pointerbase.cur),auto;
 }
 a{
-    cursor: url(./imagens/my-mouse-pointeresquepointer.cur),pointer;
+    cursor: url(./imagens/my-mouse-pointerbasepoiter.cur),pointer;
 }
 p{
-    cursor: url(./imagens/my-mouse-pointerbasetextesqueletico.cur), text;
+    cursor: url(./imagens/my-mouse-pointerbasetextnovo.cur), text;
 }
 h1{
-    cursor: url(./imagens/my-mouse-pointerbasetextesqueletico.cur), text;
+    cursor: url(./imagens/my-mouse-pointerbasetextnovo.cur), text;
 }
 .headerdefundo {
     height: 170px;
@@ -54,21 +54,6 @@ header .Siste:after {
 header .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
-}
-header h1 {
-    color: #04a31e;
-    font-size: 42px;
-    margin-left: 167.5px;
-    margin-top: 7px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 50px;
-    width: 550px;
-    background-color: #ffffff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-    padding-left: 10px;
-    letter-spacing: 1px;
 }
 header ul {
     height: 80px;
@@ -185,7 +170,7 @@ header a:hover:after {
 }
 .main {
     display: grid;
-    height: 7170px;
+    height: 4770px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
 }
@@ -216,7 +201,7 @@ footer h1 {
 }
 .base {
     width: 1200px;
-    height: 7100px;
+    height: 4700px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: 74.5px;
@@ -226,15 +211,16 @@ footer h1 {
 }
 .Nomedosistema {
     height: 100px;
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(187, 0, 0);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
     text-shadow: 2px 0px 2px white;
 }
+
 .Nomedosistema h1 {
     color: white;
-    margin-left: 350px;
+    margin-left: 320px;
     margin-top: 15px;
     font-size: 60px;
     height: 60px;
@@ -248,9 +234,9 @@ footer h1 {
 }
 .sistemasfoto {
     height: 570px;
-    width: 620px;
-    margin-top: -130px;
-    margin-left: 10px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 180px;
     display: grid;
 }
 main .introducao {
@@ -261,15 +247,15 @@ main .introducao {
     height: 50px;
     background-color: #ffffff;
     letter-spacing: 2px;
-    margin-top: -120px;
-    text-decoration: underline double rgb(148, 148, 148);
+    margin-top: 60px;
+    text-decoration: underline double rgb(187, 0, 0);
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
 .imagens {
     height: 400px;
     width: 400px;
     display: grid;
-    margin-left: 110px;
+    margin-left: 120px;
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
 }
@@ -278,9 +264,9 @@ main .introducao {
     width: 570px;
     display: grid;
     margin-left: 50px;
-    margin-top: -210px;
+    margin-top: 50px;
     display: grid;
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(187, 0, 0);
     padding-left: 10px;
     padding-top: 10px;
     border-top-right-radius: 5px;
@@ -302,17 +288,17 @@ position: relative;
 color: rgb(0, 0, 0);
 margin-left: 20px;
 margin-top: 20px;
-width: 390px;
+width: 400px;
 font-size: 24px;
 z-index: 0;
 position: relative;
 }
 .ladodomodelo3d img{
-width: 200px;
-height: 348px;
-margin-top: -370px;
+width: 300px;
+height: 570px;
+margin-top: -450px;
 z-index: 999;
-margin-left: 336px;
+margin-left: 286px;
 position: relative;
 }
 .imageminicial {
@@ -323,15 +309,14 @@ position: relative;
     height: 350px;
     width: 600px;
     margin-top: -375px;
-    margin-left: 512px;
+    margin-left: 522px;
     background-color: #e4e4e4;
 }
 .basedasimagens h1 {
     font-size: 35px;
     margin-left: 20px;
-    margin-top:15px;
+    margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .basedasimagens p {
     height: 200px;
@@ -339,28 +324,42 @@ position: relative;
     margin-left: 26px;
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -30px;
+    margin-top: -10px;
+    display: grid;
 }
 .basedasimagens a {
     height: 27px;
     width: 80px;
-    margin-top: -15px;
+    margin-top: -20px;
     margin-left: 20px;
     color: #ffffff;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color:rgb(148, 148, 148);
+    background-color: rgb(187, 0, 0);
     padding-left: 4px;
+}
+.basedasimagens a:hover {
+    height: 29px;
+    width: 81px;
+    margin-top: -18px;
+    margin-left: 22px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: rgb(173, 2, 2);
+    padding-left: 4px;
+    padding-top: 1px;
+    transition: 0.2s;
 }
 .modelo3d {
     display: grid;
     height: 350px;
     width: 660px;
-    margin-top: -1222px;
+    margin-top: -1335px;
     margin-left: 470px;
     background-color: #e4e4e4;
-
 }
 .modelo3d h1 {
     font-size: 35px;
@@ -370,7 +369,7 @@ position: relative;
     border-top-left-radius: 5px;
     padding-top: 10px;
     padding-left: 25px;
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(187, 0, 0);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .modelo3d p {
@@ -383,7 +382,7 @@ position: relative;
 }
 .modelo3d a {
     height: 27px;
-    width: 280px;
+    width: 290px;
     margin-top: -20px;
     margin-left: 20px;
     padding-left: 4px;
@@ -391,12 +390,25 @@ position: relative;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(187, 0, 0);
+}
+.modelo3d a:hover {
+    height: 29px;
+    width: 294px;
+    margin-top: -18px;
+    margin-left: 18px;
+    padding-left: 6px;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: rgb(170, 1, 1);
+    transition: 0.4s;
 }
 .quiz {
     width: 300px;
     height: 80px;
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(187, 0, 0);
     font-size: 55px;
     margin-top: 100px;
     margin-left: 420px;
@@ -406,6 +418,23 @@ position: relative;
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(95, 95, 95);
+    border: 1px solid #000000;
     display: grid;
+}
+.quiz:hover {
+    width: 310px;
+    height: 82px;
+    background-color: rgb(145, 0, 0);
+    font-size: 56px;
+    margin-top: 90px;
+    margin-left: 410px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    text-decoration: none;
+    padding-left: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(78, 0, 0);
+    display: grid;
+    transition: 0.3s;
 }

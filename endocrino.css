@@ -3,6 +3,15 @@
     margin: 0;
     cursor: url(./imagens/my-mouse-pointerend.cur),auto;
 }
+a{
+    cursor: url(./imagens/my-mouse-pointerendopointer.cur),pointer;
+}
+p{
+    cursor: url(./imagens/my-mouse-pointerbasetextendocrino.cur), text;
+}
+h1{
+    cursor: url(./imagens/my-mouse-pointerbasetextendocrino.cur), text;
+}
 .headerdefundo {
     height: 170px;
 }
@@ -13,6 +22,38 @@
     border-radius: 2px;
     display: grid;
     z-index: 1;
+}
+header .Siste {
+    color: #04a31e;
+    font-size: 40px;
+    margin-left: 167.5px;
+    margin-top: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 38px;
+    width: 550px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    padding-top: 1px;
+    position: relative;
+    text-decoration: none;
+}
+header .Siste:after {
+    content: "";
+    position: absolute;
+    background-color: #008b17;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.3s;
+}
+header .Siste:hover:after {
+    width: 550px;
+    margin-left: 10px;
 }
 header h1 {
     color: #04a31e;
@@ -60,12 +101,83 @@ header a {
 header a:after {
     content: "";
     position: absolute;
-    background-color: #008b17;
     height: 3px;
     width: 0;
     left: 0;
-    bottom: 10px;
+    bottom: 6px;
     transition: 0.3s;
+}
+header .card:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: rgb(187, 0, 0);
+}
+header .resp:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #87CEEB;
+}
+header .dige:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #FFA500;
+}
+header .nerv:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #ffd700;
+}
+header .endo:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #9370db;
+}
+header .excr:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #aa8f15;
+}
+header .urin:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #000080;
+}
+header .esqu:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: rgb(148, 148, 148);
+
+}
+header .musc:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color:  #ab3130;
+
+}
+header .imun:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #006400;
+}
+header .linf:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #556B2F;
+}
+header .sens:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #DA70D6;
+}
+header .repr:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: pink;
+}
+header .tegu:hover:after {
+    width: 120px;
+    margin-left: 10px;
+    background-color: #f1d299;
 }
 header a:hover:after {
     width: 120px;
