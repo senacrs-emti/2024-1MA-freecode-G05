@@ -12,22 +12,46 @@ p{
 h1{
     cursor: url(./imagens/my-mouse-pointerbasetext\ nervoso.cur), text;
 }
+body::-webkit-scrollbar {
+    width: 17px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffd700;    /* color of the scroll thumb */
+    border: 1px solid #dbba00;
+    height: 50px;  /* creates padding around scroll thumb */
+  }
+/*Header que aparece quando se clica no botão para manter a página estática*/
+.headerdefundo {
+    height: 170px;
+    background-color: #c9e3ae;
+}
+/* Estilo inicial do header */
 .header {
     height: 170px;
     width: 100%;
+    top: -70px;
     background-color: #c9e3ae;
     border-radius: 2px;
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* No topo inicialmente */
+    transition: top 1s ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
     display: grid;
-    z-index: 1;
-    position: fixed;
 }
+
+/* Estilo quando o header se torna menor (minimizado) */
 .header2 {
-    height: 170px;
+    height: 170px; /* Menor altura para o estado minimizado */
+    top: -70px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
+    transition: top 1 ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
     display: grid;
-    transition: 3s;
+     /* Move o header para cima quando minimizado */
 }
 /*Botões de subir/descer o header*/
 #btn2 {
@@ -91,10 +115,6 @@ width: 22px;
     width: 20px;
     height: 20px;
     margin-top: 2px;
-}
-/*Header que aparece quando se clica no botão para manter a página estática*/
-.headerdefundo {
-    height: 170px;
 }
 header .Siste {
     color: #04a31e;
@@ -407,8 +427,6 @@ margin-left: 20px;
 margin-top: 20px;
 width: 400px;
 font-size: 24px;
-z-index: 0;
-position: relative;
 }
 .ladodomodelo3d img{
 width: 400px;
@@ -466,7 +484,20 @@ margin-left: 46px;
     background-color: #ffd700;
     padding-left: 4px;
 }
-
+.basedasimagens a:hover {
+    height: 29px;
+    width: 81px;
+    margin-top: -18px;
+    margin-left: 22px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: #ffd700;
+    padding-left: 4px;
+    padding-top: 1px;
+    transition: 0.2s;
+}
 .modelo3d {
     display: grid;
     height: 350px;
@@ -511,7 +542,19 @@ margin-left: 46px;
     text-decoration: none;
     background-color: #ffd700 ;
 }
-
+.modelo3d a:hover {
+    height: 29px;
+    width: 298px;
+    margin-top: -18px;
+    margin-left: 18px;
+    padding-left: 6px;
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: #ffd700 ;
+    transition: 0.4s;
+}
 .quiz {
     width: 300px;
     height: 80px;

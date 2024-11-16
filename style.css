@@ -12,6 +12,18 @@ p{
 h1{
     cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
 }
+body::-webkit-scrollbar {
+    width: 17px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #04a31e;    /* color of the scroll thumb */
+    border: 1px solid #028017;
+    height: 50px;  /* creates padding around scroll thumb */
+  }
 /*Botões de subir/descer o header*/
 #btn2 {
     width: 30px;
@@ -78,23 +90,31 @@ width: 22px;
 /*Header que aparece quando se clica no botão para manter a página estática*/
 .headerdefundo {
     height: 170px;
+    background-color: #c9e3ae;
 }
-/*Cabeçario da página*/
+/* Estilo inicial do header */
 .header {
     height: 170px;
     width: 100%;
+    top: -70px;
     background-color: #c9e3ae;
     border-radius: 2px;
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* No topo inicialmente */
+    transition: top 1s ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
     display: grid;
-    position: fixed;
 }
+
+/* Estilo quando o header se torna menor (minimizado) */
 .header2 {
-    height: 170px;
+    height: 170px; /* Menor altura para o estado minimizado */
+    top: -70px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
+    transition: top 1 ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
     display: grid;
-    transition: 3s;
+     /* Move o header para cima quando minimizado */
 }
 /*Link para o index no header*/
 header .Siste {
