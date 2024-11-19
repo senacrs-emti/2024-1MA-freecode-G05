@@ -103,6 +103,7 @@ width: 22px;
     top: 0; /* No topo inicialmente */
     transition: top 1s ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
     display: grid;
+    transition-delay: .2s;
 }
 
 /* Estilo quando o header se torna menor (minimizado) */
@@ -114,6 +115,7 @@ width: 22px;
     border-radius: 2px;
     transition: top 1 ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
     display: grid;
+    transition-delay: .2s;
      /* Move o header para cima quando minimizado */
 }
 /*Link para o index no header*/
