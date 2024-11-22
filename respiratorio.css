@@ -1,34 +1,45 @@
 * {
     padding: 0;
     margin: 0;
-    cursor: url(./imagens/my-mouse-pointerazul.cur),auto;
+    cursor: url(./imagens/my-mouse-pointerazul.cur), auto;
 }
-a{
-    cursor: url(./imagens/my-mouse-pointerrespirapointer.cur),pointer;
+
+a {
+    cursor: url(./imagens/my-mouse-pointerrespirapointer.cur), pointer;
 }
-p{
+
+p {
     cursor: url(./imagens/my-mouse-pointerresptext\ .cur), text;
 }
-h1{
+
+h1 {
     cursor: url(./imagens/my-mouse-pointerresptext\ .cur), text;
 }
+
 body::-webkit-scrollbar {
-    width: 17px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: #f1f1f1;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #87CEEB;    /* color of the scroll thumb */
+    width: 17px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #87CEEB;
+    /* color of the scroll thumb */
     border: 1px solid #79adc2;
-    height: 50px;  /* creates padding around scroll thumb */
-  }
+    height: 50px;
+    /* creates padding around scroll thumb */
+}
+
 /*Header que aparece quando se clica no botão para manter a página estática*/
 .headerdefundo {
     height: 170px;
     background-color: #c9e3ae;
 }
+
 /* Estilo inicial do header */
 .header {
     height: 170px;
@@ -36,23 +47,29 @@ body::-webkit-scrollbar {
     top: -70px;
     background-color: #c9e3ae;
     border-radius: 2px;
-    position: fixed; /* Fixa o header no topo */
-    top: 0; /* No topo inicialmente */
-    transition: top 1s ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
+    position: fixed;
+    /* Fixa o header no topo */
+    top: 0;
+    /* No topo inicialmente */
+    transition: top 1s ease, height 0.5s ease;
+    /* Suaviza a transição da posição (top) e da altura */
     display: grid;
 }
 
 /* Estilo quando o header se torna menor (minimizado) */
 .header2 {
-    height: 170px; /* Menor altura para o estado minimizado */
+    height: 170px;
+    /* Menor altura para o estado minimizado */
     top: -70px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
-    transition: top 1 ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
+    transition: top 1 ease, height 0.5s ease;
+    /* Suaviza a transição da posição (top) e da altura */
     display: grid;
-     /* Move o header para cima quando minimizado */
+    /* Move o header para cima quando minimizado */
 }
+
 /*Botões de subir/descer o header*/
 #btn2 {
     width: 30px;
@@ -67,17 +84,21 @@ body::-webkit-scrollbar {
     margin-top: 120px;
     border-color: #008b17;
 }
-#btn2:hover{
+
+#btn2:hover {
     background-color: #00c020;
-    border-color:  rgb(5, 54, 0);
+    border-color: rgb(5, 54, 0);
     height: 32px;
     width: 32px;
-    img{
-height: 22px;
-width: 22px;
+
+    img {
+        height: 22px;
+        width: 22px;
     }
+
     transition: 0.2s;
 }
+
 .btn2 {
     width: 30px;
     position: fixed;
@@ -89,6 +110,7 @@ width: 22px;
     background-color: #d3ebbb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .btn2cima {
     width: 30px;
     position: fixed;
@@ -101,21 +123,25 @@ width: 22px;
     border-bottom-right-radius: 18px;
     border-color: #04a31e;
 }
+
 .btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 #btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 .btn2cima img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 header .Siste {
     color: #04a31e;
     font-size: 40px;
@@ -134,6 +160,7 @@ header .Siste {
     position: relative;
     text-decoration: none;
 }
+
 header .Siste:after {
     content: "";
     position: absolute;
@@ -144,10 +171,12 @@ header .Siste:after {
     bottom: 5px;
     transition: 0.3s;
 }
+
 header .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 header h1 {
     color: #04a31e;
     font-size: 42px;
@@ -163,6 +192,7 @@ header h1 {
     padding-left: 10px;
     letter-spacing: 1px;
 }
+
 header ul {
     height: 80px;
     width: 1014px;
@@ -172,6 +202,7 @@ header ul {
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
 }
+
 header ul li {
     display: grid;
     height: 38px;
@@ -180,6 +211,7 @@ header ul li {
     background-color: #ffffff;
     border: 1px solid #008b17;
 }
+
 header a {
     position: relative;
     text-decoration: none;
@@ -191,6 +223,7 @@ header a {
     padding: 10px;
     margin-top: -4px;
 }
+
 header a:after {
     content: "";
     position: absolute;
@@ -200,99 +233,118 @@ header a:after {
     bottom: 6px;
     transition: 0.3s;
 }
+
 header .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
 }
+
 header .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
 }
+
 header .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
 }
+
 header .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #ffd700;
 }
+
 header .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 header .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 header .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 header .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 header .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 header .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 header .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 header .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 header .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 header .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 header a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 .main {
     display: grid;
     height: 4770px;
     background-color: rgb(233, 235, 235);
     width: 100%;
 }
+
 footer {
     height: 150px;
     background-color: #c9e3ae;
     display: grid;
 }
+
 footer img {
     height: 100px;
     width: 200px;
     margin-top: 20px;
     margin-left: 20px;
 }
+
 footer h1 {
     color: #004a8d;
     margin-left: 260px;
@@ -300,6 +352,7 @@ footer h1 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .participantes {
     color: #004a8d;
     margin-left: 260px;
@@ -307,6 +360,7 @@ footer h1 {
     margin-top: -70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .base {
     width: 1200px;
     height: 4700px;
@@ -317,6 +371,7 @@ footer h1 {
     box-shadow: 10px 10px 8px 10px #888888;
     display: grid;
 }
+
 .Nomedosistema {
     height: 100px;
     background-color: #87CEEB;
@@ -325,6 +380,7 @@ footer h1 {
     display: grid;
     text-shadow: 2px 0px 2px white;
 }
+
 .Nomedosistema h1 {
     color: white;
     margin-left: 340px;
@@ -333,12 +389,14 @@ footer h1 {
     height: 60px;
     width: 700px;
 }
+
 .Nomedosistema img {
     height: 90px;
     width: 100px;
     margin-top: -90px;
     margin-left: 740px;
 }
+
 .sistemasfoto {
     height: 570px;
     width: 380px;
@@ -346,6 +404,7 @@ footer h1 {
     margin-left: 100px;
     display: grid;
 }
+
 main .introducao {
     color: #000000;
     font-size: 42px;
@@ -358,6 +417,7 @@ main .introducao {
     text-decoration: underline double #87CEEB;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
+
 .imagens {
     height: 400px;
     width: 400px;
@@ -366,6 +426,7 @@ main .introducao {
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
 }
+
 .sketchfab {
     height: 570px;
     width: 570px;
@@ -380,31 +441,36 @@ main .introducao {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.ladodomodelo3d{
-height: 400px;
-width: 500px;
-background-color: #ffffff;
-box-shadow: 0px 1px 5px black;
-display: grid;
-margin-left: 600px;
-margin-top: -500px;
+
+.ladodomodelo3d {
+    height: 400px;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px black;
+    display: grid;
+    margin-left: 600px;
+    margin-top: -500px;
 }
-.ladodomodelo3d p{
-color: rgb(0, 0, 0);
-margin-left: 20px;
-margin-top: 20px;
-width: 400px;
-font-size: 24px;
+
+.ladodomodelo3d p {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 400px;
+    font-size: 24px;
 }
-.ladodomodelo3d img{
-width: 280px;
-height: 480px;
-margin-top: -370px;
-margin-left: 310px;
+
+.ladodomodelo3d img {
+    width: 280px;
+    height: 480px;
+    margin-top: -370px;
+    margin-left: 310px;
 }
+
 .imageminicial {
     margin-top: 100px;
 }
+
 .basedasimagens {
     display: grid;
     height: 350px;
@@ -413,12 +479,14 @@ margin-left: 310px;
     margin-left: 502px;
     background-color: #e4e4e4;
 }
+
 .basedasimagens h1 {
     font-size: 35px;
     margin-left: 20px;
     margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .basedasimagens p {
     height: 200px;
     width: 550px;
@@ -427,6 +495,7 @@ margin-left: 310px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
 }
+
 .basedasimagens a {
     height: 27px;
     width: 80px;
@@ -439,6 +508,7 @@ margin-left: 310px;
     background-color: #87CEEB;
     padding-left: 4px;
 }
+
 .basedasimagens a:hover {
     height: 29px;
     width: 81px;
@@ -453,6 +523,7 @@ margin-left: 310px;
     padding-top: 1px;
     transition: 0.2s;
 }
+
 .modelo3d {
     display: grid;
     height: 350px;
@@ -461,6 +532,7 @@ margin-left: 310px;
     margin-left: 470px;
     background-color: #e4e4e4;
 }
+
 .modelo3d h1 {
     font-size: 35px;
     height: 55px;
@@ -472,6 +544,7 @@ margin-left: 310px;
     background-color: #87CEEB;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .modelo3d p {
     height: 200px;
     width: 600px;
@@ -480,6 +553,7 @@ margin-left: 310px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
 }
+
 .modelo3d a {
     height: 27px;
     width: 280px;
@@ -492,6 +566,7 @@ margin-left: 310px;
     text-decoration: none;
     background-color: #87CEEB;
 }
+
 .modelo3d a:hover {
     height: 29px;
     width: 294px;
@@ -505,6 +580,7 @@ margin-left: 310px;
     background-color: #87CEEB;
     transition: 0.4s;
 }
+
 .quiz {
     width: 300px;
     height: 80px;
@@ -521,6 +597,7 @@ margin-left: 310px;
     border: 1px solid #87CEEB;
     display: grid;
 }
+
 .quiz:hover {
     width: 310px;
     height: 82px;
@@ -537,129 +614,386 @@ margin-left: 310px;
     display: grid;
     transition: 0.3s;
 }
-.coração{
+
+.Porçãocondutora {
     height: 10px;
     width: 10px;
-    background-color: rgb(187, 0, 0);
+    background-color: #87CEEB;
     margin-top: -410px;
     margin-left: 300px;
-    border: 3px solid rgb(136, 0, 0);
+    border: 3px solid #52a3c4;
     border-radius: 6px;
-    }
-    .coração:hover{
+}
+
+.Porçãocondutora:hover {
     height: 10px;
     width: 10px;
-    background-color: rgb(187, 0, 0);
+    background-color: #52a3c4;
     margin-top: -410px;
     margin-left: 300px;
-    border: 3px solid rgb(136, 0, 0);
+    border: 3px solid #2a6f8a;
     border-radius: 6px;
     transition: 0.3s;
-    
-    #coração{
-    height: 170px;
-    width: 170px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(136, 0, 0);
-    opacity: 100%;
-    margin-left: -200px;
-    transition: 0.5s;
-    margin-top: -120px;
-    z-index: 0;
+
+    #Porçãocondutora {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #87CEEB;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
     }
-    #coração img{
+
+    #Porçãocondutora img {
         opacity: 100%;
         height: 60px;
         width: 55px;
         margin-left: 5px;
         margin-top: 5px;
-        border-bottom: 3px solid rgb(136, 0, 0);
+        border-bottom: 3px solid #87CEEB;
     }
-    #coração h1{
-    margin-left: 5px;
-    margin-top: 5px;
-    opacity: 100%; 
-    font-size: 15px;
+
+    #Porçãocondutora h1 {
+        margin-left: 5px;
+        margin-top: 5px;
+        opacity: 100%;
+        font-size: 15px;
     }
-    }
-    #coração{
+}
+
+#Porçãocondutora {
     height: 1px;
     width: 1px;
-    
-    
-    }
-    #coração img{
-        opacity: 0%;
-        height: 0px;
-        width: 0px;
-        z-index: 999;
-    }
-    #coração h1{
-        opacity: 0%;
-        height: 0.1px;
-        width: 0.1px;
-        font-size: 0px;
-    }
-    .veia{
-        height: 10px;
-        width: 10px;
-        background-color: rgb(187, 0, 0);
-        margin-top: -388px;
-        margin-left: 338px;
-        border: 3px solid rgb(136, 0, 0);
-        border-radius: 6px;
-        z-index: 1;
-        }
-        .veia:hover{
-        height: 10px;
-        width: 10px;
-        background-color: rgb(187, 0, 0);
-        margin-top: -388px;
-        margin-left: 338px;
-        border: 3px solid rgb(136, 0, 0);
-        border-radius: 6px;
-        transition: 0.3s;
-        
-        #veia{
+
+
+}
+
+#Porçãocondutora img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+}
+
+#Porçãocondutora h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+}
+
+
+.Porçãorespiratória {
+    height: 10px;
+    width: 10px;
+    background-color: #87CEEB;
+    margin-top: -368px;
+    margin-left: 338px;
+    border: 3px solid #52a3c4;
+    border-radius: 6px;
+}
+
+.Porçãorespiratória:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #52a3c4;
+    margin-top: -368px;
+    margin-left: 338px;
+    border: 3px solid #2a6f8a;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Porçãorespiratória {
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(136, 0, 0);
+        border: 1px solid #87CEEB;
+        opacity: 100%;
+        margin-left: -250px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+
+    #Porçãorespiratória img {
+        opacity: 100%;
+        height: 60px;
+        width: 55px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-bottom: 3px solid #87CEEB;
+    }
+
+    #Porçãorespiratória h1 {
+        margin-left: 5px;
+        margin-top: 5px;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+
+#Porçãorespiratória {
+    height: 1px;
+    width: 1px;
+
+
+}
+
+#Porçãorespiratória img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+}
+
+#Porçãorespiratória h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+}
+.artéria {
+    height: 10px;
+    width: 10px;
+    background-color: #87CEEB;
+    margin-top: -400px;
+    margin-left: 306px;
+    border: 3px solid #52a3c4;
+    border-radius: 6px;
+}
+
+.artéria:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #52a3c4;
+    margin-top: -420px;
+    margin-left: 306px;
+    border: 3px solid #2a6f8a;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #artéria {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #87CEEB;
         opacity: 100%;
         margin-left: -200px;
         transition: 0.5s;
         margin-top: -120px;
-       z-index: 0;
-        }
-        }
-        .artéria{
-            height: 10px;
-            width: 10px;
-            background-color: rgb(187, 0, 0);
-            margin-top: -420px;
-            margin-left: 306px;
-            border: 3px solid rgb(136, 0, 0);
-            border-radius: 6px;
-            }
-            .artéria:hover{
-            height: 10px;
-            width: 10px;
-            background-color: rgb(187, 0, 0);
-            margin-top: -420px;
-            margin-left: 306px;
-            border: 3px solid rgb(136, 0, 0);
-            border-radius: 6px;
-            transition: 0.3s;
-            
-            #artéria{
-            height: 170px;
-            width: 170px;
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgb(136, 0, 0);
-            opacity: 100%;
-            margin-left: -200px;
-            transition: 0.5s;
-            margin-top: -120px;
-            }
-            }
-    
+    }
+}
+
+.Alvéolospulmonares {
+    height: 10px;
+    width: 10px;
+    background-color: #87CEEB;
+    margin-top: -410px;
+    margin-left: 300px;
+    border: 3px solid #52a3c4;
+    border-radius: 6px;
+}
+
+.Alvéolospulmonares:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #52a3c4;
+    margin-top: -410px;
+    margin-left: 300px;
+    border: 3px solid #2a6f8a;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Alvéolospulmonares {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #87CEEB;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+
+    #Alvéolospulmonares img {
+        opacity: 100%;
+        height: 60px;
+        width: 55px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-bottom: 3px solid #87CEEB;
+    }
+
+    #Alvéolospulmonares h1 {
+        margin-left: 5px;
+        margin-top: 5px;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+
+#Alvéolospulmonares {
+    height: 1px;
+    width: 1px;
+
+
+}
+
+#Alvéolospulmonares img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+}
+
+#Alvéolospulmonares h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+}
+
+.Bronquíolos {
+    height: 10px;
+    width: 10px;
+    background-color: #87CEEB;
+    margin-top: -304px;
+    margin-left: 306px;
+    border: 3px solid #52a3c4;
+    border-radius: 6px;
+}
+
+.Bronquíolos:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #52a3c4;
+    margin-top: -304px;
+    margin-left: 306px;
+    border: 3px solid #2a6f8a;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Bronquíolos {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #87CEEB;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+
+    #Bronquíolos img {
+        opacity: 100%;
+        height: 60px;
+        width: 55px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-bottom: 3px solid #87CEEB;
+    }
+
+    #Bronquíolos h1 {
+        margin-left: 5px;
+        margin-top: 5px;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+
+#Bronquíolos {
+    height: 1px;
+    width: 1px;
+
+
+}
+
+#Bronquíolos img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+}
+
+#Bronquíolos h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+}
+
+
+.Brônquios {
+    height: 10px;
+    width: 10px;
+    background-color: #87CEEB;
+    margin-top: -400px;
+    margin-left: 285px;
+    border: 3px solid #52a3c4;
+    border-radius: 6px;
+}
+
+.Brônquios:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #52a3c4;
+    margin-top: -400px;
+    margin-left: 285px;
+    border: 3px solid #2a6f8a;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Brônquios {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #87CEEB;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+
+    #Brônquios img {
+        opacity: 100%;
+        height: 60px;
+        width: 55px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-bottom: 3px solid #87CEEB;
+    }
+
+    #Brônquios h1 {
+        margin-left: 5px;
+        margin-top: 5px;
+        opacity: 100%;
+        font-size: 15px;
+    }
+}
+
+#Brônquios {
+    height: 1px;
+    width: 1px;
+
+
+}
+
+#Brônquios img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+}
+
+#Brônquios h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+}
