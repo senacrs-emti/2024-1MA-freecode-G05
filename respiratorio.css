@@ -650,25 +650,45 @@ main .introducao {
     #Porçãocondutora img {
         opacity: 100%;
         height: 60px;
-        width: 55px;
-        margin-left: 5px;
-        margin-top: 5px;
-        border-bottom: 3px solid #87CEEB;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: -10px;
+        transition: 1s;
     }
 
     #Porçãocondutora h1 {
         margin-left: 5px;
-        margin-top: 5px;
+        margin-top: 15px;
         opacity: 100%;
-        font-size: 15px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Porçãocondutora p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: 15px;
+      width: 170px;
+      font-size: 14px;
     }
 }
 
 #Porçãocondutora {
     height: 1px;
     width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
 
-
+#Porçãocondutora p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Porçãocondutora img {
@@ -676,6 +696,8 @@ main .introducao {
     height: 0px;
     width: 0px;
     z-index: 999;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Porçãocondutora h1 {
@@ -683,6 +705,8 @@ main .introducao {
     height: 0.1px;
     width: 0.1px;
     font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 
@@ -721,25 +745,45 @@ main .introducao {
     #Porçãorespiratória img {
         opacity: 100%;
         height: 60px;
-        width: 55px;
-        margin-left: 5px;
-        margin-top: 5px;
-        border-bottom: 3px solid #87CEEB;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: 4px;
+        transition: 1s;
     }
 
     #Porçãorespiratória h1 {
-        margin-left: 5px;
-        margin-top: 5px;
+        margin-left: 2px;
+        margin-top: -50px;
         opacity: 100%;
-        font-size: 15px;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Porçãorespiratória p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: 60px;
+      width: 170px;
+      font-size: 14px;
     }
 }
 
 #Porçãorespiratória {
     height: 1px;
     width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
 
-
+#Porçãorespiratória p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Porçãorespiratória img {
@@ -747,6 +791,8 @@ main .introducao {
     height: 0px;
     width: 0px;
     z-index: 999;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Porçãorespiratória h1 {
@@ -754,39 +800,9 @@ main .introducao {
     height: 0.1px;
     width: 0.1px;
     font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }
-.artéria {
-    height: 10px;
-    width: 10px;
-    background-color: #87CEEB;
-    margin-top: -400px;
-    margin-left: 306px;
-    border: 3px solid #52a3c4;
-    border-radius: 6px;
-}
-
-.artéria:hover {
-    height: 10px;
-    width: 10px;
-    background-color: #52a3c4;
-    margin-top: -420px;
-    margin-left: 306px;
-    border: 3px solid #2a6f8a;
-    border-radius: 6px;
-    transition: 0.3s;
-
-    #artéria {
-        height: 170px;
-        width: 170px;
-        background-color: rgb(255, 255, 255);
-        border: 1px solid #87CEEB;
-        opacity: 100%;
-        margin-left: -200px;
-        transition: 0.5s;
-        margin-top: -120px;
-    }
-}
-
 .Alvéolospulmonares {
     height: 10px;
     width: 10px;
@@ -822,25 +838,45 @@ main .introducao {
     #Alvéolospulmonares img {
         opacity: 100%;
         height: 60px;
-        width: 55px;
-        margin-left: 5px;
-        margin-top: 5px;
-        border-bottom: 3px solid #87CEEB;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: 3px;
+        transition: 1s;
     }
 
     #Alvéolospulmonares h1 {
         margin-left: 5px;
-        margin-top: 5px;
+        margin-top: -50px;
         opacity: 100%;
-        font-size: 15px;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Alvéolospulmonares p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: 60px;
+      width: 175px;
+      font-size: 14px;
     }
 }
 
 #Alvéolospulmonares {
     height: 1px;
     width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
 
-
+#Alvéolospulmonares p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Alvéolospulmonares img {
@@ -848,6 +884,8 @@ main .introducao {
     height: 0px;
     width: 0px;
     z-index: 999;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Alvéolospulmonares h1 {
@@ -855,6 +893,8 @@ main .introducao {
     height: 0.1px;
     width: 0.1px;
     font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 .Bronquíolos {
@@ -888,29 +928,48 @@ main .introducao {
         margin-top: -120px;
         z-index: 0;
     }
-
     #Bronquíolos img {
         opacity: 100%;
         height: 60px;
-        width: 55px;
-        margin-left: 5px;
-        margin-top: 5px;
-        border-bottom: 3px solid #87CEEB;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: -13px;
+        transition: 1s;
     }
 
     #Bronquíolos h1 {
         margin-left: 5px;
-        margin-top: 5px;
+        margin-top: 19px;
         opacity: 100%;
-        font-size: 15px;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Bronquíolos p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: -10px;
+      width: 175px;
+      font-size: 14px;
     }
 }
 
 #Bronquíolos {
     height: 1px;
     width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
 
-
+#Bronquíolos p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Bronquíolos img {
@@ -918,6 +977,8 @@ main .introducao {
     height: 0px;
     width: 0px;
     z-index: 999;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Bronquíolos h1 {
@@ -925,9 +986,9 @@ main .introducao {
     height: 0.1px;
     width: 0.1px;
     font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }
-
-
 .Brônquios {
     height: 10px;
     width: 10px;
@@ -963,25 +1024,45 @@ main .introducao {
     #Brônquios img {
         opacity: 100%;
         height: 60px;
-        width: 55px;
-        margin-left: 5px;
-        margin-top: 5px;
-        border-bottom: 3px solid #87CEEB;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: -20px;
+        transition: 1s;
     }
 
     #Brônquios h1 {
-        margin-left: 5px;
-        margin-top: 5px;
+        margin-left: 8px;
+        margin-top: 25px;
         opacity: 100%;
-        font-size: 15px;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Brônquios p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: -2px;
+      width: 175px;
+      font-size: 14px;
     }
 }
 
 #Brônquios {
     height: 1px;
     width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
 
-
+#Brônquios p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Brônquios img {
@@ -989,6 +1070,8 @@ main .introducao {
     height: 0px;
     width: 0px;
     z-index: 999;
+    pointer-events: none;
+    transition: 1s;
 }
 
 #Brônquios h1 {
@@ -996,4 +1079,6 @@ main .introducao {
     height: 0.1px;
     width: 0.1px;
     font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }
