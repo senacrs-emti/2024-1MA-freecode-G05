@@ -283,8 +283,8 @@ header a:hover:after {
     width: 1349px;
 }
 footer {
-    height: 150px;
-    background-color: #c9e3ae;
+    height: 800px;
+    background-color: rgb(52, 109, 52);
     display: grid;
 }
 footer img {
@@ -294,18 +294,71 @@ footer img {
     margin-left: 20px;
 }
 footer h1 {
-    color: #004a8d;
-    margin-left: 260px;
-    margin-top: -100px;
-    font-size: 30px;
+    font-size:large;
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+footer h2{
+    font-size: large;
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer h3{
+    font-size: large;
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer ul li{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+#pessoas{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-decoration: underline white;
+    cursor: pointer;
+}
+.integrantes{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+.fimagem{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-left: 400px;
+}
+/*nomes no footer*/
 .participantes {
     color: #004a8d;
-    margin-left: 260px;
+    margin-left: 250px;
     font-size: 30px;
-    margin-top: -70px;
+    margin-top: -50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.referencias{
+    position: absolute;
+    margin-left: 800px;
+}
+#supa{
+    text-align: center;
+    margin-right: 30px;
+    color: white;
+    margin-top: 20px;
+}
+#textos{
+    text-align: right;
+    margin-right: 45px;
+    color: white;
+    margin-top: 20px;
 }
 .base {
     width: 1200px;
@@ -535,4 +588,561 @@ margin-left: 296px;
     border: 1px solid #a56b00;
     display: grid;
     transition: 0.3s;
+}
+
+.Porçãocondutora {
+    height: 10px;
+    width: 10px;
+    background-color:  #FFA500;
+    margin-top: -550px;
+    margin-left: 200px;
+    border: 3px solid  #bd7b00;
+    border-radius: 6px;
+}
+
+.Porçãocondutora:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #bd7b00;
+    margin-top: -550px;
+    margin-left: 200px;
+    border: 3px solid #976200;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Porçãocondutora {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid  #FFA500;
+        opacity: 100%;
+        margin-left: -190px;
+        transition: 0.5s;
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    #Porçãocondutora img {
+        opacity: 100%;
+        height: 60px;
+        width: 50px;
+        margin-left: 107px;
+        margin-top: -10px;
+        transition: 1s;
+    }
+
+    #Porçãocondutora h1 {
+        margin-left: 15px;
+        margin-top: 20px;
+        opacity: 100%;
+        font-size: 32px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Porçãocondutora p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: -2px;
+      width: 180px;
+      font-size: 14px;
+    }
+}
+
+#Porçãocondutora {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Porçãocondutora p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Porçãocondutora img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Porçãocondutora h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+
+.Porçãorespiratória {
+    height: 10px;
+    width: 10px;
+    background-color:  #FFA500;
+    margin-top: -568px;
+    margin-left: 338px;
+    border: 3px solid #bd7b00;
+    border-radius: 6px;
+}
+
+.Porçãorespiratória:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #bd7b00;
+    margin-top: -568px;
+    margin-left: 338px;
+    border: 3px solid #976200;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Porçãorespiratória {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid  #FFA500;
+        opacity: 100%;
+        margin-left: -320px;
+        transition: 0.5s;
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    #Porçãorespiratória img {
+        opacity: 100%;
+        height: 60px;
+        width: 50px;
+        margin-left: 115px;
+        margin-top: 6px;
+        transition: 1s;
+    }
+
+    #Porçãorespiratória h1 {
+        margin-left: 10px;
+        margin-top: -50px;
+        opacity: 100%;
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Porçãorespiratória p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: 52px;
+      width: 170px;
+      font-size: 14px;
+    }
+}
+
+#Porçãorespiratória {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Porçãorespiratória p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Porçãorespiratória img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Porçãorespiratória h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+.Alvéolospulmonares {
+    height: 10px;
+    width: 10px;
+    background-color:  #FFA500;
+    margin-top: -550px;
+    margin-left: 200px;
+    border: 3px solid #bd7b00;
+    border-radius: 6px;
+}
+
+.Alvéolospulmonares:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #bd7b00;
+    margin-top: -550px;
+    margin-left: 200px;
+    border: 3px solid #976200;
+    transition: 0.3s;
+
+    #Alvéolospulmonares {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid  #FFA500;
+        opacity: 100%;
+        margin-left: -190px;
+        transition: 0.5s;
+        margin-top: -20px;
+    }
+
+    #Alvéolospulmonares img {
+        opacity: 100%;
+        height: 60px;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: 13px;
+        transition: 1s;
+    }
+
+    #Alvéolospulmonares h1 {
+        margin-left: 10px;
+        margin-top: -54px;
+        opacity: 100%;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Alvéolospulmonares p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 1px;
+      margin-top: 38px;
+      width: 175px;
+      font-size: 14px;
+    }
+}
+
+#Alvéolospulmonares {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Alvéolospulmonares p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Alvéolospulmonares img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Alvéolospulmonares h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.Bronquíolos {
+    height: 10px;
+    width: 10px;
+    background-color:  #FFA500;
+    margin-top: -402px;
+    margin-left: 306px;
+    border: 3px solid #bd7b00;
+    border-radius: 6px;
+}
+
+.Bronquíolos:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #bd7b00;
+    margin-top: -402px;
+    margin-left: 306px;
+    border: 3px solid #976200;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #Bronquíolos {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid  #FFA500;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+    #Bronquíolos img {
+        opacity: 100%;
+        height: 60px;
+        width: 50px;
+        margin-left: 108px;
+        margin-top: -1px;
+        transition: 1s;
+    }
+
+    #Bronquíolos h1 {
+        margin-left: 10px;
+        margin-top: 10px;
+        opacity: 100%;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Bronquíolos p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 1px;
+      margin-top: -1px;
+      width: 175px;
+      font-size: 14px;
+    }
+}
+
+#Bronquíolos {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Bronquíolos p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Bronquíolos img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Bronquíolos h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+.Brônquios {
+    height: 10px;
+    width: 10px;
+    background-color:  #FFA500;
+    margin-top: -550px;
+    margin-left: 385px;
+    border: 3px solid #bd7b00;
+    border-radius: 6px;
+}
+
+.Brônquios:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #bd7b00;
+    margin-top: -550px;
+    margin-left: 385px;
+    border: 3px solid #976200;
+    transition: 0.3s;
+
+    #Brônquios {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid  #FFA500;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+
+    #Brônquios img {
+        opacity: 100%;
+        height: 60px;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: -20px;
+        transition: 1s;
+    }
+
+    #Brônquios h1 {
+        margin-left: 8px;
+        margin-top: 25px;
+        opacity: 100%;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #Brônquios p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: -2px;
+      width: 175px;
+      font-size: 14px;
+    }
+}
+
+#Brônquios {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Brônquios p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Brônquios img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#Brônquios h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+.IntestinoDelgado {
+    height: 10px;
+    width: 10px;
+    background-color:  #FFA500;
+    margin-top: -366px;
+    margin-left: 306px;
+    border: 3px solid #bd7b00;
+    border-radius: 6px;
+}
+
+.IntestinoDelgado:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #bd7b00;
+    margin-top: -366px;
+    margin-left: 306px;
+    border: 3px solid #976200;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #IntestinoDelgado {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid  #FFA500;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+    #IntestinoDelgado img {
+        opacity: 100%;
+        height: 60px;
+        width: 50px;
+        margin-left: 117px;
+        margin-top: -2px;
+        transition: 1s;
+    }
+
+    #IntestinoDelgado h1 {
+        margin-left: 10px;
+        margin-top: 3px;
+        opacity: 100%;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #IntestinoDelgado p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: -8px;
+      width: 175px;
+      font-size: 14px;
+    }
+}
+
+#IntestinoDelgado {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#IntestinoDelgado p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#IntestinoDelgado img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#IntestinoDelgado h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }

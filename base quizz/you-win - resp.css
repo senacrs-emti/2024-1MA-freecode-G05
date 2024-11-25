@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 125px;
+    background: #1CCF25;
+background: linear-gradient(to right, #1CCF25 0%, #CFCC0B 60%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 125px;
+    background: #1CCF25;
+background: linear-gradient(to right, #1CCF25 0%, #CFCC0B 60%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}

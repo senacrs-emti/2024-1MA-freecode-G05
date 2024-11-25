@@ -280,7 +280,7 @@ header a:hover:after {
 }
 /*descrição da feira, link pros githubs*/
 footer {
-    height: 1000px;
+    height: 800px;
     background-color: rgb(52, 109, 52);
     display: grid;
 }
@@ -311,7 +311,28 @@ footer h3{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+footer ul li{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+#pessoas{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-decoration: underline white;
+    cursor: pointer;
+}
+.integrantes{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+.fimagem{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-left: 400px;
+}
 /*nomes no footer*/
 .participantes {
     color: #004a8d;
@@ -319,6 +340,22 @@ footer h3{
     font-size: 30px;
     margin-top: -50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.referencias{
+    position: absolute;
+    margin-left: 800px;
+}
+#supa{
+    text-align: center;
+    margin-right: 30px;
+    color: white;
+    margin-top: 20px;
+}
+#textos{
+    text-align: right;
+    margin-right: 45px;
+    color: white;
+    margin-top: 20px;
 }
 /*Dentro da main*/
 .base {
