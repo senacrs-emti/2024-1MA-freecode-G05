@@ -332,6 +332,7 @@ footer ul li{
     height: 400px;
     float: left;
     margin-left: 400px;
+    margin-top: -400px;
 }
 /*nomes no footer*/
 .participantes {
@@ -353,8 +354,8 @@ footer ul li{
 }
 #textos{
     text-align: right;
-    margin-right: 45px;
     color: white;
+    text-decoration: underline white;
     margin-top: 20px;
 }
 /*Dentro da main*/
