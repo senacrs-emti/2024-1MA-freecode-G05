@@ -351,12 +351,14 @@ footer ul li{
     margin-right: 30px;
     color: white;
     margin-top: 20px;
+    cursor: pointer;
 }
 #textos{
     text-align: right;
     color: white;
     text-decoration: underline white;
     margin-top: 20px;
+    cursor: pointer;
 }
 /*Dentro da main*/
 .base {
