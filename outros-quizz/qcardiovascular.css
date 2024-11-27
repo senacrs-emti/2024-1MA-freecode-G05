@@ -1,3 +1,5 @@
+
+
 .caixa-pergunta{
     display: flex;
     flex-direction: column;
@@ -5,6 +7,9 @@
     height: 560px;
     border: 1px black solid;
     text-align: center;
+    margin-left: 20%;
+    margin-top: 9%;
+    background-color: lightcoral;
 }
 .caixa-alternativa1{
     justify-content: space-around;
@@ -27,7 +32,7 @@ h1{
 button{
     width: 300px;
     height: 100px;
-    background-color: white;
+    background-color: rgb(187, 0, 0);
     border: 1px solid black;
 
 }
@@ -36,9 +41,9 @@ a{
     font-size: 20px;
     text-decoration: none;
     outline: none;
-     color: black;
+     color: white;
 }
 button:hover{
-    background-color: gainsboro;
+    background-color:  rgb(136, 0, 0);
     
 }

@@ -596,7 +596,7 @@ margin-left: 306px;
     background-color: #000080;
     margin-top: -420px;
     margin-left: 234px;
-    border: 3px solid #000055;
+    border: 3px solid #010168;
     border-radius: 6px;
     object-fit: cover;
 }
@@ -604,10 +604,10 @@ margin-left: 306px;
 .coração:hover {
     height: 10px;
     width: 10px;
-    background-color:#000055;
+    background-color:#010168;
     margin-top: -420px;
     margin-left: 234px;
-    border: 3px solid #00002c;
+    border: 3px solid #000044;
     border-radius: 6px;
     transition: 0.3s;
 
@@ -692,7 +692,7 @@ margin-left: 306px;
     background-color: #000080;
     margin-top: -308px;
     margin-left: 269px;
-    border: 3px solid #000055;
+    border: 3px solid #010168;
     border-radius: 6px;
 
 }
@@ -700,10 +700,10 @@ margin-left: 306px;
 .veia:hover {
     height: 10px;
     width: 10px;
-    background-color: #000055;
+    background-color: #010168;
     margin-top: -308px;
     margin-left: 269px;
-    border: 3px solid #00002c;
+    border: 3px solid #000044;
     border-radius: 6px;
     transition: 0.3s;
 
@@ -785,17 +785,17 @@ margin-left: 306px;
     background-color: #000080;
     margin-top: -130px;
     margin-left: 345px;
-    border: 3px solid #000055;
+    border: 3px solid #010168;
     border-radius: 6px;
 }
 
 .artéria:hover {
     height: 10px;
     width: 10px;
-    background-color: #000055;
+    background-color: #010168;
     margin-top: -130px;
     margin-left: 345px;
-    border: 3px solid #00002c;
+    border: 3px solid #000044;
     border-radius: 6px;
     transition: 0.3s;
 
@@ -875,17 +875,17 @@ margin-left: 306px;
     background-color: #000080;
     margin-top: -102px;
     margin-left: 345px;
-    border: 3px solid #000055;
+    border: 3px solid #010168;
     border-radius: 6px;
 }
 
 .artériabaixo:hover {
     height: 10px;
     width: 10px;
-    background-color: #000055;
+    background-color: #010168;
     margin-top: -102px;
     margin-left: 345px;
-    border: 3px solid #00002c;
+    border: 3px solid #000044;
     border-radius: 6px;
     transition: 0.3s;
 
