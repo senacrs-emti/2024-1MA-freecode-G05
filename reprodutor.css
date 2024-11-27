@@ -393,10 +393,10 @@ footer ul li{
     margin-left: 740px;
 }
 .sistemasfoto {
-    height: 530px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     margin-top: 80px;
-    margin-left: 70px;
+    margin-left: 35px;
     display: grid;
 }
 main .introducao {
@@ -590,4 +590,373 @@ margin-left: 326px;
     border: 1px solid  rgb(255, 140, 159);
     display: grid;
     transition: 0.3s;
+}
+.coração {
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+    margin-top: -370px;
+    margin-left: 254px;
+    border: 3px solid rgb(223, 166, 175);
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.coração:hover {
+    height: 10px;
+    width: 10px;
+    background-color:rgb(223, 166, 175);
+    margin-top: -370px;
+    margin-left: 254px;
+    border: 3px solid rgb(177, 133, 139);
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #coração {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid pink;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+
+    #coração img {
+        opacity: 100%;
+        height: 50px;
+        width: 50px;
+        margin-left: 110px;
+        margin-top: -5px;
+        transition: 1s;
+    }
+
+    #coração h1 {
+        margin-left: 15px;
+        margin-top: 15px;
+        opacity: 100%;
+        font-size: 29px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #coração p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 1px;
+      margin-top: -2px;
+      width: 170px;
+      font-size: 14px;
+      
+    }
+}
+
+#coração {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#coração p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#coração img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#coração h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.veia {
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+    margin-top: -438px;
+    margin-left: 460px;
+    border: 3px solid rgb(223, 166, 175);
+    border-radius: 6px;
+
+}
+
+.veia:hover {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(223, 166, 175);
+    margin-top: -438px;
+    margin-left: 460px;
+    border: 3px solid rgb(177, 133, 139);
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #veia {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid pink;
+        opacity: 100%;
+        margin-left: -210px;
+        transition: 0.5s;
+        margin-top: -120px;
+        z-index: 0;
+    }
+    #veia img {
+        opacity: 100%;
+        height: 50px;
+        width: 60px;
+        margin-left: 100px;
+        margin-top: -1px;
+        transition: 1s;
+    }
+
+    #veia h1 {
+        margin-left: 6px;
+        margin-top: 5px;
+        opacity: 100%;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #veia p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: 5px;
+      width: 170px;
+      font-size: 14px;
+    }
+}
+#veia {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#veia p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#veia img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#veia h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.artéria {
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+    margin-top: -360px;
+    margin-left: 425px;
+    border: 3px solid rgb(223, 166, 175);
+    border-radius: 6px;
+}
+
+.artéria:hover {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(223, 166, 175);
+    margin-top: -360px;
+    margin-left: 425px;
+    border: 3px solid rgb(177, 133, 139);
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #artéria {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid pink;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+    }
+    #artéria img {
+        opacity: 100%;
+        height: 80px;
+        width: 70px;
+        margin-left: 97px;
+        margin-top: -22px;
+        transition: 1s;
+    }
+
+    #artéria h1 {
+        margin-left: 10px;
+        margin-top: 9px;
+        opacity: 100%;
+        font-size: 24px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #artéria p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top:-12px;
+      width: 170px;
+      font-size: 14px;
+    }
+}
+#artéria {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#artéria p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#artéria img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#artéria h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+.artériabaixo {
+    height: 10px;
+    width: 10px;
+    background-color: pink;
+    margin-top: -230px;
+    margin-left: 253px;
+    border: 3px solid rgb(223, 166, 175);
+    border-radius: 6px;
+}
+
+.artériabaixo:hover {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(223, 166, 175);
+    margin-top: -230px;
+    margin-left: 253px;
+    border: 3px solid rgb(177, 133, 139);
+    border-radius: 6px;
+    transition: 0.3s;
+
+    #artériabaixo {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid pink;
+        opacity: 100%;
+        margin-left: -200px;
+        transition: 0.5s;
+        margin-top: -120px;
+    }
+    #artériabaixo img {
+        opacity: 100%;
+        height: 50px;
+        width: 60px;
+        margin-left: 104px;
+        margin-top: -9px;
+        transition: 1s;
+    }
+
+    #artériabaixo h1 {
+        margin-left: 5px;
+        margin-top: 13px;
+        opacity: 100%;
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+    }
+
+    #artériabaixo p {
+      transition: 1s;
+      opacity: 100%;
+      margin-left: 2px;
+      margin-top: -1px;
+      width: 170px;
+      font-size: 14px;
+    }
+}
+#artériabaixo {
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#artériabaixo p {
+    opacity: 0%;
+    height: 1px;
+    width: 1px;
+    font-size: 1px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#artériabaixo img {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    z-index: 999;
+    pointer-events: none;
+    transition: 1s;
+}
+
+#artériabaixo h1 {
+    opacity: 0%;
+    height: 0.1px;
+    width: 0.1px;
+    font-size: 0px;
+    pointer-events: none;
+    transition: 1s;
 }
