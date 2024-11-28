@@ -10,7 +10,7 @@
     text-align: center;
     margin-top: 9%;
     margin-left: 20%;
-    background-color: blue;
+    background-color: lightgreen;
 }
 .caixa-alternativa1{
     justify-content: space-around;
@@ -33,7 +33,7 @@ h1{
 button{
     width: 300px;
     height: 100px;
-    background-color: #000080;
+    background-color: #556B2F;
     border: 1px solid black;
 
 }
@@ -45,6 +45,6 @@ a{
      color: white;
 }
 button:hover{
-    background-color: #010168;
+    background-color: #445526;
     
 }
