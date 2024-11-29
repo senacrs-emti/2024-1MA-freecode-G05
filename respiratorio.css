@@ -404,6 +404,7 @@ footer ul li{
     color: white;
     margin-top: 20px;
     cursor: pointer;
+    text-decoration: underline white;
 }
 #textos{
     text-align: right;
@@ -411,6 +412,7 @@ footer ul li{
     color: white;
     margin-top: 20px;
     cursor: pointer;
+    text-decoration: underline white;
 }
 .base {
     width: 1200px;

@@ -338,12 +338,14 @@ footer ul li{
     margin-right: 30px;
     color: white;
     margin-top: 20px;
+    text-decoration: underline white;
 }
 #textos{
     text-align: right;
     margin-right: 45px;
     color: white;
     margin-top: 20px;
+    text-decoration: underline white;
 }
 .base {
     width: 1200px;
