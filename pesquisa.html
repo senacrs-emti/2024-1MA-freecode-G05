@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Pesquisa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .search-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .search-bar {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-top: none;
+      background: white;
+      border-radius: 0 0 5px 5px;
+      z-index: 1000;
+      display: none;
+    }
+
+    .option {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .option:last-child {
+      border-bottom: none;
+    }
+
+    .option:hover {
+      background-color: #f0f0f0;
+    }
+
+    .search-container.active .options {
+      display: block;
+    }
+
+    section {
+      margin: 50px 0;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container" id="searchContainer">
+    <input
+      type="text"
+      id="searchInput"
+      class="search-bar"
+      placeholder="Clique para pesquisar..."
+      readonly
+    />
+    <div class="options" id="options">
+      <div class="option" data-target="html">HTML Básico</div>
+      <div class="option" data-target="css">CSS Avançado</div>
+      <div class="option" data-target="javascript">JavaScript para Iniciantes</div>
+      <div class="option" data-target="react">ReactJS Avançado</div>
+      <div class="option" data-target="python">Python para Web</div>
+    </div>
+  </div>
+
+  <!-- Seções da página -->
+  <section id="html">
+    <h2>HTML Básico</h2>
+    <p>Introdução ao HTML e suas principais tags.</p>
+  </section>
+  <section id="css">
+    <h2>CSS Avançado</h2>
+    <p>Técnicas avançadas de estilização com CSS.</p>
+  </section>
+  <section id="javascript">
+    <h2>JavaScript para Iniciantes</h2>
+    <p>Conceitos básicos de programação com JavaScript.</p>
+  </section>
+  <section id="react">
+    <h2>ReactJS Avançado</h2>
+    <p>Componentes e hooks no ReactJS.</p>
+  </section>
+  <section id="python">
+    <h2>Python para Web</h2>
+    <p>Utilizando Python para desenvolvimento web.</p>
+  </section>
+
+  <script>
+    const searchContainer = document.getElementById("searchContainer");
+    const searchInput = document.getElementById("searchInput");
+    const options = document.getElementById("options");
+
+    // Exibe as opções ao clicar na barra
+    searchInput.addEventListener("click", () => {
+      searchContainer.classList.toggle("active");
+    });
+
+    // Seleciona uma opção e navega até o ID correspondente
+    options.addEventListener("click", (event) => {
+      if (event.target.classList.contains("option")) {
+        const targetId = event.target.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          // Fecha o menu de opções
+          searchContainer.classList.remove("active");
+
+          // Atualiza o valor do input
+          searchInput.value = event.target.textContent;
+
+          // Rola até a seção correspondente
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+
+    // Fecha as opções ao clicar fora
+    document.addEventListener("click", (event) => {
+      if (!searchContainer.contains(event.target)) {
+        searchContainer.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
