@@ -1,6 +1,5 @@
 html{
 scroll-behavior: smooth;
-
 }
 * {
 
@@ -16,6 +15,9 @@ p{
 }
 h1{
     cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+}
+input{
+cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
 }
 body::-webkit-scrollbar {
     width: 17px;               /* width of the entire scrollbar */
@@ -339,14 +341,7 @@ footer ul li{
     margin-left: 400px;
     margin-top: -400px;
 }
-/*nomes no footer*/
-.participantes {
-    color: #004a8d;
-    margin-left: 250px;
-    font-size: 30px;
-    margin-top: -50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 .referencias{
     position: absolute;
     margin-left: 800px;
@@ -466,93 +461,27 @@ main .introducao {
     font-size: 23px;
 transition: 0.2s;
 }
-footer ul{
-width: 800px;
-margin-top: 20px;
-}
-footer ul a{
-color: #004a8d;
-text-decoration: none;
-list-style-type: none;
-margin-top: 10px;
-font-weight: bold;
-position: relative;
-height: 20px;
-letter-spacing: 1px;
-position: relative;
-}
-footer ul a:after{
-    content: "";
-    position: absolute;
-    background-color: #004a8d;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -3px;
-    transition: 0.3s;
-}
-footer .j:hover:after {
-    width: 160px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-footer .m:hover:after {
-    width: 90px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-footer .g:hover:after {
-    width: 210px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-footer .gu:hover:after {
-    width: 240px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-footer ul li{
-text-decoration: none;
-list-style-type: none;
-float: left;
-margin-left: 10px;
-}
-/* Barra de pesquisa no header */
+
 .header-search {
     display: inline-flex;
     align-items: center;
     margin-left: 820px;
-    margin-top: -80px; /* Adiciona algum espaçamento */
+    margin-top: -79px;
 }
 
 .header-search input {
     padding: 5px;
     font-size: 16px;
-    border: 1px solid #04a31e;
+    border: 2px solid #04a31e;
     border-radius: 8px;
-    height: 30px;
+    height: 36px;
     width: 200px;
     outline: none;
 }
 
 .header-search input::placeholder {
     color: #a0a0a0;
-    font-size: 14px;
-}
-
-.header-search button {
-    background-color: #04a31e;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 8px;
-    margin-left: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.header-search button:hover {
-    background-color: #00c020;
+    font-size: 18px;
 }
 /* Caixa de sugestões */
 .suggestions-box {
