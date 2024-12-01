@@ -18,6 +18,7 @@ btn2.addEventListener('click', () => {
 
     console.log(header.className);
 });
+
 // Função para exibir sugestões
 function showSuggestions() {
     const query = document.getElementById("search-input").value.toLowerCase();
@@ -35,10 +36,16 @@ function showSuggestions() {
         { name: 'Esquelético', id: 'esqueletico' },
         { name: 'Muscular', id: 'muscular' },
         { name: 'Imunológico', id: 'imunologico' },
-        { name: 'Linfatico', id: 'linfa' },
+        { name: 'Linfático', id: 'linfa' },
         { name: 'Sensorial', id: 'sensitivo' },
         { name: 'Reprodutor', id: 'reprodutor' },
-        { name: 'Tegumentar', id: 'tegumentar' }
+        { name: 'Tegumentar', id: 'tegumentar' },
+        { name: 'Vasos Sanguíneos', href: 'base.html#sanguineos' }, 
+        { name: 'Artérias', href: 'base.html#arterias' },
+        { name: 'Veias', href: 'base.html#veias' },
+        { name: 'Vasos Capilares', href: 'base.html#vasoscapilares' },
+        { name: 'Coração', href: 'base.html#coracao' },
+        { name: 'Pulsação', href: 'base.html#pulsacao' },
     ];
 
     // Limpa sugestões anteriores
@@ -51,7 +58,12 @@ function showSuggestions() {
         // Exibe as sugestões
         filteredSystems.forEach(system => {
             const link = document.createElement('a');
-            link.href = `#${system.id}`;
+            // Verifica se o sistema tem o href (link externo)
+            if (system.href) {
+                link.href = system.href;  // Link para a página base.html
+            } else {
+                link.href = `#${system.id}`;  // Link para ID local
+            }
             link.innerText = system.name;
             suggestionsBox.appendChild(link);
         });

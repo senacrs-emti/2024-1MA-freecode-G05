@@ -496,7 +496,11 @@ transition: 0.2s;
     display: none;
     margin-top: 300px;
 }
-
+.suggestions-box::-webkit-scrollbar-thumb {
+    background-color: #04a31e;    /* color of the scroll thumb */
+    border: 1px solid #028017;
+    height: 50px;  /* creates padding around scroll thumb */
+  }
 .suggestions-box a {
     display: block;
     padding: 10px;
