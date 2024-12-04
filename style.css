@@ -608,7 +608,7 @@ header a:hover:after {
 }
 /*descrição da feira, link pros githubs*/
 footer {
-    height: 500px;
+    height: 450px;
     background-color: rgb(52, 109, 52);
     display: grid;
 }
