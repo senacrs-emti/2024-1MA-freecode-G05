@@ -52,13 +52,34 @@ function showSuggestionsHeader() {
         { name: 'Sensorial', id: 'sensitivo' },
         { name: 'Reprodutor', id: 'reprodutor' },
         { name: 'Tegumentar', id: 'tegumentar' },
+        { name: 'Vasos Sanguíneos', url: 'base.html#sanguineos' },
+        { name: 'Artérias', url: 'base.html#arterias' },
+        { name: 'Veias', url: 'base.html#veias' },
+        { name: 'Vasos Capilares', url: 'base.html#vasoscapilares' },
+        { name: 'Coração', url: 'base.html#coracao'},
+        { name: 'Pulsação', url: 'base.html#pulsacao'},
+        { name: 'Porção Condutora', url: 'respiratorio.html#porcaocondutora'},
+        { name: 'Porção Respiratória', url: 'respiratorio.html#porcaorespi'},
+        { name: 'Alvéolos Pulmonares', url: 'respiratorio.html#aoveolos'},
+        { name: 'Bronquiolos', url: 'respiratorio.html#bronquiolos'},
+        { name: 'Brônquios', url: 'respiratorio.html#bronquios'},
+        { name: 'Respiração', url: 'respiratorio.html#respiracao'},
+        { name: 'Boca', url: 'Digestório.html#boca'},
+        { name: 'Faringe', url: 'Digestório.html#faringe'},
+        { name: 'Esôfago', url: 'Digestório.html#esofago'},
+        { name: 'Estômago', url: 'Digestório.html#estomago'},
+        { name: 'Intestino Delgado', url: 'Digestório.html#intestinodelg'},
+        { name: 'Intestino Grosso', url: 'Digestório.html#intestinogrosso'},
+        { name: 'Sistema Central Nervoso', url: 'nervoso.html#nervosocentral'},
+        { name: 'Encéfalo', url: 'nervoso.html#encefalo'},
+        { name: 'Cérebro', url: 'nervoso.html#cerebro'},
     ];
 
     if (query.length > 0) {
         const filteredSystems = systems.filter(system => system.name.toLowerCase().includes(query));
         filteredSystems.forEach((system, index) => {
             const link = document.createElement('a');
-            link.href = `#${system.id}`;
+            link.href = system.url || `#${system.id}`; // URL ou ID
             link.innerText = system.name;
             link.setAttribute('data-index', index);
             link.classList.add('suggestion-link');
@@ -99,6 +120,7 @@ function showSuggestionsBranco() {
         { name: 'Sensorial', id: 'sensitivo' },
         { name: 'Reprodutor', id: 'reprodutor' },
         { name: 'Tegumentar', id: 'tegumentar' },
+        { name: 'Vasos Sanguíneos', url: 'base.html#sanguineos' },
     ];
 
     if (query.length > 0) {
@@ -258,6 +280,7 @@ searchInputHeader.addEventListener('keydown', function(event) {
         { name: 'Sensorial', id: 'sensitivo' },
         { name: 'Reprodutor', id: 'reprodutor' },
         { name: 'Tegumentar', id: 'tegumentar' },
+        { name: 'Vasos Sanguíneos', url: 'base.html#sanguineos' },
     ];
 
     if (event.key === 'Enter') {
@@ -294,6 +317,7 @@ searchInputBranco.addEventListener('keydown', function(event) {
         { name: 'Sensorial', id: 'sensitivo' },
         { name: 'Reprodutor', id: 'reprodutor' },
         { name: 'Tegumentar', id: 'tegumentar' },
+        { name: 'Vasos Sanguíneos', url: 'base.html#sanguineos' },
     ];
 
     if (event.key === 'Enter') {
