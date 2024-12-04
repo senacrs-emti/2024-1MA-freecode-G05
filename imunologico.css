@@ -297,7 +297,7 @@ header a:hover:after {
 
 
 footer {
-    height: 800px;
+    height: 400px;
     background-color: rgb(52, 109, 52);
     display: grid;
 }
