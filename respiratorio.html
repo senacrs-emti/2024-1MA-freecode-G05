@@ -13,6 +13,10 @@
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -30,7 +34,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div vw class="enabled">
@@ -127,7 +154,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="imagens imageminicial"
+                    <img id="porcaocondutora" class="imagens imageminicial"
                         src="https://www.unifal-mg.edu.br/histologiainterativa/wp-content/uploads/sites/38/2020/07/Captura-de-Tela-2020-07-29-%C3%A0s-12.23.00.png"
                         alt="
                         Cartilagem da Laringe
@@ -138,7 +165,7 @@
                         Brônquios Terciários
                         Bronquíolos">
                     <div class="basedasimagens">
-                        <h1 id="porcaocondutora">Porção condutora</h1>
+                        <h1>Porção condutora</h1>
                         <p> É formada pelas fossas nasais, nasofaringe, laringe, traqueia, brônquios, bronquíolos e
                             bronquíolos terminais. Como o nome indica, essa porção permite a entrada e saída de ar,
                             porém sua função não acaba aí, é nessa parte que o ar é limpo, umedecido e aquecido.
@@ -149,10 +176,10 @@
                     </div>
                 </div>
                 <div>
-                    <img class="imagens" src="https://enfermagemflorence.com.br/wp-content/uploads/2019/01/png2.png"
+                    <img id="porcaorespi" class="imagens" src="https://enfermagemflorence.com.br/wp-content/uploads/2019/01/png2.png"
                         alt="">
                     <div class="basedasimagens">
-                        <h1 id="porcaorespi">Porção Respiratória</h1>
+                        <h1>Porção Respiratória</h1>
                         <p>É formada pelos bronquíolos respiratórios, ductos alveolares e alvéolos, que são as partes
                             responsáveis pela ocorrência das trocas gasosas. É nessa porção que o oxigênio inspirado
                             passará para o sangue e o gás carbônico presente no sangue passará para o sistema
@@ -164,9 +191,9 @@
                     </div>
                 </div>
                 <div>
-                    <img class="imagens" src="https://static.todamateria.com.br/upload/al/va/alva_olos.jpg" alt="">
+                    <img id="aoveolos" class="imagens" src="https://static.todamateria.com.br/upload/al/va/alva_olos.jpg" alt="">
                     <div class="basedasimagens">
-                        <h1 id="aoveolos">Alvéolos Pulmonares</h1>
+                        <h1>Alvéolos Pulmonares</h1>
                         <p>
                             São estruturas que fazem parte da última porção da árvore brônquica e estão localizadas no
                             final dos ductos alveolares. São semelhantes a pequenas bolsas, apresentam uma parede
@@ -179,7 +206,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="imagens"
+                    <img id="bronquiolos" class="imagens"
                         src="https://static.todamateria.com.br/upload/al/ve/alveoloscapilaressanguineos-0-cke.jpg" alt="
                         Músculo liso
                         Saco
@@ -189,7 +216,7 @@
                         Bronquiolo respiratorio
                         Capilares sanguíneos">
                     <div class="basedasimagens">
-                        <h1 id="bronquiolos">Bronquíolos</h1>
+                        <h1>Bronquíolos</h1>
                         <p>São ramificações dos brônquios, possuem diâmetro de cerca de 1 mm e não possuem cartilagem.
                             Esses também ramificam-se, formando os bronquíolos terminais e, posteriormente, os
                             bronquíolos respiratórios. Os bronquíolos respiratórios marcam a transição para a parte
@@ -201,14 +228,14 @@
                     </div>
                 </div>
                 <div>
-                    <img class="imagens"
+                    <img id="bronquios" class="imagens"
                         src="https://portaldrauziovarella.nyc3.digitaloceanspaces.com/wp-content/uploads/2017/09/31001737/bronquio.jpg"
                         alt="
                         TRAQUEIA
                         BRONQUIOS
                         BRONQUIOLOS">
                     <div class="basedasimagens">
-                        <h1 id="bronquios">Brônquios</h1>
+                        <h1>Brônquios</h1>
                         <p>São ramificações da traqueia, que penetram cada um em um pulmão pela região do hilo. Os
                             denominados de brônquios primários penetram pelos pulmões e
                             ramificam-se em três brônquios no pulmão direito e dois no pulmão esquerdo. Os
@@ -222,13 +249,13 @@
                     </div>
                 </div>
                 <div>
-                    <img class="imagens"
+                    <img id="respiracao" class="imagens"
                         src="https://static.biologianet.com/conteudo/images/2014/12/movimentos-respiratorios.jpg" alt="
                         Inspiração
                         Expiração
                         DIAFRAGMA">
                     <div class="basedasimagens">
-                        <h1 id="respiracao">Controle da respiração em seres humanos
+                        <h1>Controle da respiração em seres humanos
                         </h1>
                         <p>
                             Os seres humanos possuem neurônios na região do bulbo que garantem a regulação da

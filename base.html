@@ -12,6 +12,10 @@
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -29,7 +33,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div class="base">
@@ -105,7 +132,7 @@
                 </div>
             </div>
             <div>
-                <img class="imagens imageminicial"
+                <img id="sanguineos" class="imagens imageminicial"
                     src="https://s3.static.brasilescola.uol.com.br/img/2019/07/estrutura-dos-vasos-sanguineos.jpg"
                     alt="Estrutura das artérias, veias e capilares
                     Hemácia
@@ -125,7 +152,7 @@
                     Vênula
                     Veia">
                 <div class="basedasimagens">
-                    <h1 id="sanguineos">Vasos Sanguíneos</h1>
+                    <h1>Vasos Sanguíneos</h1>
                     <p> Os vasos sanguíneos constituem uma ampla rede de tubos por onde circula o sangue,
                         distribuídos
                         por todo o corpo. Existem três tipos de vasos sanguíneos: as artérias, as veias e os vasos
@@ -136,11 +163,11 @@
                 </div>
             </div>
             <div>
-                <img class="imagens" src="https://i.pinimg.com/originals/51/80/7a/51807aafdf2f1fee9f2cdff02b7a1261.png"
+                <img id="arterias" class="imagens" src="https://i.pinimg.com/originals/51/80/7a/51807aafdf2f1fee9f2cdff02b7a1261.png"
                     alt="">
 
                 <div class="basedasimagens">
-                    <h1 id="arterias">Artérias</h1>
+                    <h1>Artérias</h1>
                     <p>As artérias são vasos do sistema cardiovascular, por onde passa o sangue que sai do coração,
                         sendo transportado para as outras partes do corpo.
                         A musculatura das artérias é espessa, formada de tecido muscular bastante elástico. Permite
@@ -153,7 +180,7 @@
                 </div>
             </div>
             <div>
-                <img class="imagens"
+                <img id="veias" class="imagens"
                     src="https://proffelipebarros.com.br/wp-content/uploads/2019/05/image-32-1024x982.png" alt="Internal jugular External jugular
                     Subclavian
                     Superior vena cava
@@ -191,7 +218,7 @@
                     Anterior tibial artery">
 
                 <div class="basedasimagens">
-                    <h1 id="veias">Veias</h1>
+                    <h1>Veias</h1>
                     <p>
                         As veias são vasos que transportam o sangue das diversas partes do
                         corpo para o coração. Sua parede é mais fina que a das artérias, e o
@@ -205,7 +232,7 @@
                 </div>
             </div>
             <div>
-                <img class="imagens"
+                <img id="vasoscapilares" class="imagens"
                     src="http://www.professorinterativo.com.br/aval_on_line/01_TICs/TIC_11/imagens/vasos02.jpg" alt="VEIA
                     ARTÉRIA
                     CAPILAR
@@ -213,7 +240,7 @@
                     As artérias levam sangue do coração a todo o corpo. Suas paredes são espessas e dilatáveis.
                     Os capilares levam sangue aos tecidos, para fornecer oxigênio às células. Eles ligam artérias a veias.">
                 <div class="basedasimagens">
-                    <h1 id="vasoscapilares">Vasos Capilares</h1>
+                    <h1>Vasos Capilares</h1>
                     <p>Os vasos capilares são ramificações microscópicas de artérias e veias, o que possibilita a
                         formação de uma rede de comunicação entre os grandes vasos.
                         Suas paredes são constituídas por uma camada fina de células que permite a troca de
@@ -225,7 +252,7 @@
                 </div>
             </div>
             <div>
-                <img class="imagens" src="https://static.todamateria.com.br/upload/co/ra/coracao-1-cke.jpg" alt="
+                <img id="coracao" class="imagens" src="https://static.todamateria.com.br/upload/co/ra/coracao-1-cke.jpg" alt="
                 Veia cava superior
                 Átrio
                 direito
@@ -238,7 +265,7 @@
                 Ventrículo esquerdo">
 
                 <div class="basedasimagens">
-                    <h1 id="coracao">Coração</h1>
+                    <h1>Coração</h1>
                     <p>O coração é localizado na caixa torácica, entre os pulmões.
                         Possui a função de bombear o sangue através dos vasos sanguíneos para irrigar todo o corpo.
                         É oco e musculoso, envolvido por uma membrana chamada pericárdio, e no interior as cavidades
@@ -249,11 +276,11 @@
                 </div>
             </div>
             <div>
-                <img class="imagens"
+                <img id="pulsacao" class="imagens"
                     src="https://www.wikihow.com/images_en/thumb/3/39/Check-Your-Pulse-Step-8-Version-6.jpg/v4-728px-Check-Your-Pulse-Step-8-Version-6.jpg"
                     alt="">
                 <div class="basedasimagens">
-                    <h1 id="pulsacao">Pulsação</h1>
+                    <h1>Pulsação</h1>
                     <p>
                         A pulsação do sistema cardiovascular é observada a cada vez que os ventrículos se contraem,
                         impulsionando o sangue para as artérias, ou a cada batida do coração.
