@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,14 @@
     <link rel="stylesheet" href="./endocrino.css ">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4807/4807844.png" type="image/x-icon">
 </head>
+
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -27,7 +33,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div class="base">
@@ -41,54 +70,63 @@
             <script>
                 new window.VLibras.Widget('https://vlibras.gov.br/app');
             </script>
-               <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js" data-account="lqELz1dV9X"></script>
+            <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
+                data-account="lqELz1dV9X"></script>
             <div class="Nomedosistema">
                 <h1>Sistema Endócrino</h1>
             </div>
-            <img class="sistemasfoto" src="./imagens/sistema-endocrino1.jpg"
-                alt="">
-                <div class="Porçãocondutora">
-                    <div id="Porçãocondutora">
-                        <h1>Hipófise</h1>
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.GlMzajp-mGwfd6yiaoAS0QHaHa&pid=Api&P=0&h=180" alt="">
-                        <p>A hipófise é uma glândula localizada logo abaixo do cérebro, responsável pela produção de diversos hormônios, em destaque o hormônio do crescimento.</p>
-                    </div>
+            <img class="sistemasfoto" src="./imagens/sistema-endocrino1.jpg" alt="">
+            <div class="Porçãocondutora">
+                <div id="Porçãocondutora">
+                    <h1>Hipófise</h1>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.GlMzajp-mGwfd6yiaoAS0QHaHa&pid=Api&P=0&h=180" alt="">
+                    <p>A hipófise é uma glândula localizada logo abaixo do cérebro, responsável pela produção de
+                        diversos hormônios, em destaque o hormônio do crescimento.</p>
                 </div>
-                <div class="Porçãorespiratória">
-                    <div id="Porçãorespiratória">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3817/3817931.png" alt="">
-                        <h1>Timo</h1>
-                        <p>É uma glândula entre os pulmôes, tem papel fundamental na imunidade. Na infância ele produz um hormônio que ajuda na defesa do organismo.</p>
-                    </div>
+            </div>
+            <div class="Porçãorespiratória">
+                <div id="Porçãorespiratória">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3817/3817931.png" alt="">
+                    <h1>Timo</h1>
+                    <p>É uma glândula entre os pulmôes, tem papel fundamental na imunidade. Na infância ele produz um
+                        hormônio que ajuda na defesa do organismo.</p>
                 </div>
-                <div class="Alvéolospulmonares">
-                    <div id="Alvéolospulmonares">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3817/3817019.png" alt="">
-                        <h1>Tireóide</h1>
-                        <p>A tireóide é encontrada no pescoço, produz a tiroxina, hormônio responsável por regular a velocidade do nosso metabolismo, o calor corporal e o ritmo cardíaco.</p>
-                    </div>
+            </div>
+            <div class="Alvéolospulmonares">
+                <div id="Alvéolospulmonares">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3817/3817019.png" alt="">
+                    <h1>Tireóide</h1>
+                    <p>A tireóide é encontrada no pescoço, produz a tiroxina, hormônio responsável por regular a
+                        velocidade do nosso metabolismo, o calor corporal e o ritmo cardíaco.</p>
                 </div>
-                <div class="Bronquíolos">
-                    <div id="Bronquíolos">
-                        <h1>Glândulas Sexuais</h1>
-                        <img src="https://static.vecteezy.com/system/resources/previews/017/415/553/original/uterus-and-ovaries-internal-organs-of-human-png.png" alt="">
-                    <p>As glândulas sexuais são os ovários e os testículos. Os testículos liberam o hormônio testosterona. Já os ovários progesterona e estrogênio, que são os hormônios sexuais femininos.</p>
-                    </div>
+            </div>
+            <div class="Bronquíolos">
+                <div id="Bronquíolos">
+                    <h1>Glândulas Sexuais</h1>
+                    <img src="https://static.vecteezy.com/system/resources/previews/017/415/553/original/uterus-and-ovaries-internal-organs-of-human-png.png"
+                        alt="">
+                    <p>As glândulas sexuais são os ovários e os testículos. Os testículos liberam o hormônio
+                        testosterona. Já os ovários progesterona e estrogênio, que são os hormônios sexuais femininos.
+                    </p>
                 </div>
-                <div class="Brônquios">
-                    <div id="Brônquios">
-                        <h1>Suprarrenais</h1>
-                        <img src="https://cdn-icons-png.flaticon.com/512/5877/5877794.png" alt="">
-                        <p>São duas glândulas encontradas em cima dos rins, responsáveis pela produção da adrenalina, hormônio que prepara o corpo para ação. Também o cortisol, conhecido como hormônio do estresse</p>
-                    </div>
+            </div>
+            <div class="Brônquios">
+                <div id="Brônquios">
+                    <h1>Suprarrenais</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5877/5877794.png" alt="">
+                    <p>São duas glândulas encontradas em cima dos rins, responsáveis pela produção da adrenalina,
+                        hormônio que prepara o corpo para ação. Também o cortisol, conhecido como hormônio do estresse
+                    </p>
                 </div>
-                <div class="Brônquioslado">
-                    <div id="Brônquioslado">
-                        <h1>Pâncreas</h1>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3904/3904605.png" alt="">
-                        <p>É uma glândula responsável pela produção da insulina, do glucagon, e do suco pancreático. A insulina é o hormônio que regula regula a entrada de glicose no sangue</p>
-                    </div>
+            </div>
+            <div class="Brônquioslado">
+                <div id="Brônquioslado">
+                    <h1>Pâncreas</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3904/3904605.png" alt="">
+                    <p>É uma glândula responsável pela produção da insulina, do glucagon, e do suco pancreático. A
+                        insulina é o hormônio que regula regula a entrada de glicose no sangue</p>
                 </div>
+            </div>
             <h1 class="introducao">Partes do Sistema E Modelos 3D</h1>
             <div>
                 <div class="sketchfab sketchfab-embed-wrapper">
@@ -102,10 +140,11 @@
                             neurônios, visto que o sistema nervoso trabalha em <br> conjunto com o endócrino. <br>
                             O sistema endócrino produz <br>
                             cerca de 50 hormônios <br> diferentes com funções <br>diferentes como o
-                            cortisol <br> que regula o sistema aumentando <br> o estresse, ou a testosterona, que <br> é um hormônio
+                            cortisol <br> que regula o sistema aumentando <br> o estresse, ou a testosterona, que <br> é
+                            um hormônio
                             sexual.
                         </p>
-<img src="https://cdn-icons-png.flaticon.com/512/4145/4145000.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4145/4145000.png" alt="">
                     </div>
                     <div class="modelo3d">
                         <h1>Sistema Endócrino</h1>
@@ -115,7 +154,8 @@
                             Ele é formado pela hipófase, o pâncreas, a tireoide e os paratireoides, o timo, os
                             suprarrenais e as glândulas sexuais.
                         </p>
-                        <a target="_blank" href="https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm">Veja mais sobre no
+                        <a target="_blank" href="https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm">Veja
+                            mais sobre no
                             Brasilescola</a>
                     </div>
                 </div>
@@ -175,7 +215,9 @@
                     </div>
                 </div>
                 <div>
-                    <img id="timo" class="imagens" src="http://4.bp.blogspot.com/-Gyoa25Ozf3g/T_f1ejwW7qI/AAAAAAAAADY/y2Ec1g4v8kA/s400/Timo+07+07+2012.jpg" alt="Lóbulos do timo
+                    <img id="timo" class="imagens"
+                        src="http://4.bp.blogspot.com/-Gyoa25Ozf3g/T_f1ejwW7qI/AAAAAAAAADY/y2Ec1g4v8kA/s400/Timo+07+07+2012.jpg"
+                        alt="Lóbulos do timo
                     Lobo direito
                     -Lobo esquerdo">
                     <div class="basedasimagens">
@@ -231,7 +273,9 @@
                     </div>
                 </div>
                 <div>
-                    <img id="glandulassexuais" src="https://thumbs.dreamstime.com/b/illustrazioni-di-vettore-dell-ovaia-e-del-testicolo-nello-stile-piano-130643205.jpg" alt="" class="imagens">
+                    <img id="glandulassexuais"
+                        src="https://thumbs.dreamstime.com/b/illustrazioni-di-vettore-dell-ovaia-e-del-testicolo-nello-stile-piano-130643205.jpg"
+                        alt="" class="imagens">
                     <div class="basedasimagens">
                         <h1>Glândulas Sexuais</h1>
                         <p>
@@ -240,7 +284,8 @@
                             masculinas, como barba e voz grave, por exemplo.
                             Já os ovários produzem progesterona e estrogênio, que são os hormônios sexuais femininos.
                         </p>
-                        <a target="_blank" href="https://mundoeducacao.uol.com.br/biologia/hormonios-sexuais.htm">Ver mais</a>
+                        <a target="_blank" href="https://mundoeducacao.uol.com.br/biologia/hormonios-sexuais.htm">Ver
+                            mais</a>
                     </div>
                 </div>
                 <a href="outros-quizz/qendocrino1.html" class="quiz">Fazer Quiz</a>
@@ -249,27 +294,52 @@
     <footer>
         <div class="integrantes">
             <h1>Integrantes</h1>
-           <a href="https://github.com/Jean-Dalpra" target="_blank"><p id="pessoas">Jean Dalpra</p></a>
-           <a href="https://github.com/GABRIEL-AIROLDI" target="_blank"><p id="pessoas">Gabriel Airoldi</p></a>
-           <a href="https://github.com/Miguel-Naiba" target="_blank"><p id="pessoas">Miguel Naiba</p></a>
-           <a href="https://github.com/GUI-BK" target="_blank"><p id="pessoas">Guilherme Betch</p></a>
+            <a href="https://github.com/Jean-Dalpra" target="_blank">
+                <p id="pessoas">Jean Dalpra</p>
+            </a>
+            <a href="https://github.com/GABRIEL-AIROLDI" target="_blank">
+                <p id="pessoas">Gabriel Airoldi</p>
+            </a>
+            <a href="https://github.com/Miguel-Naiba" target="_blank">
+                <p id="pessoas">Miguel Naiba</p>
+            </a>
+            <a href="https://github.com/GUI-BK" target="_blank">
+                <p id="pessoas">Guilherme Betch</p>
+            </a>
         </div>
         <div class="fimagem">
             <h1>Imagens</h1>
-            <a href="https://www.todamateria.com.br/sistema-endocrino/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistema-endocrino/</p></a>
-            <a href="https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm" target="_blank"><p id="supa">https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm</p></a>
-            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p></a>
-            <a href="https://www.infoescola.com/wp-content/uploads/2009/12/anatomia-hipofise.jpg" target="_blank"><p id="supa">https://www.infoescola.com/wp-content/uploads/2009/12/anatomia-hipofise.jpg</p></a>
+            <a href="https://www.todamateria.com.br/sistema-endocrino/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistema-endocrino/</p>
+            </a>
+            <a href="https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm" target="_blank">
+                <p id="supa">https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p>
+            </a>
+            <a href="https://www.infoescola.com/wp-content/uploads/2009/12/anatomia-hipofise.jpg" target="_blank">
+                <p id="supa">https://www.infoescola.com/wp-content/uploads/2009/12/anatomia-hipofise.jpg</p>
+            </a>
         </div>
         <div class="referencias">
             <h1>Referências</h1>
-            <a href="https://www.todamateria.com.br/sistema-endocrino/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistema-endocrino/</p></a>
-            <a href="https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm" target="_blank"><p id="textos">https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm</p></a>
-            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p></a>
-            <a href="" target="_blank"><p id="textos"></p></a>
+            <a href="https://www.todamateria.com.br/sistema-endocrino/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistema-endocrino/</p>
+            </a>
+            <a href="https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm" target="_blank">
+                <p id="textos">https://brasilescola.uol.com.br/biologia/sistema-endocrinico.htm</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p>
+            </a>
+            <a href="" target="_blank">
+                <p id="textos"></p>
+            </a>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>
+
 </html>

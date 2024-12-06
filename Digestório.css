@@ -1,37 +1,49 @@
 * {
     padding: 0;
     margin: 0;
-    cursor: url(./imagens/my-mouse-pointerdigest.cur),auto;
+    cursor: url(./imagens/my-mouse-pointerdigest.cur), auto;
 }
-a{
-    cursor: url(./imagens/my-mouse-pointerdigestpointer.cur),pointer;
+
+a {
+    cursor: url(./imagens/my-mouse-pointerdigestpointer.cur), pointer;
 }
-p{
+
+p {
     cursor: url(./imagens/my-mouse-pointerdigestoriotext.cur), text;
 }
-h1{
+
+h1 {
     cursor: url(./imagens/my-mouse-pointerdigestoriotext.cur), text;
 }
-input{
+
+input {
     cursor: url(./imagens/my-mouse-pointerdigestoriotext.cur), text;
-    }
+}
+
 body::-webkit-scrollbar {
-    width: 17px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: #f1f1f1;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #FFA500;    /* color of the scroll thumb */
+    width: 17px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFA500;
+    /* color of the scroll thumb */
     border: 1px solid #e49400;
-    height: 50px;  /* creates padding around scroll thumb */
-  }
+    height: 50px;
+    /* creates padding around scroll thumb */
+}
+
 /*Header que aparece quando se clica no botão para manter a página estática*/
 .headerdefundo {
     height: 170px;
     background-color: #c9e3ae;
 }
+
 /* Estilo inicial do header */
 .header {
     height: 170px;
@@ -39,23 +51,29 @@ body::-webkit-scrollbar {
     top: -70px;
     background-color: #c9e3ae;
     border-radius: 2px;
-    position: fixed; /* Fixa o header no topo */
-    top: 0; /* No topo inicialmente */
-    transition: top 1s ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
+    position: fixed;
+    /* Fixa o header no topo */
+    top: 0;
+    /* No topo inicialmente */
+    transition: top 1s ease, height 0.5s ease;
+    /* Suaviza a transição da posição (top) e da altura */
     display: grid;
 }
 
 /* Estilo quando o header se torna menor (minimizado) */
 .header2 {
-    height: 170px; /* Menor altura para o estado minimizado */
+    height: 170px;
+    /* Menor altura para o estado minimizado */
     top: -70px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
-    transition: top 1 ease, height 0.5s ease; /* Suaviza a transição da posição (top) e da altura */
+    transition: top 1 ease, height 0.5s ease;
+    /* Suaviza a transição da posição (top) e da altura */
     display: grid;
-     /* Move o header para cima quando minimizado */
+    /* Move o header para cima quando minimizado */
 }
+
 /*Botões de subir/descer o header*/
 #btn2 {
     width: 30px;
@@ -70,17 +88,21 @@ body::-webkit-scrollbar {
     margin-top: 120px;
     border-color: #008b17;
 }
-#btn2:hover{
+
+#btn2:hover {
     background-color: #00c020;
-    border-color:  rgb(5, 54, 0);
+    border-color: rgb(5, 54, 0);
     height: 32px;
     width: 32px;
-    img{
-height: 22px;
-width: 22px;
+
+    img {
+        height: 22px;
+        width: 22px;
     }
+
     transition: 0.2s;
 }
+
 .btn2 {
     width: 30px;
     position: fixed;
@@ -92,6 +114,7 @@ width: 22px;
     background-color: #d3ebbb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .btn2cima {
     width: 30px;
     position: fixed;
@@ -104,43 +127,52 @@ width: 22px;
     border-bottom-right-radius: 18px;
     border-color: #04a31e;
 }
+
 .btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 #btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 .btn2cima img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 .headerdefundo {
     height: 170px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
-    top: 0; /* Header visível */
+    top: 0;
+    /* Header visível */
     display: grid;
     transition: 1s;
 }
-.headerdefundo2{
+
+.headerdefundo2 {
     height: 170px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
-    top: 0; /* Header visível */
+    top: 0;
+    /* Header visível */
     display: grid;
-     opacity: 0%;
-     transition: 1.0s;
-     pointer-events: none;
+    opacity: 0%;
+    transition: 1.0s;
+    pointer-events: none;
 }
+
 .headerdefundo2 .Siste {
-    position: relative; /* Torna o elemento pai um contexto de posicionamento */
+    position: relative;
+    /* Torna o elemento pai um contexto de posicionamento */
     color: #04a31e;
     font-size: 40px;
     margin-left: 167.5px;
@@ -156,24 +188,32 @@ width: 22px;
     letter-spacing: 1px;
     padding-top: 1px;
     text-decoration: none;
-    z-index: 1; /* Mantém o texto acima do pseudo-elemento */
+    z-index: 1;
+    /* Mantém o texto acima do pseudo-elemento */
     transition: 1s;
 }
+
 .headerdefundo2 .Siste:after {
     content: "";
     position: absolute;
     background-color: #008b17;
     height: 3px;
     width: 0;
-    left: 0; /* Alinha com o início do elemento */
-    bottom: 5px; /* Posiciona a linha abaixo do elemento */
-    transition: width 0.3s ease; /* Adiciona uma transição suave */
-    z-index: -1; /* Garante que a linha fique abaixo do texto */
+    left: 0;
+    /* Alinha com o início do elemento */
+    bottom: 5px;
+    /* Posiciona a linha abaixo do elemento */
+    transition: width 0.3s ease;
+    /* Adiciona uma transição suave */
+    z-index: -1;
+    /* Garante que a linha fique abaixo do texto */
 }
+
 .headerdefundo2 .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 /*Menu de sistemas*/
 .headerdefundo2 ul {
     height: 80px;
@@ -185,6 +225,7 @@ width: 22px;
     box-shadow: 2px 2px 3px #008b17;
     transition: 1s;
 }
+
 .headerdefundo2 ul li {
     display: grid;
     height: 38px;
@@ -194,6 +235,7 @@ width: 22px;
     border: 1px solid #008b17;
     transition: 1s;
 }
+
 .headerdefundo2 a {
     position: relative;
     text-decoration: none;
@@ -206,6 +248,7 @@ width: 22px;
     margin-top: -4px;
     transition: 1s;
 }
+
 .headerdefundo2 a:after {
     content: "";
     position: absolute;
@@ -215,88 +258,105 @@ width: 22px;
     bottom: 6px;
     transition: 1s;
 }
+
 .headerdefundo2 .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
     transition: 1s;
 }
+
 .headerdefundo2 .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
     transition: 1s;
 }
+
 .headerdefundo2 .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
     transition: 1s;
 }
+
 .headerdefundo2 .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #ffd700;
 }
+
 .headerdefundo2 .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 .headerdefundo2 .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 .headerdefundo2 .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 .headerdefundo2 .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 .headerdefundo2 .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 .headerdefundo2 .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 .headerdefundo2 .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 .headerdefundo2 .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 .headerdefundo2 .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 .headerdefundo2 .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 .headerdefundo2 a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 /*Link para o index no header*/
 .headerdefundo .Siste {
-    position: relative; /* Torna o elemento pai um contexto de posicionamento */
+    position: relative;
+    /* Torna o elemento pai um contexto de posicionamento */
     color: #04a31e;
     font-size: 40px;
     margin-left: 167.5px;
@@ -312,23 +372,31 @@ width: 22px;
     letter-spacing: 1px;
     padding-top: 1px;
     text-decoration: none;
-    z-index: 1; /* Mantém o texto acima do pseudo-elemento */
+    z-index: 1;
+    /* Mantém o texto acima do pseudo-elemento */
 }
+
 .headerdefundo .Siste:after {
     content: "";
     position: absolute;
     background-color: #008b17;
     height: 3px;
     width: 0;
-    left: 0; /* Alinha com o início do elemento */
-    bottom: 5px; /* Posiciona a linha abaixo do elemento */
-    transition: width 0.3s ease; /* Adiciona uma transição suave */
-    z-index: -1; /* Garante que a linha fique abaixo do texto */
+    left: 0;
+    /* Alinha com o início do elemento */
+    bottom: 5px;
+    /* Posiciona a linha abaixo do elemento */
+    transition: width 0.3s ease;
+    /* Adiciona uma transição suave */
+    z-index: -1;
+    /* Garante que a linha fique abaixo do texto */
 }
+
 .headerdefundo .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 /*Menu de sistemas*/
 .headerdefundo ul {
     height: 80px;
@@ -339,6 +407,7 @@ width: 22px;
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
 }
+
 .headerdefundo ul li {
     display: grid;
     height: 38px;
@@ -347,6 +416,7 @@ width: 22px;
     background-color: #ffffff;
     border: 1px solid #008b17;
 }
+
 .headerdefundo a {
     position: relative;
     text-decoration: none;
@@ -358,6 +428,7 @@ width: 22px;
     padding: 10px;
     margin-top: -4px;
 }
+
 .headerdefundo a:after {
     content: "";
     position: absolute;
@@ -367,82 +438,98 @@ width: 22px;
     bottom: 6px;
     transition: 0.3s;
 }
+
 .headerdefundo .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
 }
+
 .headerdefundo .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
 }
+
 .headerdefundo .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
 }
+
 .headerdefundo .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #ffd700;
 }
+
 .headerdefundo .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 .headerdefundo .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 .headerdefundo .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 .headerdefundo .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 .headerdefundo .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 .headerdefundo .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 .headerdefundo .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 .headerdefundo .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 .headerdefundo .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 .headerdefundo .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 .headerdefundo a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 /* Estilo inicial do header */
 .header {
     height: 170px;
@@ -450,7 +537,8 @@ width: 22px;
     background-color: #c9e3ae;
     border-radius: 2px;
     position: fixed;
-    top: 0; /* Header visível */
+    top: 0;
+    /* Header visível */
     transition: top 1s ease, height 0.5s ease;
     display: grid;
 }
@@ -462,10 +550,13 @@ width: 22px;
     background-color: #c9e3ae;
     border-radius: 2px;
     position: fixed;
-    top: -180px; /* Header fora de vista */
-    transition: top 1s ease, height 0.5s ease; /* Igual ao .header */
+    top: -180px;
+    /* Header fora de vista */
+    transition: top 1s ease, height 0.5s ease;
+    /* Igual ao .header */
     display: grid;
 }
+
 header .Siste {
     color: #04a31e;
     font-size: 40px;
@@ -484,6 +575,7 @@ header .Siste {
     position: relative;
     text-decoration: none;
 }
+
 header .Siste:after {
     content: "";
     position: absolute;
@@ -494,10 +586,12 @@ header .Siste:after {
     bottom: 5px;
     transition: 0.3s;
 }
+
 header .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 header h1 {
     color: #04a31e;
     font-size: 42px;
@@ -513,6 +607,7 @@ header h1 {
     padding-left: 10px;
     letter-spacing: 1px;
 }
+
 header ul {
     height: 80px;
     width: 1014px;
@@ -522,6 +617,7 @@ header ul {
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
 }
+
 header ul li {
     display: grid;
     height: 38px;
@@ -530,6 +626,7 @@ header ul li {
     background-color: #ffffff;
     border: 1px solid #008b17;
 }
+
 header a {
     position: relative;
     text-decoration: none;
@@ -541,6 +638,7 @@ header a {
     padding: 10px;
     margin-top: -4px;
 }
+
 header a:after {
     content: "";
     position: absolute;
@@ -550,168 +648,192 @@ header a:after {
     bottom: 6px;
     transition: 0.3s;
 }
+
 header .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
 }
+
 header .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
 }
+
 header .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
 }
+
 header .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #dbbb01;
 }
+
 header .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 header .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 header .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 header .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 header .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 header .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 header .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 header .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 header .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 header .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 header a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 .main {
     display: grid;
     height: 4770px;
     background-color: rgb(233, 235, 235);
     width: 1349px;
 }
+
 footer {
     height: 400px;
     background-color: rgb(52, 109, 52);
     display: grid;
 }
+
 footer img {
     height: 100px;
     width: 200px;
     margin-top: 20px;
     margin-left: 20px;
 }
+
 footer h1 {
-    font-size:large;
-    margin-left: 150px;
-    margin-top: 50px;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-footer h2{
     font-size: large;
     margin-left: 150px;
     margin-top: 50px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer h3{
+
+footer h2 {
     font-size: large;
     margin-left: 150px;
     margin-top: 50px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer ul li{
+
+footer h3 {
+    font-size: large;
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer ul li {
     margin-left: 100px;
     margin-top: 0px;
 }
-#pessoas{
+
+#pessoas {
     text-align: center;
     color: white;
     margin-top: 20px;
     text-decoration: underline white;
-    cursor: pointer;
+
 }
-.integrantes{
+
+.integrantes {
     width: 400px;
     height: 400px;
     position: absolute;
 }
-.fimagem{
+
+.fimagem {
     width: 400px;
     height: 400px;
     float: left;
     margin-left: 400px;
 }
-/*nomes no footer*/
-.participantes {
-    color: #004a8d;
-    margin-left: 250px;
-    font-size: 30px;
-    margin-top: -50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.referencias{
+
+
+
+.referencias {
     position: absolute;
     margin-left: 800px;
+    text-decoration: underline white;
 }
-#supa{
+
+#supa {
     text-align: center;
     margin-right: 30px;
     color: white;
     margin-top: 20px;
-    cursor: pointer;
+    text-decoration: underline white;
 }
-#textos{
+
+#textos {
     text-align: right;
     margin-right: 45px;
     color: white;
     margin-top: 20px;
-    cursor: pointer;
+    text-decoration: underline white;
 }
+
 .base {
     width: 1200px;
     height: 4700px;
@@ -722,6 +844,7 @@ footer ul li{
     box-shadow: 10px 10px 8px 10px #888888;
     display: grid;
 }
+
 .Nomedosistema {
     height: 100px;
     background-color: #FFA500;
@@ -730,6 +853,7 @@ footer ul li{
     display: grid;
     text-shadow: 2px 0px 2px white;
 }
+
 .Nomedosistema h1 {
     color: white;
     margin-left: 370px;
@@ -738,12 +862,14 @@ footer ul li{
     height: 60px;
     width: 700px;
 }
+
 .Nomedosistema img {
     height: 90px;
     width: 100px;
     margin-top: -90px;
     margin-left: 740px;
 }
+
 .sistemasfoto {
     height: 570px;
     width: 300px;
@@ -751,6 +877,7 @@ footer ul li{
     margin-left: 180px;
     display: grid;
 }
+
 main .introducao {
     color: #000000;
     font-size: 42px;
@@ -763,6 +890,7 @@ main .introducao {
     text-decoration: underline double #FFA500;
     text-shadow: 2px 1px 1px rgb(177, 177, 177);
 }
+
 .imagens {
     height: 400px;
     width: 400px;
@@ -771,6 +899,7 @@ main .introducao {
     box-shadow: 0px 0px 2px 1px black;
     margin-top: 100px;
 }
+
 .sketchfab {
     height: 570px;
     width: 570px;
@@ -785,31 +914,36 @@ main .introducao {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.ladodomodelo3d{
-height: 400px;
-width: 500px;
-background-color: #ffffff;
-box-shadow: 0px 1px 5px black;
-display: grid;
-margin-left: 600px;
-margin-top: -500px;
+
+.ladodomodelo3d {
+    height: 400px;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px black;
+    display: grid;
+    margin-left: 600px;
+    margin-top: -500px;
 }
-.ladodomodelo3d p{
-color: rgb(0, 0, 0);
-margin-left: 20px;
-margin-top: 20px;
-width: 400px;
-font-size: 24px;
+
+.ladodomodelo3d p {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 400px;
+    font-size: 24px;
 }
-.ladodomodelo3d img{
-width: 180px;
-height: 388px;
-margin-top: -305px;
-margin-left: 296px;
+
+.ladodomodelo3d img {
+    width: 180px;
+    height: 388px;
+    margin-top: -305px;
+    margin-left: 296px;
 }
+
 .imageminicial {
     margin-top: 100px;
 }
+
 .basedasimagens {
     display: grid;
     height: 350px;
@@ -818,12 +952,14 @@ margin-left: 296px;
     margin-left: 502px;
     background-color: #e4e4e4;
 }
+
 .basedasimagens h1 {
     font-size: 35px;
     margin-left: 20px;
     margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .basedasimagens p {
     height: 200px;
     width: 550px;
@@ -832,6 +968,7 @@ margin-left: 296px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
 }
+
 .basedasimagens a {
     height: 27px;
     width: 80px;
@@ -844,6 +981,7 @@ margin-left: 296px;
     background-color: #FFA500;
     padding-left: 4px;
 }
+
 .basedasimagens a:hover {
     height: 29px;
     width: 81px;
@@ -858,6 +996,7 @@ margin-left: 296px;
     padding-top: 1px;
     transition: 0.2s;
 }
+
 .modelo3d {
     display: grid;
     height: 350px;
@@ -866,6 +1005,7 @@ margin-left: 296px;
     margin-left: 470px;
     background-color: #e4e4e4;
 }
+
 .modelo3d h1 {
     font-size: 35px;
     height: 55px;
@@ -874,9 +1014,10 @@ margin-left: 296px;
     border-top-left-radius: 5px;
     padding-top: 10px;
     padding-left: 25px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .modelo3d p {
     height: 200px;
     width: 600px;
@@ -885,6 +1026,7 @@ margin-left: 296px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: -10px;
 }
+
 .modelo3d a {
     height: 27px;
     width: 280px;
@@ -895,8 +1037,9 @@ margin-left: 296px;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    background-color:  #FFA500;
+    background-color: #FFA500;
 }
+
 .modelo3d a:hover {
     height: 29px;
     width: 294px;
@@ -910,6 +1053,7 @@ margin-left: 296px;
     background-color: #FFA500;
     transition: 0.4s;
 }
+
 .quiz {
     width: 300px;
     height: 80px;
@@ -925,6 +1069,7 @@ margin-left: 296px;
     border: 1px solid #c58000;
     display: grid;
 }
+
 .quiz:hover {
     width: 310px;
     height: 82px;
@@ -945,10 +1090,10 @@ margin-left: 296px;
 .Porçãocondutora {
     height: 10px;
     width: 10px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     margin-top: -550px;
     margin-left: 200px;
-    border: 3px solid  #bd7b00;
+    border: 3px solid #bd7b00;
     border-radius: 6px;
 }
 
@@ -966,7 +1111,7 @@ margin-left: 296px;
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid  #FFA500;
+        border: 1px solid #FFA500;
         opacity: 100%;
         margin-left: -190px;
         transition: 0.5s;
@@ -993,12 +1138,12 @@ margin-left: 296px;
     }
 
     #Porçãocondutora p {
-      transition: 1s;
-      opacity: 100%;
-      margin-left: 2px;
-      margin-top: -2px;
-      width: 180px;
-      font-size: 14px;
+        transition: 1s;
+        opacity: 100%;
+        margin-left: 2px;
+        margin-top: -2px;
+        width: 180px;
+        font-size: 14px;
     }
 }
 
@@ -1040,7 +1185,7 @@ margin-left: 296px;
 .Porçãorespiratória {
     height: 10px;
     width: 10px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     margin-top: -568px;
     margin-left: 338px;
     border: 3px solid #bd7b00;
@@ -1061,7 +1206,7 @@ margin-left: 296px;
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid  #FFA500;
+        border: 1px solid #FFA500;
         opacity: 100%;
         margin-left: -320px;
         transition: 0.5s;
@@ -1088,12 +1233,12 @@ margin-left: 296px;
     }
 
     #Porçãorespiratória p {
-      transition: 1s;
-      opacity: 100%;
-      margin-left: 2px;
-      margin-top: 52px;
-      width: 170px;
-      font-size: 14px;
+        transition: 1s;
+        opacity: 100%;
+        margin-left: 2px;
+        margin-top: 52px;
+        width: 170px;
+        font-size: 14px;
     }
 }
 
@@ -1130,10 +1275,11 @@ margin-left: 296px;
     pointer-events: none;
     transition: 1s;
 }
+
 .Alvéolospulmonares {
     height: 10px;
     width: 10px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     margin-top: -550px;
     margin-left: 200px;
     border: 3px solid #bd7b00;
@@ -1153,7 +1299,7 @@ margin-left: 296px;
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid  #FFA500;
+        border: 1px solid #FFA500;
         opacity: 100%;
         margin-left: -190px;
         transition: 0.5s;
@@ -1179,12 +1325,12 @@ margin-left: 296px;
     }
 
     #Alvéolospulmonares p {
-      transition: 1s;
-      opacity: 100%;
-      margin-left: 1px;
-      margin-top: 38px;
-      width: 175px;
-      font-size: 14px;
+        transition: 1s;
+        opacity: 100%;
+        margin-left: 1px;
+        margin-top: 38px;
+        width: 175px;
+        font-size: 14px;
     }
 }
 
@@ -1225,7 +1371,7 @@ margin-left: 296px;
 .Bronquíolos {
     height: 10px;
     width: 10px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     margin-top: -402px;
     margin-left: 306px;
     border: 3px solid #bd7b00;
@@ -1246,13 +1392,14 @@ margin-left: 296px;
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid  #FFA500;
+        border: 1px solid #FFA500;
         opacity: 100%;
         margin-left: -200px;
         transition: 0.5s;
         margin-top: -120px;
         z-index: 0;
     }
+
     #Bronquíolos img {
         opacity: 100%;
         height: 60px;
@@ -1272,12 +1419,12 @@ margin-left: 296px;
     }
 
     #Bronquíolos p {
-      transition: 1s;
-      opacity: 100%;
-      margin-left: 1px;
-      margin-top: -1px;
-      width: 175px;
-      font-size: 14px;
+        transition: 1s;
+        opacity: 100%;
+        margin-left: 1px;
+        margin-top: -1px;
+        width: 175px;
+        font-size: 14px;
     }
 }
 
@@ -1314,10 +1461,11 @@ margin-left: 296px;
     pointer-events: none;
     transition: 1s;
 }
+
 .Brônquios {
     height: 10px;
     width: 10px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     margin-top: -550px;
     margin-left: 385px;
     border: 3px solid #bd7b00;
@@ -1337,7 +1485,7 @@ margin-left: 296px;
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid  #FFA500;
+        border: 1px solid #FFA500;
         opacity: 100%;
         margin-left: -200px;
         transition: 0.5s;
@@ -1364,12 +1512,12 @@ margin-left: 296px;
     }
 
     #Brônquios p {
-      transition: 1s;
-      opacity: 100%;
-      margin-left: 2px;
-      margin-top: -2px;
-      width: 175px;
-      font-size: 14px;
+        transition: 1s;
+        opacity: 100%;
+        margin-left: 2px;
+        margin-top: -2px;
+        width: 175px;
+        font-size: 14px;
     }
 }
 
@@ -1406,10 +1554,11 @@ margin-left: 296px;
     pointer-events: none;
     transition: 1s;
 }
+
 .IntestinoDelgado {
     height: 10px;
     width: 10px;
-    background-color:  #FFA500;
+    background-color: #FFA500;
     margin-top: -366px;
     margin-left: 306px;
     border: 3px solid #bd7b00;
@@ -1430,13 +1579,14 @@ margin-left: 296px;
         height: 170px;
         width: 170px;
         background-color: rgb(255, 255, 255);
-        border: 1px solid  #FFA500;
+        border: 1px solid #FFA500;
         opacity: 100%;
         margin-left: -200px;
         transition: 0.5s;
         margin-top: -120px;
         z-index: 0;
     }
+
     #IntestinoDelgado img {
         opacity: 100%;
         height: 60px;
@@ -1456,12 +1606,12 @@ margin-left: 296px;
     }
 
     #IntestinoDelgado p {
-      transition: 1s;
-      opacity: 100%;
-      margin-left: 2px;
-      margin-top: -8px;
-      width: 175px;
-      font-size: 14px;
+        transition: 1s;
+        opacity: 100%;
+        margin-left: 2px;
+        margin-top: -8px;
+        width: 175px;
+        font-size: 14px;
     }
 }
 
@@ -1520,6 +1670,7 @@ margin-left: 296px;
     color: #a0a0a0;
     font-size: 18px;
 }
+
 /* Caixa de sugestões */
 .suggestions-box {
     background-color: #ffffff;
@@ -1530,31 +1681,39 @@ margin-left: 296px;
     overflow-y: auto;
     z-index: 9999;
     display: none;
-    position: absolute; /* Altere para 'absolute' para que fique dentro do container */
-    top: 60px;  /* Ajuste conforme necessário */
+    position: absolute;
+    /* Altere para 'absolute' para que fique dentro do container */
+    top: 60px;
+    /* Ajuste conforme necessário */
 }
 
 /* Torna a suggestions-box visível ao fazer uma busca */
-#search-input:focus + #suggestions,
-#search-input:not(:placeholder-shown) + #suggestions {
-    display: block;  /* Exibe quando o input é focado ou preenchido */
+#search-input:focus+#suggestions,
+#search-input:not(:placeholder-shown)+#suggestions {
+    display: block;
+    /* Exibe quando o input é focado ou preenchido */
 }
 
 /* Estilo para a barra de rolagem */
 .suggestions-box::-webkit-scrollbar {
-    width: 15px; /* Largura da barra */
-    background-color: #f0f0f0; /* Cor de fundo */
+    width: 15px;
+    /* Largura da barra */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
     border-radius: 8px;
 }
 
 .suggestions-box::-webkit-scrollbar-thumb {
-    background-color: #04a31e; /* Cor do "thumb" */
+    background-color: #04a31e;
+    /* Cor do "thumb" */
     border-radius: 8px;
-    border: 1px solid #028017; /* Borda do "thumb" */
+    border: 1px solid #028017;
+    /* Borda do "thumb" */
 }
 
 .suggestions-box::-webkit-scrollbar-thumb:hover {
-    background-color: #028017; /* Cor ao passar o mouse */
+    background-color: #028017;
+    /* Cor ao passar o mouse */
 }
 
 /* Estilo dos links */
@@ -1570,17 +1729,23 @@ margin-left: 296px;
     background-color: #04a31e;
     color: white;
 }
+
 .suggestion-link.highlight {
     background-color: #04a31e;
-    color: white;  /* Destaca a sugestão */
+    color: white;
+    /* Destaca a sugestão */
 }
-.suggestion-link.highlight, .suggestion-item.highlight {
+
+.suggestion-link.highlight,
+.suggestion-item.highlight {
     background-color: #04a31e;
-    color: white;  /* Destaca a sugestão */
+    color: white;
+    /* Destaca a sugestão */
 }
 
 .header-search input.highlight {
-    background-color: #e0e0e0;  /* Por exemplo, destaque sutil no input */
+    background-color: #e0e0e0;
+    /* Por exemplo, destaque sutil no input */
 }
 
 /* Caixa de sugestões */
@@ -1593,36 +1758,43 @@ margin-left: 296px;
     overflow-y: auto;
     z-index: 9999;
     display: none;
-    position: absolute; /* Altere para 'absolute' para que fique dentro do container */
-    top: 60px;  /* Ajuste conforme necessário */
+    position: absolute;
+    /* Altere para 'absolute' para que fique dentro do container */
+    top: 60px;
+    /* Ajuste conforme necessário */
 }
 
 /* Torna a suggestions-box visível ao fazer uma busca */
-#search-input-header:focus + #suggestions-header,
-#search-input-header:not(:placeholder-shown) + #suggestions-header {
+#search-input-header:focus+#suggestions-header,
+#search-input-header:not(:placeholder-shown)+#suggestions-header {
     display: block;
 }
 
-#search-input-branco:focus + #suggestions-branco,
-#search-input-branco:not(:placeholder-shown) + #suggestions-branco {
+#search-input-branco:focus+#suggestions-branco,
+#search-input-branco:not(:placeholder-shown)+#suggestions-branco {
     display: block;
 }
 
 /* Estilo para a barra de rolagem */
 .suggestions-branco::-webkit-scrollbar {
-    width: 15px; /* Largura da barra */
-    background-color: #f0f0f0; /* Cor de fundo */
+    width: 15px;
+    /* Largura da barra */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
     border-radius: 8px;
 }
 
 .suggestions-branco::-webkit-scrollbar-thumb {
-    background-color: #04a31e; /* Cor do "thumb" */
+    background-color: #04a31e;
+    /* Cor do "thumb" */
     border-radius: 8px;
-    border: 1px solid #028017; /* Borda do "thumb" */
+    border: 1px solid #028017;
+    /* Borda do "thumb" */
 }
 
 .suggestions-branco::-webkit-scrollbar-thumb:hover {
-    background-color: #028017; /* Cor ao passar o mouse */
+    background-color: #028017;
+    /* Cor ao passar o mouse */
 }
 
 /* Estilo dos links */
@@ -1638,22 +1810,27 @@ margin-left: 296px;
     background-color: #04a31e;
     color: white;
 }
+
 .suggestion-item.highlight {
     background-color: #04a31e;
-    color: white;  /* Destaca a sugestão */
+    color: white;
+    /* Destaca a sugestão */
 }
-#search-input-branco:focus + #suggestions-branco,
-#search-input-branco:not(:placeholder-shown) + #suggestions-branco {
+
+#search-input-branco:focus+#suggestions-branco,
+#search-input-branco:not(:placeholder-shown)+#suggestions-branco {
     display: block;
 }
-.suggestion-item{
-padding-top: 7px;
-padding-bottom: 7px;
-font-size: 16px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-text-align: center;
+
+.suggestion-item {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
-.suggestion-item:hover{
+
+.suggestion-item:hover {
     padding-top: 7px;
     padding-bottom: 7px;
     font-size: 16px;
@@ -1661,5 +1838,8 @@ text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: white;
-    }
+}
 
+footer a p {
+    cursor: url(./imagens/my-mouse-pointerdigestpointer.cur), pointer;
+}

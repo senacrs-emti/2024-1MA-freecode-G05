@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./muscular.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3475/3475975.png" type="image/x-icon">
 </head>
+
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -28,7 +33,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div vw class="enabled">
@@ -189,7 +217,8 @@
                     </div>
                 </div>
                 <div>
-                    <img id="musculosdosmembrossuperiores" class="imagens" src="./imagens/musculosmembroinferiorantebraco-0-cke.jpg"
+                    <img id="musculosdosmembrossuperiores" class="imagens"
+                        src="./imagens/musculosmembroinferiorantebraco-0-cke.jpg"
                         alt="Olécrano Epicôndio medial-
                     Músculo extensor radial longo do carpo Músculo extensor radial curto do carpo, Músculo extensor ulnar do carpo
                     Epicondilo lateral
@@ -215,7 +244,8 @@
                     </div>
                 </div>
                 <div>
-                    <img id="musculosdosmembrosinferiores" class="imagens" src="./imagens/musculosdosmembrosinferioresrevisado-cke.jpg" alt="Músculo tensor da fascia lata-
+                    <img id="musculosdosmembrosinferiores" class="imagens"
+                        src="./imagens/musculosdosmembrosinferioresrevisado-cke.jpg" alt="Músculo tensor da fascia lata-
                     Músculo vasto lateral
                     Tendão do quadríceps
                     Músculo fibular longo
@@ -264,8 +294,8 @@
                     </div>
                 </div>
                 <div>
-                    <img id="musculoestriadoesqueletico" class="imagens" src="https://www.coladaweb.com/wp-content/uploads/tecido-muscular-estriado.jpg"
-                        alt="Esquema da musculatura estriada esquelética
+                    <img id="musculoestriadoesqueletico" class="imagens"
+                        src="https://www.coladaweb.com/wp-content/uploads/tecido-muscular-estriado.jpg" alt="Esquema da musculatura estriada esquelética
                     Fasciculo muscular (constituido por fibras musculares)
                     Fibra muscular (constituida por miofibrilas)
                     Músculo">
@@ -333,4 +363,5 @@
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>
+
 </html>

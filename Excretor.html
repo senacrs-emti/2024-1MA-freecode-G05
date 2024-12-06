@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,14 @@
     <link rel="shortcut icon" href="https://www.ynsadiet.com/wp-content/uploads/2019/03/YUVBHKJ.png"
         type="image/x-icon">
 </head>
+
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -28,7 +34,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div vw class="enabled">
@@ -41,7 +70,8 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
-           <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js" data-account="lqELz1dV9X"></script>
+        <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
+            data-account="lqELz1dV9X"></script>
         <div class="base">
             <div class="Nomedosistema">
                 <h1>Sistema Excretor</h1>
@@ -49,34 +79,42 @@
             <img class="sistemasfoto"
                 src="https://static.vecteezy.com/ti/vetor-gratis/p1/6852329-anatomia-do-sistema-urinario-vetor.jpg"
                 alt="">
-                <div class="coração">
-                    <div id="coração">
-                        <h1>Rins</h1>
-                        <img src="https://cdn-icons-png.flaticon.com/512/822/822151.png" alt="">
-                        <p>Os rins são órgãos do sistema urinário, porém que atuam diretamente na eliminação de resíduos que resultam da ação do metabolismo do organismo.</p>
-                    </div>
+            <div class="coração">
+                <div id="coração">
+                    <h1>Rins</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/822/822151.png" alt="">
+                    <p>Os rins são órgãos do sistema urinário, porém que atuam diretamente na eliminação de resíduos que
+                        resultam da ação do metabolismo do organismo.</p>
                 </div>
-                <div class="veia">
-                    <div id="veia">
-                        <h1>Ureter</h1>
-                        <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Ureter-kidneys-tubes-renal-urinary-512.png" alt="">
-                        <p>É um tubo que liga o rim à bexiga, ele transporta a urina dos rins para a bexiga, sendo um ureter para cada rim, que auxiliam na excreção das substâncias indesejadas.</p>
-                    </div>
+            </div>
+            <div class="veia">
+                <div id="veia">
+                    <h1>Ureter</h1>
+                    <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Ureter-kidneys-tubes-renal-urinary-512.png"
+                        alt="">
+                    <p>É um tubo que liga o rim à bexiga, ele transporta a urina dos rins para a bexiga, sendo um ureter
+                        para cada rim, que auxiliam na excreção das substâncias indesejadas.</p>
                 </div>
-                <div class="artéria">
-                    <div id="artéria">
-                        <h1>Bexiga Urinária</h1>
-                        <img src="https://static.vecteezy.com/system/resources/previews/018/972/028/original/urinary-bladder-internal-organs-of-human-png.png" alt="">
-                        <p>A bexiga urinária é o órgão responsável por armazenar a urina produzida pelos rins e transportada pelos ureteres. Além do armazenamento é ela quem elimina a urina</p>
-                    </div>
+            </div>
+            <div class="artéria">
+                <div id="artéria">
+                    <h1>Bexiga Urinária</h1>
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/972/028/original/urinary-bladder-internal-organs-of-human-png.png"
+                        alt="">
+                    <p>A bexiga urinária é o órgão responsável por armazenar a urina produzida pelos rins e transportada
+                        pelos ureteres. Além do armazenamento é ela quem elimina a urina</p>
                 </div>
-                <div class="artériabaixo">
-                    <div id="artériabaixo">
-                        <h1>Uretra</h1>
-                        <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Urethra-urinary-bladder-male-genital-512.png" alt="">
-                        <p>A uretra é o canal responsável por conduzir o caminho da urina para fora do corpo. Ela está ligada à bexiga urinária. Nos homens a uretra termina no pênis, já nas mulheres termina na vulva</p>
-                    </div>
+            </div>
+            <div class="artériabaixo">
+                <div id="artériabaixo">
+                    <h1>Uretra</h1>
+                    <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Urethra-urinary-bladder-male-genital-512.png"
+                        alt="">
+                    <p>A uretra é o canal responsável por conduzir o caminho da urina para fora do corpo. Ela está
+                        ligada à bexiga urinária. Nos homens a uretra termina no pênis, já nas mulheres termina na vulva
+                    </p>
                 </div>
+            </div>
             <h1 class="introducao">Partes do Sistema E Modelos 3D</h1>
             <div>
                 <div class="sketchfab sketchfab-embed-wrapper">
@@ -110,7 +148,8 @@
                             Importante ressaltar que o sistema excretor é encarregado de muito mais que apenas a
                             eliminação de resíduos. Trata-se do principal responsável pelo controle da composição
                             química do ambiente interno.</p>
-                        <a target="_blank" href="https://brasilescola.uol.com.br/videos/sistema-excretor.htm">Veja mais sobre no
+                        <a target="_blank" href="https://brasilescola.uol.com.br/videos/sistema-excretor.htm">Veja mais
+                            sobre no
                             Brasilescola</a>
                     </div>
                 </div>
@@ -197,12 +236,14 @@
                             Este é um órgão muscular com alta capacidade elástica, visto que pode armazenar até 800 ml
                             de urina.
                         </p>
-                        <a target="_blank" href="https://www.biologianet.com/anatomia-fisiologia-animal/bexiga-urinaria.htm">Ver
+                        <a target="_blank"
+                            href="https://www.biologianet.com/anatomia-fisiologia-animal/bexiga-urinaria.htm">Ver
                             mais</a>
                     </div>
                 </div>
                 <div>
-                    <img id="uretra" class="imagens" src="./imagens/desktop_f3d2bfed-f0c5-4f88-a184-02642bfd11fb.jpg" alt="Orificios ureterales
+                    <img id="uretra" class="imagens" src="./imagens/desktop_f3d2bfed-f0c5-4f88-a184-02642bfd11fb.jpg"
+                        alt="Orificios ureterales
                     Orina
                     Uréteres
                     Músculo detrusor
@@ -224,27 +265,54 @@
     <footer>
         <div class="integrantes">
             <h1>Integrantes</h1>
-           <a href="https://github.com/Jean-Dalpra" target="_blank"><p id="pessoas">Jean Dalpra</p></a>
-           <a href="https://github.com/GABRIEL-AIROLDI" target="_blank"><p id="pessoas">Gabriel Airoldi</p></a>
-           <a href="https://github.com/Miguel-Naiba" target="_blank"><p id="pessoas">Miguel Naiba</p></a>
-           <a href="https://github.com/GUI-BK" target="_blank"><p id="pessoas">Guilherme Betch</p></a>
+            <a href="https://github.com/Jean-Dalpra" target="_blank">
+                <p id="pessoas">Jean Dalpra</p>
+            </a>
+            <a href="https://github.com/GABRIEL-AIROLDI" target="_blank">
+                <p id="pessoas">Gabriel Airoldi</p>
+            </a>
+            <a href="https://github.com/Miguel-Naiba" target="_blank">
+                <p id="pessoas">Miguel Naiba</p>
+            </a>
+            <a href="https://github.com/GUI-BK" target="_blank">
+                <p id="pessoas">Guilherme Betch</p>
+            </a>
         </div>
         <div class="fimagem">
             <h1>Imagens</h1>
-            <a href="https://www.todamateria.com.br/sistema-excretor/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistema-excretor/</p></a>
-            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p></a>
-            <a href="https://brasilescola.uol.com.br/biologia/sistema-excretor.htm" target="_blank"><p id="supa">https://brasilescola.uol.com.br/biologia/sistema-excretor.htm</p></a>
-            <a href="https://static.todamateria.com.br/upload/55/a0/55a0040d876e5_sistema_urinario_large.jpg" target="_blank"><p id="supa">https://static.todamateria.com.br/upload/55/a0/55a0040d876e5_sistema_urinario_large.jpg</p></a>
+            <a href="https://www.todamateria.com.br/sistema-excretor/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistema-excretor/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p>
+            </a>
+            <a href="https://brasilescola.uol.com.br/biologia/sistema-excretor.htm" target="_blank">
+                <p id="supa">https://brasilescola.uol.com.br/biologia/sistema-excretor.htm</p>
+            </a>
+            <a href="https://static.todamateria.com.br/upload/55/a0/55a0040d876e5_sistema_urinario_large.jpg"
+                target="_blank">
+                <p id="supa">https://static.todamateria.com.br/upload/55/a0/55a0040d876
+                    <br>e5_sistema_urinario_large.jpg</p>
+            </a>
         </div>
         <div class="referencias">
             <h1>Referências</h1>
-            <a href="https://www.todamateria.com.br/sistema-excretor/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistema-excretor/</p></a>
-            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p></a>
-            <a href="https://brasilescola.uol.com.br/biologia/sistema-excretor.htm" target="_blank"><p id="textos">https://brasilescola.uol.com.br/biologia/sistema-excretor.htm</p></a>
-            <a href="" target="_blank"><p id="textos"></p></a>
+            <a href="https://www.todamateria.com.br/sistema-excretor/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistema-excretor/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p>
+            </a>
+            <a href="https://brasilescola.uol.com.br/biologia/sistema-excretor.htm" target="_blank">
+                <p id="textos">https://brasilescola.uol.com.br/biologia/sistema-excretor.htm</p>
+            </a>
+            <a href="" target="_blank">
+                <p id="textos"></p>
+            </a>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>
+
 </html>

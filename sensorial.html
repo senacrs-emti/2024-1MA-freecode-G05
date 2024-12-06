@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./sensorial.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/10688/10688622.png" type="image/x-icon">
 </head>
+
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -28,7 +33,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div vw class="enabled">
@@ -41,7 +69,8 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
-           <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js" data-account="lqELz1dV9X"></script>
+        <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
+            data-account="lqELz1dV9X"></script>
         <div class="base">
             <div class="Nomedosistema">
                 <h1>Sistema Sensorial</h1>
@@ -49,116 +78,125 @@
             <img class="sistemasfoto"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzrKKd-TIVxPlmI1UDfOYzZ5q0Ci7paeIWphdLHRV9xVVBosGyqUUnC9WzLoF5kE8BOcQ&usqp=CAU"
                 alt="">
-                <div class="coração">
-                    <div id="coração">
-                        <h1>Lobo Frontal</h1>
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.E-uMjgbcK8vHhQbk5-_wRgHaHa&pid=Api&P=0&h=180" alt="">
-                        <p>É a parte que mais diferencia o humano como racional do resto dos outros animais. É nele que se regula a memória funcional, linguagem, e movimentos voluntários.
-                        </p>
-                    </div>
+            <div class="coração">
+                <div id="coração">
+                    <h1>Lobo Frontal</h1>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.E-uMjgbcK8vHhQbk5-_wRgHaHa&pid=Api&P=0&h=180" alt="">
+                    <p>É a parte que mais diferencia o humano como racional do resto dos outros animais. É nele que se
+                        regula a memória funcional, linguagem, e movimentos voluntários.
+                    </p>
                 </div>
-                <div class="veia">
-                    <div id="veia">
-                        <h1>Lobo Parietal</h1>
-                        <img src="https://www.spinalcord.com/hs-fs/hubfs/Updated%20Web%20Page%20Images%202020/Brain-Highlighted-in-Parietal-Lobe-min.png?width=1000&name=Brain-Highlighted-in-Parietal-Lobe-min.png" alt="">
-                        <p>Regula os dados recebidos a partir de estímulos do sentido do tato, como a percepção de dor, de carícias agradáveis ou da sensação de frio ou calor. Ele também intervém na sensação de equilíbrio.</p>
-                    </div>
+            </div>
+            <div class="veia">
+                <div id="veia">
+                    <h1>Lobo Parietal</h1>
+                    <img src="https://www.spinalcord.com/hs-fs/hubfs/Updated%20Web%20Page%20Images%202020/Brain-Highlighted-in-Parietal-Lobe-min.png?width=1000&name=Brain-Highlighted-in-Parietal-Lobe-min.png"
+                        alt="">
+                    <p>Regula os dados recebidos a partir de estímulos do sentido do tato, como a percepção de dor, de
+                        carícias agradáveis ou da sensação de frio ou calor. Ele também intervém na sensação de
+                        equilíbrio.</p>
                 </div>
-                <div class="artéria">
-                    <div id="artéria">
-                        <h1>Lobo Temporal</h1>
-                        <img src="https://tse3.explicit.bing.net/th?id=OIP.r8xhqA-ZNByFyPowSwWwZAAAAA&pid=Api&P=0&h=180" alt="">
-                        <p>Percebe e reconhece os estímulos vinculados à memória e à emoção. Esse lobo está distribuído nas laterais da nossa cabeça, na altura das nossas orelhas, aproximadamente.</p>
-                    </div>
+            </div>
+            <div class="artéria">
+                <div id="artéria">
+                    <h1>Lobo Temporal</h1>
+                    <img src="https://tse3.explicit.bing.net/th?id=OIP.r8xhqA-ZNByFyPowSwWwZAAAAA&pid=Api&P=0&h=180"
+                        alt="">
+                    <p>Percebe e reconhece os estímulos vinculados à memória e à emoção. Esse lobo está distribuído nas
+                        laterais da nossa cabeça, na altura das nossas orelhas, aproximadamente.</p>
                 </div>
-                <div class="artériabaixo">
-                    <div id="artériabaixo">
-                        <h1>Lobo Occipital</h1>
-                        <img src="https://www.spinalcord.com/hubfs/img/occipital-lobe.png" alt="">
-                        <p>processa a informação dos dados visuais, já que lá se encontra o córtex visual. Por isso, graças a essa informação, podemos compreender o ambiente que nos rodeia.</p>
-                    </div>
+            </div>
+            <div class="artériabaixo">
+                <div id="artériabaixo">
+                    <h1>Lobo Occipital</h1>
+                    <img src="https://www.spinalcord.com/hubfs/img/occipital-lobe.png" alt="">
+                    <p>processa a informação dos dados visuais, já que lá se encontra o córtex visual. Por isso, graças
+                        a essa informação, podemos compreender o ambiente que nos rodeia.</p>
                 </div>
+            </div>
             <h1 class="introducao">Partes do Sistema E Modelos 3D</h1>
             <div>
-                <div class="sketchfab sketchfab-embed-wrapper"> <iframe title="Eye Anatomy" frameborder="0" allowfullscreen
-                        mozallowfullscreen="true" webkitallowfullscreen="true"
+                <div class="sketchfab sketchfab-embed-wrapper"> <iframe title="Eye Anatomy" frameborder="0"
+                        allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
                         allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
                         execution-while-out-of-viewport execution-while-not-rendered web-share width="550" height="550"
                         src="https://sketchfab.com/models/18712e1fe1e544a197775b8a08da000d/embed?camera=0&ui_theme=dark">
                     </iframe>
-                <div class="ladodomodelo3d">
-                    <p>
-                        Além dos clássicos 5 sentidos, a ciência comprovou que nós temos na verdade 7 sentidos, os 2
-                        sentidos extras são o equilíbrio e a propriocepção.
-                        O equilíbrio é a capacidade do cérebro de perceber que está caindo e se ajustar no espaço. A
-                        propriocepção é a capacidade do cérebro de saber sua posição no espaço e a força dos
-                        músculos sem usar a visão
-                    </p>
-                    <img src="https://static.vecteezy.com/system/resources/previews/001/201/290/non_2x/neuron-png.png"
+                    <div class="ladodomodelo3d">
+                        <p>
+                            Além dos clássicos 5 sentidos, a ciência comprovou que nós temos na verdade 7 sentidos, os 2
+                            sentidos extras são o equilíbrio e a propriocepção.
+                            O equilíbrio é a capacidade do cérebro de perceber que está caindo e se ajustar no espaço. A
+                            propriocepção é a capacidade do cérebro de saber sua posição no espaço e a força dos
+                            músculos sem usar a visão
+                        </p>
+                        <img src="https://static.vecteezy.com/system/resources/previews/001/201/290/non_2x/neuron-png.png"
+                            alt="">
+                    </div>
+                    <div class="modelo3d">
+                        <h1>Sistema Sensorial</h1>
+                        <p>
+                            O sistema sensorial compões os orgãos responsáveis pelos 5 sentidos do corpo humano: A
+                            visão, a audição, o olfato, o paladar, e o tato.
+                            Ele é reponsável por captar informações que o nosso corpo recebem e enviá-las para o sistema
+                            nervoso central, onde a informção vai ser tratada e analisada.
+                        </p>
+                        <a target="_blank" href="https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm">Veja
+                            mais sobre no
+                            Brasilescola</a>
+                    </div>
+                </div>
+                <div>
+                    <img id="visao" class="imagens imageminicial" src="./imagens/visao-normal-2.jpg" alt="">
+                    <div class="basedasimagens">
+                        <h1>Visão</h1>
+                        <p>
+                            O olho é orgão responsável pela visão. O olho é um orgão sensível e complexo, onde a luz
+                            atravessa o nosso olho e passar por diversas etapas até ser analisada pelo nosso sistema
+                            nerovoso.
+                        </p>
+                        <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/visao.htm">Ver
+                            mais</a>
+                    </div>
+                </div>
+                <div>
+                    <img id="audicao" class="imagens"
+                        src="https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg"
                         alt="">
+                    <div class="basedasimagens">
+                        <h1>Audição</h1>
+                        <p>
+                            Os ouvidos, ou orelhas, são os orgãos responsáveis pela audição. Os nossos ouvidos possuem
+                            uma estrutura interna extremamente complexa com várias células especializadas para o
+                            tratamento do som.
+                            O som depois de traduzido para informações é interpretado pelo nosso sistema nervoso, que
+                            pode responder como um som agudo, grave, forte, etc.
+                        </p>
+                        <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/audicao.htm">Ver
+                            mais</a>
+                    </div>
                 </div>
-                <div class="modelo3d">
-                    <h1>Sistema Sensorial</h1>
-                    <p>
-                        O sistema sensorial compões os orgãos responsáveis pelos 5 sentidos do corpo humano: A
-                        visão, a audição, o olfato, o paladar, e o tato.
-                        Ele é reponsável por captar informações que o nosso corpo recebem e enviá-las para o sistema
-                        nervoso central, onde a informção vai ser tratada e analisada.
-                    </p>
-                    <a target="_blank" href="https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm">Veja mais sobre no
-                        Brasilescola</a>
+                <div>
+                    <img id="olfato" class="imagens"
+                        src="https://i0.wp.com/sanar-hub.s3.amazonaws.com/docx-imgs/SM-Vias-A-reas-docx-media/media/image1.png?resize=640%2C823&ssl=1"
+                        alt="">
+                    <div class="basedasimagens">
+                        <h1>Olfato</h1>
+                        <p>
+                            O nariz é orgão responsável pelo olfato. O nosso nariz possuí células nervosas que são
+                            capazes de sentir e interpetar diferentes cheiros e odores.
+                            Quando o odor passa pelo nosso nariz ele é traduzido para informações que são processadas
+                            pelo nosso cérebro, se o cheiro pode ser algo que prejudicaria nossa saúde, seria
+                            interpretado como um cheiro ruim.
+                        </p>
+                        <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/olfato.htm">Ver
+                            mais</a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img id="visao" class="imagens imageminicial" src="./imagens/visao-normal-2.jpg" alt="">
-                <div class="basedasimagens">
-                    <h1>Visão</h1>
-                    <p>
-                        O olho é orgão responsável pela visão. O olho é um orgão sensível e complexo, onde a luz
-                        atravessa o nosso olho e passar por diversas etapas até ser analisada pelo nosso sistema
-                        nerovoso.
-                    </p>
-                    <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/visao.htm">Ver
-                        mais</a>
-                </div>
-            </div>
-            <div>
-                <img id="audicao" class="imagens"
-                    src="https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg"
-                    alt="">
-                <div class="basedasimagens">
-                    <h1>Audição</h1>
-                    <p>
-                        Os ouvidos, ou orelhas, são os orgãos responsáveis pela audição. Os nossos ouvidos possuem
-                        uma estrutura interna extremamente complexa com várias células especializadas para o
-                        tratamento do som.
-                        O som depois de traduzido para informações é interpretado pelo nosso sistema nervoso, que
-                        pode responder como um som agudo, grave, forte, etc.
-                    </p>
-                    <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/audicao.htm">Ver
-                        mais</a>
-                </div>
-            </div>
-            <div>
-                <img id="olfato" class="imagens"
-                    src="https://i0.wp.com/sanar-hub.s3.amazonaws.com/docx-imgs/SM-Vias-A-reas-docx-media/media/image1.png?resize=640%2C823&ssl=1"
-                    alt="">
-                <div class="basedasimagens">
-                    <h1>Olfato</h1>
-                    <p>
-                        O nariz é orgão responsável pelo olfato. O nosso nariz possuí células nervosas que são
-                        capazes de sentir e interpetar diferentes cheiros e odores.
-                        Quando o odor passa pelo nosso nariz ele é traduzido para informações que são processadas
-                        pelo nosso cérebro, se o cheiro pode ser algo que prejudicaria nossa saúde, seria
-                        interpretado como um cheiro ruim.
-                    </p>
-                    <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/olfato.htm">Ver mais</a>
-                </div>
-            </div>
-            <div>
-                <img id="paladar" class="imagens"
-                    src="https://static.todamateria.com.br/upload/an/at/anatomiadalinguapercepcaodesabores03-cke.jpg"
-                    alt="Teoria antiga
+                <div>
+                    <img id="paladar" class="imagens"
+                        src="https://static.todamateria.com.br/upload/an/at/anatomiadalinguapercepcaodesabores03-cke.jpg"
+                        alt="Teoria antiga
                     Como funciona
                     AMARGO
                     AZEDO
@@ -167,20 +205,21 @@
                     SALGADO
                     Papilas gustativas captam todos
                     os sabores">
-                <div class="basedasimagens">
-                    <h1>Paladar</h1>
-                    <p>
-                        A língua é o orgão responsável pelo paladar. A nossa língua está repleta de células
-                        sensoriais chamadas de papilas gustativas.
-                        As papilas gustativas são células capazes de sentir sabores e enviar a informação para o
-                        nosso cérebro, se o gosto for ruim a comida não deve estar em bom estado.
-                    </p>
-                    <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/paladar.htm">Ver mais</a>
+                    <div class="basedasimagens">
+                        <h1>Paladar</h1>
+                        <p>
+                            A língua é o orgão responsável pelo paladar. A nossa língua está repleta de células
+                            sensoriais chamadas de papilas gustativas.
+                            As papilas gustativas são células capazes de sentir sabores e enviar a informação para o
+                            nosso cérebro, se o gosto for ruim a comida não deve estar em bom estado.
+                        </p>
+                        <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/paladar.htm">Ver
+                            mais</a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img id="tato" class="imagens" src="https://s2.static.brasilescola.uol.com.br/be/2020/10/receptores-tateis.jpg"
-                    alt="Terminações nervosas livres
+                <div>
+                    <img id="tato" class="imagens"
+                        src="https://s2.static.brasilescola.uol.com.br/be/2020/10/receptores-tateis.jpg" alt="Terminações nervosas livres
                     Corpúsculo de Meissner
                     Terminações
                     de Ruffini
@@ -192,65 +231,95 @@
                     Músculo
                     Órgão terminal
                     do pelo">
-                <div class="basedasimagens">
-                    <h1>Tato</h1>
-                    <p>
-                        A pele é o orgão responsável pelo tato. Ao contrário do que a maioria pensa, o tato não é
-                        exclusivo das mãos, acontece que nossas mãos possuem sim muitas células sensorias do tato,
-                        muito mais que qualquer lugar do nosso corpo, mas toda nossa pele é responsável pelo tato.
-                        O tato é a sensação de toque, as células podem determinar se algo é áspero ou liso, quente
-                        ou frio, etc.
-                    </p>
-                    <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/tato.htm">Ver mais
-                    </a>
+                    <div class="basedasimagens">
+                        <h1>Tato</h1>
+                        <p>
+                            A pele é o orgão responsável pelo tato. Ao contrário do que a maioria pensa, o tato não é
+                            exclusivo das mãos, acontece que nossas mãos possuem sim muitas células sensorias do tato,
+                            muito mais que qualquer lugar do nosso corpo, mas toda nossa pele é responsável pelo tato.
+                            O tato é a sensação de toque, as células podem determinar se algo é áspero ou liso, quente
+                            ou frio, etc.
+                        </p>
+                        <a target="_blank" href="https://brasilescola.uol.com.br/oscincosentidos/tato.htm">Ver mais
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img id="sextosentido" class="imagens" src="https://media.istockphoto.com/vectors/illustration-of-human-senses-vector-id948490802?k=20&m=948490802&s=612x612&w=0&h=Jxz-hXn54CVZYofGbbq8vaJrybcihI5cCASRCoeg_nw=" alt="Senses of effort
+                <div>
+                    <img id="sextosentido" class="imagens"
+                        src="https://media.istockphoto.com/vectors/illustration-of-human-senses-vector-id948490802?k=20&m=948490802&s=612x612&w=0&h=Jxz-hXn54CVZYofGbbq8vaJrybcihI5cCASRCoeg_nw="
+                        alt="Senses of effort
                 Determine body's position in space
                 Control limbs
                 PROPRIOCEPTION
                 Sense of force
                 or of heaviness">
-                <div class="basedasimagens">
-                    <h1>Sexto-Sentido</h1>
-                    <p>
-                        Os sentidos do nosso corpo são descritos na maior parte das vezes como apenas 5, porém
-                        muitos acreditam que exista o sexto-sentido, uma super percepção, mas nada comprovado pela
-                        ciência.
-                        O sexto-sentido é muitas vezes retratado em culturas espirituais, e dizem que ele é mais
-                        forte nas mulheres
-                    </p>
-                    <a target="_blank" href="https://www.tuasaude.com/propriocepcao/">Ver mais</a>
+                    <div class="basedasimagens">
+                        <h1>Sexto-Sentido</h1>
+                        <p>
+                            Os sentidos do nosso corpo são descritos na maior parte das vezes como apenas 5, porém
+                            muitos acreditam que exista o sexto-sentido, uma super percepção, mas nada comprovado pela
+                            ciência.
+                            O sexto-sentido é muitas vezes retratado em culturas espirituais, e dizem que ele é mais
+                            forte nas mulheres
+                        </p>
+                        <a target="_blank" href="https://www.tuasaude.com/propriocepcao/">Ver mais</a>
+                    </div>
                 </div>
+                <a href="outros-quizz/qsensorial1.html" class="quiz">Fazer Quiz</a>
             </div>
-            <a href="outros-quizz/qsensorial1.html" class="quiz">Fazer Quiz</a>
-        </div>
     </main>
     <footer>
         <div class="integrantes">
             <h1>Integrantes</h1>
-           <a href="https://github.com/Jean-Dalpra" target="_blank"><p id="pessoas">Jean Dalpra</p></a>
-           <a href="https://github.com/GABRIEL-AIROLDI" target="_blank"><p id="pessoas">Gabriel Airoldi</p></a>
-           <a href="https://github.com/Miguel-Naiba" target="_blank"><p id="pessoas">Miguel Naiba</p></a>
-           <a href="https://github.com/GUI-BK" target="_blank"><p id="pessoas">Guilherme Betch</p></a>
+            <a href="https://github.com/Jean-Dalpra" target="_blank">
+                <p id="pessoas">Jean Dalpra</p>
+            </a>
+            <a href="https://github.com/GABRIEL-AIROLDI" target="_blank">
+                <p id="pessoas">Gabriel Airoldi</p>
+            </a>
+            <a href="https://github.com/Miguel-Naiba" target="_blank">
+                <p id="pessoas">Miguel Naiba</p>
+            </a>
+            <a href="https://github.com/GUI-BK" target="_blank">
+                <p id="pessoas">Guilherme Betch</p>
+            </a>
         </div>
         <div class="fimagem">
             <h1>Imagens</h1>
-            <a href="https://www.todamateria.com.br/sistema-sensorial/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistema-sensorial/</p></a>
-            <a href="https://www.todamateria.com.br/sentidos-do-corpo-humano/" target="_blank"><p id="supa">https://www.todamateria.com.br/sentidos-do-corpo-humano/</p></a>
-            <a href="https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm" target="_blank"><p id="supa">https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm</p></a>
-            <a href="https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg" target="_blank"><p id="supa">https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg</p></a>
+            <a href="https://www.todamateria.com.br/sistema-sensorial/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistema-sensorial/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sentidos-do-corpo-humano/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sentidos-do-corpo-humano/</p>
+            </a>
+            <a href="https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm" target="_blank">
+                <p id="supa">https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm</p>
+            </a>
+            <a href="https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg"
+                target="_blank">
+                <p id="supa">
+                    https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg
+                </p>
+            </a>
         </div>
         <div class="referencias">
             <h1>Referências</h1>
-            <a href="https://www.todamateria.com.br/sistema-sensorial/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistema-sensorial/</p></a>
-            <a href="https://www.todamateria.com.br/sentidos-do-corpo-humano/" target="_blank"><p id="textos">https://www.todamateria.com.br/sentidos-do-corpo-humano/</p></a>
-            <a href="https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm" target="_blank"><p id="textos">https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm</p></a>
-            <a href="" target="_blank"><p id="textos"></p></a>
+            <a href="https://www.todamateria.com.br/sistema-sensorial/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistema-sensorial/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sentidos-do-corpo-humano/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sentidos-do-corpo-humano/</p>
+            </a>
+            <a href="https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm" target="_blank">
+                <p id="textos">https://brasilescola.uol.com.br/biologia/sistema-sensorial.htm</p>
+            </a>
+            <a href="" target="_blank">
+                <p id="textos"></p>
+            </a>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>
+
 </html>

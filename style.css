@@ -1,36 +1,48 @@
-html{
-scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 * {
 
     padding: 0;
     margin: 0;
-    cursor: url(./imagens/my-mouse-pointerindex.cur),auto;
+    cursor: url(./imagens/my-mouse-pointerindex.cur), auto;
 }
-a{
-    cursor: url(./imagens/my-mouse-pointerindexpointer.cur),pointer;
+
+a {
+    cursor: url(./imagens/my-mouse-pointerindexpointer.cur), pointer;
 }
-p{
+
+p {
     cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
 }
-h1{
+
+h1 {
     cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
 }
-input{
-cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+
+input {
+    cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
 }
+
 body::-webkit-scrollbar {
-    width: 17px;               /* width of the entire scrollbar */
-  }
-  body::-webkit-scrollbar-track {
-    background: #f1f1f1;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #04a31e;    /* color of the scroll thumb */
+    width: 17px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #04a31e;
+    /* color of the scroll thumb */
     border: 1px solid #028017;
-    height: 50px;  /* creates padding around scroll thumb */
-  }
+    height: 50px;
+    /* creates padding around scroll thumb */
+}
+
 /*Botões de subir/descer o header*/
 #btn2 {
     width: 30px;
@@ -45,17 +57,21 @@ body::-webkit-scrollbar {
     margin-top: 120px;
     border-color: #008b17;
 }
-#btn2:hover{
+
+#btn2:hover {
     background-color: #00c020;
-    border-color:  rgb(5, 54, 0);
+    border-color: rgb(5, 54, 0);
     height: 32px;
     width: 32px;
-    img{
-height: 22px;
-width: 22px;
+
+    img {
+        height: 22px;
+        width: 22px;
     }
+
     transition: 0.2s;
 }
+
 .btn2 {
     width: 30px;
     position: fixed;
@@ -67,6 +83,7 @@ width: 22px;
     background-color: #d3ebbb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .btn2cima {
     width: 30px;
     position: fixed;
@@ -79,44 +96,53 @@ width: 22px;
     border-bottom-right-radius: 18px;
     border-color: #04a31e;
 }
+
 .btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 #btn2 img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 .btn2cima img {
     width: 20px;
     height: 20px;
     margin-top: 2px;
 }
+
 /*Header que aparece quando se clica no botão para manter a página estática*/
 .headerdefundo {
     height: 170px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
-    top: 0; /* Header visível */
+    top: 0;
+    /* Header visível */
     display: grid;
     transition: 1s;
 }
-.headerdefundo2{
+
+.headerdefundo2 {
     height: 170px;
     width: 100%;
     background-color: #c9e3ae;
     border-radius: 2px;
-    top: 0; /* Header visível */
+    top: 0;
+    /* Header visível */
     display: grid;
-     opacity: 0%;
-     transition: 1.0s;
-     pointer-events: none;
+    opacity: 0%;
+    transition: 1.0s;
+    pointer-events: none;
 }
+
 .headerdefundo2 .Siste {
-    position: relative; /* Torna o elemento pai um contexto de posicionamento */
+    position: relative;
+    /* Torna o elemento pai um contexto de posicionamento */
     color: #04a31e;
     font-size: 40px;
     margin-left: 167.5px;
@@ -132,24 +158,32 @@ width: 22px;
     letter-spacing: 1px;
     padding-top: 1px;
     text-decoration: none;
-    z-index: 1; /* Mantém o texto acima do pseudo-elemento */
+    z-index: 1;
+    /* Mantém o texto acima do pseudo-elemento */
     transition: 1s;
 }
+
 .headerdefundo2 .Siste:after {
     content: "";
     position: absolute;
     background-color: #008b17;
     height: 3px;
     width: 0;
-    left: 0; /* Alinha com o início do elemento */
-    bottom: 5px; /* Posiciona a linha abaixo do elemento */
-    transition: width 0.3s ease; /* Adiciona uma transição suave */
-    z-index: -1; /* Garante que a linha fique abaixo do texto */
+    left: 0;
+    /* Alinha com o início do elemento */
+    bottom: 5px;
+    /* Posiciona a linha abaixo do elemento */
+    transition: width 0.3s ease;
+    /* Adiciona uma transição suave */
+    z-index: -1;
+    /* Garante que a linha fique abaixo do texto */
 }
+
 .headerdefundo2 .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 /*Menu de sistemas*/
 .headerdefundo2 ul {
     height: 80px;
@@ -161,6 +195,7 @@ width: 22px;
     box-shadow: 2px 2px 3px #008b17;
     transition: 1s;
 }
+
 .headerdefundo2 ul li {
     display: grid;
     height: 38px;
@@ -170,6 +205,7 @@ width: 22px;
     border: 1px solid #008b17;
     transition: 1s;
 }
+
 .headerdefundo2 a {
     position: relative;
     text-decoration: none;
@@ -182,6 +218,7 @@ width: 22px;
     margin-top: -4px;
     transition: 1s;
 }
+
 .headerdefundo2 a:after {
     content: "";
     position: absolute;
@@ -191,88 +228,105 @@ width: 22px;
     bottom: 6px;
     transition: 1s;
 }
+
 .headerdefundo2 .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
     transition: 1s;
 }
+
 .headerdefundo2 .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
     transition: 1s;
 }
+
 .headerdefundo2 .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
     transition: 1s;
 }
+
 .headerdefundo2 .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #ffd700;
 }
+
 .headerdefundo2 .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 .headerdefundo2 .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 .headerdefundo2 .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 .headerdefundo2 .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 .headerdefundo2 .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 .headerdefundo2 .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 .headerdefundo2 .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 .headerdefundo2 .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 .headerdefundo2 .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 .headerdefundo2 .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 .headerdefundo2 a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 /*Link para o index no header*/
 .headerdefundo .Siste {
-    position: relative; /* Torna o elemento pai um contexto de posicionamento */
+    position: relative;
+    /* Torna o elemento pai um contexto de posicionamento */
     color: #04a31e;
     font-size: 40px;
     margin-left: 167.5px;
@@ -288,23 +342,31 @@ width: 22px;
     letter-spacing: 1px;
     padding-top: 1px;
     text-decoration: none;
-    z-index: 1; /* Mantém o texto acima do pseudo-elemento */
+    z-index: 1;
+    /* Mantém o texto acima do pseudo-elemento */
 }
+
 .headerdefundo .Siste:after {
     content: "";
     position: absolute;
     background-color: #008b17;
     height: 3px;
     width: 0;
-    left: 0; /* Alinha com o início do elemento */
-    bottom: 5px; /* Posiciona a linha abaixo do elemento */
-    transition: width 0.3s ease; /* Adiciona uma transição suave */
-    z-index: -1; /* Garante que a linha fique abaixo do texto */
+    left: 0;
+    /* Alinha com o início do elemento */
+    bottom: 5px;
+    /* Posiciona a linha abaixo do elemento */
+    transition: width 0.3s ease;
+    /* Adiciona uma transição suave */
+    z-index: -1;
+    /* Garante que a linha fique abaixo do texto */
 }
+
 .headerdefundo .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 /*Menu de sistemas*/
 .headerdefundo ul {
     height: 80px;
@@ -315,6 +377,7 @@ width: 22px;
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
 }
+
 .headerdefundo ul li {
     display: grid;
     height: 38px;
@@ -323,6 +386,7 @@ width: 22px;
     background-color: #ffffff;
     border: 1px solid #008b17;
 }
+
 .headerdefundo a {
     position: relative;
     text-decoration: none;
@@ -334,6 +398,7 @@ width: 22px;
     padding: 10px;
     margin-top: -4px;
 }
+
 .headerdefundo a:after {
     content: "";
     position: absolute;
@@ -343,82 +408,98 @@ width: 22px;
     bottom: 6px;
     transition: 0.3s;
 }
+
 .headerdefundo .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
 }
+
 .headerdefundo .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
 }
+
 .headerdefundo .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
 }
+
 .headerdefundo .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #ffd700;
 }
+
 .headerdefundo .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 .headerdefundo .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 .headerdefundo .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 .headerdefundo .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 .headerdefundo .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 .headerdefundo .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 .headerdefundo .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 .headerdefundo .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 .headerdefundo .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 .headerdefundo .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 .headerdefundo a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 /* Estilo inicial do header */
 .header {
     height: 170px;
@@ -426,7 +507,8 @@ width: 22px;
     background-color: #c9e3ae;
     border-radius: 2px;
     position: fixed;
-    top: 0; /* Header visível */
+    top: 0;
+    /* Header visível */
     transition: top 1s ease, height 0.5s ease;
     display: grid;
 }
@@ -438,14 +520,17 @@ width: 22px;
     background-color: #c9e3ae;
     border-radius: 2px;
     position: fixed;
-    top: -180px; /* Header fora de vista */
-    transition: top 1s ease, height 0.5s ease; /* Igual ao .header */
+    top: -180px;
+    /* Header fora de vista */
+    transition: top 1s ease, height 0.5s ease;
+    /* Igual ao .header */
     display: grid;
 }
 
 /*Link para o index no header*/
 header .Siste {
-    position: relative; /* Torna o elemento pai um contexto de posicionamento */
+    position: relative;
+    /* Torna o elemento pai um contexto de posicionamento */
     color: #04a31e;
     font-size: 40px;
     margin-left: 167.5px;
@@ -461,23 +546,31 @@ header .Siste {
     letter-spacing: 1px;
     padding-top: 1px;
     text-decoration: none;
-    z-index: 1; /* Mantém o texto acima do pseudo-elemento */
+    z-index: 1;
+    /* Mantém o texto acima do pseudo-elemento */
 }
+
 header .Siste:after {
     content: "";
     position: absolute;
     background-color: #008b17;
     height: 3px;
     width: 0;
-    left: 0; /* Alinha com o início do elemento */
-    bottom: 5px; /* Posiciona a linha abaixo do elemento */
-    transition: width 0.3s ease; /* Adiciona uma transição suave */
-    z-index: -1; /* Garante que a linha fique abaixo do texto */
+    left: 0;
+    /* Alinha com o início do elemento */
+    bottom: 5px;
+    /* Posiciona a linha abaixo do elemento */
+    transition: width 0.3s ease;
+    /* Adiciona uma transição suave */
+    z-index: -1;
+    /* Garante que a linha fique abaixo do texto */
 }
+
 header .Siste:hover:after {
     width: 550px;
     margin-left: 10px;
 }
+
 /*Menu de sistemas*/
 header ul {
     height: 80px;
@@ -488,6 +581,7 @@ header ul {
     margin-left: 167.5px;
     box-shadow: 2px 2px 3px #008b17;
 }
+
 header ul li {
     display: grid;
     height: 38px;
@@ -496,6 +590,7 @@ header ul li {
     background-color: #ffffff;
     border: 1px solid #008b17;
 }
+
 header a {
     position: relative;
     text-decoration: none;
@@ -507,6 +602,7 @@ header a {
     padding: 10px;
     margin-top: -4px;
 }
+
 header a:after {
     content: "";
     position: absolute;
@@ -516,82 +612,98 @@ header a:after {
     bottom: 6px;
     transition: 0.3s;
 }
+
 header .card:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(187, 0, 0);
 }
+
 header .resp:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #87CEEB;
 }
+
 header .dige:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #FFA500;
 }
+
 header .nerv:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #ffd700;
 }
+
 header .endo:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #9370db;
 }
+
 header .excr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #aa8f15;
 }
+
 header .urin:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #000080;
 }
+
 header .esqu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: rgb(148, 148, 148);
 
 }
+
 header .musc:hover:after {
     width: 120px;
     margin-left: 10px;
-    background-color:  #ab3130;
+    background-color: #ab3130;
 
 }
+
 header .imun:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #006400;
 }
+
 header .linf:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #556B2F;
 }
+
 header .sens:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #DA70D6;
 }
+
 header .repr:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: pink;
 }
+
 header .tegu:hover:after {
     width: 120px;
     margin-left: 10px;
     background-color: #f1d299;
 }
+
 header a:hover:after {
     width: 120px;
     margin-left: 10px;
 }
+
 /*maior parte do site e maindepois, para quando o botão ser apertado o site permanecer estático*/
 .main {
     display: grid;
@@ -599,6 +711,7 @@ header a:hover:after {
     background-color: rgb(233, 235, 235);
     width: 100%;
 }
+
 .maindepois {
     display: grid;
     height: 7600px;
@@ -606,59 +719,69 @@ header a:hover:after {
     width: 1349px;
     margin-top: -170px;
 }
+
 /*descrição da feira, link pros githubs*/
 footer {
     height: 450px;
     background-color: rgb(52, 109, 52);
     display: grid;
 }
-footer a p{
-cursor:url(./imagens/my-mouse-pointerindexpointer.cur),pointer;
+
+footer a p {
+    cursor: url(./imagens/my-mouse-pointerindexpointer.cur), pointer;
 }
+
 footer img {
     height: 100px;
     width: 200px;
     margin-top: 20px;
     margin-left: 20px;
 }
+
 footer h1 {
-    font-size:large;
-    margin-left: 150px;
-    margin-top: 50px;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-footer h2{
     font-size: large;
     margin-left: 150px;
     margin-top: 50px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer h3{
+
+footer h2 {
     font-size: large;
     margin-left: 150px;
     margin-top: 50px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-footer ul li{
+
+footer h3 {
+    font-size: large;
+    margin-left: 150px;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer ul li {
     margin-left: 100px;
     margin-top: 0px;
 }
-#pessoas{
+
+#pessoas {
     text-align: center;
     color: white;
     margin-top: 20px;
     text-decoration: underline white;
 
 }
-.integrantes{
+
+.integrantes {
     width: 400px;
     height: 400px;
     position: absolute;
 }
-.fimagem{
+
+.fimagem {
     width: 400px;
     height: 400px;
     float: left;
@@ -666,24 +789,27 @@ footer ul li{
     margin-top: -105px;
 }
 
-.referencias{
+.referencias {
     position: absolute;
     margin-left: 800px;
 }
-#supa{
+
+#supa {
     text-align: center;
     margin-right: 30px;
     color: white;
     margin-top: 21px;
     text-decoration: underline white;
 }
-#textos{
+
+#textos {
     text-align: right;
     color: white;
     text-decoration: underline white;
     margin-top: 20px;
-   
+
 }
+
 /*Dentro da main*/
 .base {
     width: 1000px;
@@ -694,12 +820,14 @@ footer ul li{
     margin-top: 20px;
     box-shadow: 10px 10px 8px 10px #888888;
 }
+
 /*Foto de todos os sistemas*/
 .sistemasfoto {
     height: 500px;
     width: 1000px;
     margin-top: 30px;
 }
+
 /*primeiro texto do site*/
 .base .textoinicial {
     font-size: 26px;
@@ -709,6 +837,7 @@ footer ul li{
     margin-left: 10px;
     margin-top: 10px;
 }
+
 /*apresenta todos os sistemas, debaixo da imagem dos sistemas*/
 main .introducao {
     color: #000000;
@@ -720,6 +849,7 @@ main .introducao {
     letter-spacing: 2px;
     text-decoration: underline double;
 }
+
 /*cada uma das imagens de cada sistema*/
 .imagens {
     height: 400px;
@@ -729,6 +859,7 @@ main .introducao {
     box-shadow: 0px 0px 3px 1px black;
     margin-top: 100px;
 }
+
 /*tudo que acompanha as imagens de cada sistema*/
 .basedasimagens {
     display: grid;
@@ -738,6 +869,7 @@ main .introducao {
     margin-left: 422px;
     background-color: #e4e4e4;
 }
+
 .basedasimagens h1 {
     font-size: 27px;
     margin-left: 20px;
@@ -745,6 +877,7 @@ main .introducao {
     text-decoration: underline;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .basedasimagens h1:hover {
     font-size: 29px;
     margin-left: 20px;
@@ -753,6 +886,7 @@ main .introducao {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.3s;
 }
+
 .basedasimagens p {
     height: 200px;
     width: 500px;
@@ -760,12 +894,14 @@ main .introducao {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .basedasimagens p:hover {
     height: 200px;
     width: 530px;
     font-size: 20.5px;
     transition: 0.2s;
 }
+
 .basedasimagens a {
     height: 30px;
     width: 370px;
@@ -779,11 +915,12 @@ main .introducao {
     padding-left: 15px;
     padding-top: 3px;
 }
+
 .basedasimagens a:hover {
     height: 31px;
     width: 400px;
     font-size: 23px;
-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .header-search {
@@ -807,6 +944,7 @@ transition: 0.2s;
     color: #a0a0a0;
     font-size: 18px;
 }
+
 /* Caixa de sugestões */
 .suggestions-box {
     background-color: #ffffff;
@@ -817,31 +955,39 @@ transition: 0.2s;
     overflow-y: auto;
     z-index: 9999;
     display: none;
-    position: absolute; /* Altere para 'absolute' para que fique dentro do container */
-    top: 60px;  /* Ajuste conforme necessário */
+    position: absolute;
+    /* Altere para 'absolute' para que fique dentro do container */
+    top: 60px;
+    /* Ajuste conforme necessário */
 }
 
 /* Torna a suggestions-box visível ao fazer uma busca */
-#search-input:focus + #suggestions,
-#search-input:not(:placeholder-shown) + #suggestions {
-    display: block;  /* Exibe quando o input é focado ou preenchido */
+#search-input:focus+#suggestions,
+#search-input:not(:placeholder-shown)+#suggestions {
+    display: block;
+    /* Exibe quando o input é focado ou preenchido */
 }
 
 /* Estilo para a barra de rolagem */
 .suggestions-box::-webkit-scrollbar {
-    width: 15px; /* Largura da barra */
-    background-color: #f0f0f0; /* Cor de fundo */
+    width: 15px;
+    /* Largura da barra */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
     border-radius: 8px;
 }
 
 .suggestions-box::-webkit-scrollbar-thumb {
-    background-color: #04a31e; /* Cor do "thumb" */
+    background-color: #04a31e;
+    /* Cor do "thumb" */
     border-radius: 8px;
-    border: 1px solid #028017; /* Borda do "thumb" */
+    border: 1px solid #028017;
+    /* Borda do "thumb" */
 }
 
 .suggestions-box::-webkit-scrollbar-thumb:hover {
-    background-color: #028017; /* Cor ao passar o mouse */
+    background-color: #028017;
+    /* Cor ao passar o mouse */
 }
 
 /* Estilo dos links */
@@ -857,17 +1003,23 @@ transition: 0.2s;
     background-color: #04a31e;
     color: white;
 }
+
 .suggestion-link.highlight {
     background-color: #04a31e;
-    color: white;  /* Destaca a sugestão */
+    color: white;
+    /* Destaca a sugestão */
 }
-.suggestion-link.highlight, .suggestion-item.highlight {
+
+.suggestion-link.highlight,
+.suggestion-item.highlight {
     background-color: #04a31e;
-    color: white;  /* Destaca a sugestão */
+    color: white;
+    /* Destaca a sugestão */
 }
 
 .header-search input.highlight {
-    background-color: #e0e0e0;  /* Por exemplo, destaque sutil no input */
+    background-color: #e0e0e0;
+    /* Por exemplo, destaque sutil no input */
 }
 
 /* Caixa de sugestões */
@@ -880,36 +1032,43 @@ transition: 0.2s;
     overflow-y: auto;
     z-index: 9999;
     display: none;
-    position: absolute; /* Altere para 'absolute' para que fique dentro do container */
-    top: 60px;  /* Ajuste conforme necessário */
+    position: absolute;
+    /* Altere para 'absolute' para que fique dentro do container */
+    top: 60px;
+    /* Ajuste conforme necessário */
 }
 
 /* Torna a suggestions-box visível ao fazer uma busca */
-#search-input-header:focus + #suggestions-header,
-#search-input-header:not(:placeholder-shown) + #suggestions-header {
+#search-input-header:focus+#suggestions-header,
+#search-input-header:not(:placeholder-shown)+#suggestions-header {
     display: block;
 }
 
-#search-input-branco:focus + #suggestions-branco,
-#search-input-branco:not(:placeholder-shown) + #suggestions-branco {
+#search-input-branco:focus+#suggestions-branco,
+#search-input-branco:not(:placeholder-shown)+#suggestions-branco {
     display: block;
 }
 
 /* Estilo para a barra de rolagem */
 .suggestions-branco::-webkit-scrollbar {
-    width: 15px; /* Largura da barra */
-    background-color: #f0f0f0; /* Cor de fundo */
+    width: 15px;
+    /* Largura da barra */
+    background-color: #f0f0f0;
+    /* Cor de fundo */
     border-radius: 8px;
 }
 
 .suggestions-branco::-webkit-scrollbar-thumb {
-    background-color: #04a31e; /* Cor do "thumb" */
+    background-color: #04a31e;
+    /* Cor do "thumb" */
     border-radius: 8px;
-    border: 1px solid #028017; /* Borda do "thumb" */
+    border: 1px solid #028017;
+    /* Borda do "thumb" */
 }
 
 .suggestions-branco::-webkit-scrollbar-thumb:hover {
-    background-color: #028017; /* Cor ao passar o mouse */
+    background-color: #028017;
+    /* Cor ao passar o mouse */
 }
 
 /* Estilo dos links */
@@ -925,22 +1084,27 @@ transition: 0.2s;
     background-color: #04a31e;
     color: white;
 }
+
 .suggestion-item.highlight {
     background-color: #04a31e;
-    color: white;  /* Destaca a sugestão */
+    color: white;
+    /* Destaca a sugestão */
 }
-#search-input-branco:focus + #suggestions-branco,
-#search-input-branco:not(:placeholder-shown) + #suggestions-branco {
+
+#search-input-branco:focus+#suggestions-branco,
+#search-input-branco:not(:placeholder-shown)+#suggestions-branco {
     display: block;
 }
-.suggestion-item{
-padding-top: 7px;
-padding-bottom: 7px;
-font-size: 16px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-text-align: center;
+
+.suggestion-item {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
-.suggestion-item:hover{
+
+.suggestion-item:hover {
     padding-top: 7px;
     padding-bottom: 7px;
     font-size: 16px;
@@ -948,5 +1112,4 @@ text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: white;
-    }
-
+}

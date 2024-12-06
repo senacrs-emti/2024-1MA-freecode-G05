@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,14 @@
     <link rel="shortcut icon"
         href="https://thumbs.dreamstime.com/b/estilo-de-desenho-animado-do-%C3%ADcone-rim-urin%C3%A1rio-vetor-renal-para-web-isolado-em-fundo-branco-190874111.jpg">
 </head>
+
 <body>
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
         <ul class="menusistemas">
             <li><a href="./base.html" class="card">Cardiovascular</a></li>
             <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
@@ -28,7 +34,30 @@
             <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
         </ul>
     </header>
-    <div id="branco" class=""></div>
+
+    <div id="branco" class="headerdefundo">
+        <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+        <ul class="menusistemas">
+            <li><a href="./base.html" class="card">Cardiovascular</a></li>
+            <li><a href="./respiratorio.html" class="resp">Respiratório</a></li>
+            <li><a href="./Digestório.html" class="dige">Digestório</a></li>
+            <li><a href="./nervoso.html" class="nerv">Nervoso</a></li>
+            <li><a href="./endocrino.html" class="endo">Endócrino</a></li>
+            <li><a href="./Excretor.html" class="excr">Excretor</a></li>
+            <li><a href="./urinario.html" class="urin">Urinário</a></li>
+            <li><a href="./esqueletico.html" class="esqu">Esquelético</a></li>
+            <li><a href="./muscular.html" class="musc">Muscular</a></li>
+            <li><a href="./imunologico.html" class="imun">Imunológico</a></li>
+            <li><a href="./linfatico.html" class="linf">Linfático</a></li>
+            <li><a href="./sensorial.html" class="sens">Sensorial</a></li>
+            <li><a href="./reprodutor.html" class="repr">Reprodutor</a></li>
+            <li><a href="./tegumentar.html" class="tegu">Tegumentar</a></li>
+        </ul>
+    </div>
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div vw class="enabled">
@@ -41,7 +70,8 @@
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         </script>
-           <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js" data-account="lqELz1dV9X"></script>
+        <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
+            data-account="lqELz1dV9X"></script>
         <div class="base">
             <div class="Nomedosistema">
                 <h1>Sistema Urinário</h1>
@@ -51,28 +81,36 @@
                 <div id="coração">
                     <h1>Rins</h1>
                     <img src="https://cdn-icons-png.flaticon.com/512/822/822151.png" alt="">
-                    <p>Os rins são órgãos do sistema urinário, porém que atuam diretamente na eliminação de resíduos que resultam da ação do metabolismo do organismo.</p>
+                    <p>Os rins são órgãos do sistema urinário, porém que atuam diretamente na eliminação de resíduos que
+                        resultam da ação do metabolismo do organismo.</p>
                 </div>
             </div>
             <div class="veia">
                 <div id="veia">
                     <h1>Ureter</h1>
-                    <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Ureter-kidneys-tubes-renal-urinary-512.png" alt="Ureter">
-                    <p>É um tubo que liga o rim à bexiga, ele transporta a urina dos rins para a bexiga, sendo um ureter para cada rim, que auxiliam na excreção das substâncias indesejadas.</p>
+                    <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Ureter-kidneys-tubes-renal-urinary-512.png"
+                        alt="Ureter">
+                    <p>É um tubo que liga o rim à bexiga, ele transporta a urina dos rins para a bexiga, sendo um ureter
+                        para cada rim, que auxiliam na excreção das substâncias indesejadas.</p>
                 </div>
             </div>
             <div class="artéria">
                 <div id="artéria">
                     <h1>Bexiga Urinária</h1>
-                    <img src="https://static.vecteezy.com/system/resources/previews/018/972/028/original/urinary-bladder-internal-organs-of-human-png.png" alt="">
-                    <p>A bexiga urinária é o órgão responsável por armazenar a urina produzida pelos rins e transportada pelos ureteres. Além do armazenamento é ela quem elimina a urina</p>
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/972/028/original/urinary-bladder-internal-organs-of-human-png.png"
+                        alt="">
+                    <p>A bexiga urinária é o órgão responsável por armazenar a urina produzida pelos rins e transportada
+                        pelos ureteres. Além do armazenamento é ela quem elimina a urina</p>
                 </div>
             </div>
             <div class="artériabaixo">
                 <div id="artériabaixo">
                     <h1>Uretra</h1>
-                    <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Urethra-urinary-bladder-male-genital-512.png" alt="">
-                    <p>A uretra é o canal responsável por conduzir o caminho da urina para fora do corpo. Ela está ligada à bexiga urinária. Nos homens a uretra termina no pênis, já nas mulheres termina na vulva</p>
+                    <img src="https://cdn4.iconfinder.com/data/icons/human-organs-2-2/124/Urethra-urinary-bladder-male-genital-512.png"
+                        alt="">
+                    <p>A uretra é o canal responsável por conduzir o caminho da urina para fora do corpo. Ela está
+                        ligada à bexiga urinária. Nos homens a uretra termina no pênis, já nas mulheres termina na vulva
+                    </p>
                 </div>
             </div>
             <h1 class="introducao">Partes do Sistema E Modelos 3D</h1>
@@ -82,72 +120,75 @@
                     execution-while-out-of-viewport execution-while-not-rendered web-share width="550" height="550"
                     src="https://sketchfab.com/models/318d5aca958149918c17f94daf12e7c2/embed?camera=0&ui_theme=dark">
                 </iframe>
-            <div class="ladodomodelo3d">
-                <p>Dois rins, dois ureteres, a bexiga urinária e a uretra.
-                    Eles atuam de maneira conjunta, garantindo a filtração do sangue, a produção da urina e sua
-                    eliminação.
-                    Como sabemos, o sistema urinário é o sistema responsável pela formação da urina. A urina é
-                    produzida nos rins, passa pelos ureteres é armazenada temporariamente na bexiga e
-                    posteriormente lançada para o exterior do corpo via uretra.
-                </p>
-                <img src="https://cdn-icons-png.freepik.com/512/16463/16463148.png" alt="">
+                <div class="ladodomodelo3d">
+                    <p>Dois rins, dois ureteres, a bexiga urinária e a uretra.
+                        Eles atuam de maneira conjunta, garantindo a filtração do sangue, a produção da urina e sua
+                        eliminação.
+                        Como sabemos, o sistema urinário é o sistema responsável pela formação da urina. A urina é
+                        produzida nos rins, passa pelos ureteres é armazenada temporariamente na bexiga e
+                        posteriormente lançada para o exterior do corpo via uretra.
+                    </p>
+                    <img src="https://cdn-icons-png.freepik.com/512/16463/16463148.png" alt="">
+                </div>
+                <div class="modelo3d">
+                    <h1>Sistema Urinário</h1>
+                    <p>O sistema urinário, ou aparelho urinário, é o sistema responsável por produzir, armazenar
+                        temporariamente e eliminar a urina, um composto que garante a eliminação de substâncias que
+                        estão em excesso no organismo e resíduos oriundos do metabolismo. A seguir falaremos mais
+                        sobre esse importante sistema, que é essencial para garantir a manutenção do equilíbrio
+                        interno do nosso corpo.</p>
+                    <a target="_blank" href="https://www.todamateria.com.br/sistema-urinario/">Veja mais sobre no
+                        Brasilescola</a>
+                </div>
             </div>
-            <div class="modelo3d">
-                <h1>Sistema Urinário</h1>
-                <p>O sistema urinário, ou aparelho urinário, é o sistema responsável por produzir, armazenar
-                    temporariamente e eliminar a urina, um composto que garante a eliminação de substâncias que
-                    estão em excesso no organismo e resíduos oriundos do metabolismo. A seguir falaremos mais
-                    sobre esse importante sistema, que é essencial para garantir a manutenção do equilíbrio
-                    interno do nosso corpo.</p>
-                <a target="_blank" href="https://www.todamateria.com.br/sistema-urinario/">Veja mais sobre no
-                    Brasilescola</a>
+            <div>
+                <img class="imagens imageminicial"
+                    src="https://www.nephrocare.com.br/fileadmin/_processed_/5/3/csm_kidney-basics2_10cb5ecd87.jpg"
+                    alt="">
+                <div class="basedasimagens">
+                    <h1>Rins</h1>
+                    <p> Os rins são dois no nosso corpo, sendo eles os órgãos responsáveis
+                        pela produção da urina. Estão localizados junto à parede posterior do abdômen, abaixo do
+                        diafragma.
+                        Tem 10 cm de comprimento, peso de 120 a 280g, apresentando uma borda convexa e uma borda
+                        côncava. Na
+                        parte côncava, há
+                        o hilo, local onde entram e saem vasos sanguíneos,
+                        nervos e saem os ureteres.</p>
+                    <a target="_blank" href="https://mundoeducacao.uol.com.br/biologia/os-rins.htm">Ver
+                        mais</a>
+                </div>
             </div>
-        </div>
-        <div>
-            <img class="imagens imageminicial"
-                src="https://www.nephrocare.com.br/fileadmin/_processed_/5/3/csm_kidney-basics2_10cb5ecd87.jpg" alt="">
-            <div class="basedasimagens">
-                <h1>Rins</h1>
-                <p> Os rins são dois no nosso corpo, sendo eles os órgãos responsáveis
-                    pela produção da urina. Estão localizados junto à parede posterior do abdômen, abaixo do
-                    diafragma.
-                    Tem 10 cm de comprimento, peso de 120 a 280g, apresentando uma borda convexa e uma borda côncava. Na
-                    parte côncava, há
-                    o hilo, local onde entram e saem vasos sanguíneos,
-                    nervos e saem os ureteres.</p>
-                <a target="_blank" href="https://mundoeducacao.uol.com.br/biologia/os-rins.htm">Ver
-                    mais</a>
+            <div>
+                <img class="imagens"
+                    src="file:///C:/Users/jeanb/OneDrive/%C3%81rea%20de%20Trabalho/2024-1MA-freecode-G05/imagens/structure-ureter-structure-kidneys-infographics-vector-illustration-isolated-background-88254427.jpg"
+                    alt="">
+                <div class="basedasimagens">
+                    <h1>Ureteres</h1>
+                    <p>Os ureteres são ductos que levam a urina do rim para a bexiga. São encontrados em nosso corpo
+                        dois ureteres, cada um partindo de um dos rins. Em média, os ureteres apresentam de 25 a 30
+                        cm de comprimento e 4 a 5 mm de diâmetro.
+                    </p>
+                    <a target="_blank" href="https://www.kenhub.com/pt/library/anatomia/ureteres">Ver
+                        mais</a>
+                </div>
             </div>
-        </div>
-        <div>
-            <img class="imagens" src="file:///C:/Users/jeanb/OneDrive/%C3%81rea%20de%20Trabalho/2024-1MA-freecode-G05/imagens/structure-ureter-structure-kidneys-infographics-vector-illustration-isolated-background-88254427.jpg" alt="">
-            <div class="basedasimagens">
-                <h1>Ureteres</h1>
-                <p>Os ureteres são ductos que levam a urina do rim para a bexiga. São encontrados em nosso corpo
-                    dois ureteres, cada um partindo de um dos rins. Em média, os ureteres apresentam de 25 a 30
-                    cm de comprimento e 4 a 5 mm de diâmetro.
-                </p>
-                <a target="_blank"
-                    href="https://www.kenhub.com/pt/library/anatomia/ureteres">Ver
-                    mais</a>
+            <div>
+                <img class="imagens"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCxx0q_mXmpNH1XuD1RK5IT35j1s2hY87Sjg&s"
+                    alt="">
+                <div class="basedasimagens">
+                    <h1>Bexiga Urinária</h1>
+                    <p>
+                        A bexiga urinária é um órgão muscular oco que serve de reservatório para a urina e
+                        gradativamente distende-se conforme esse produto acumula-se. Há músculos próximos ao local
+                        de junção entre a uretra e a bexiga, que atuam regulando a micção.
+                    </p>
+                    <a target="_blank" href="https://www.kenhub.com/pt/library/anatomia/bexiga-e-uretra">Ver mais</a>
+                </div>
             </div>
-        </div>
-        <div>
-            <img class="imagens"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCxx0q_mXmpNH1XuD1RK5IT35j1s2hY87Sjg&s"
-                alt="">
-            <div class="basedasimagens">
-                <h1>Bexiga Urinária</h1>
-                <p>
-                    A bexiga urinária é um órgão muscular oco que serve de reservatório para a urina e
-                    gradativamente distende-se conforme esse produto acumula-se. Há músculos próximos ao local
-                    de junção entre a uretra e a bexiga, que atuam regulando a micção.
-                </p>
-                <a target="_blank" href="https://www.kenhub.com/pt/library/anatomia/bexiga-e-uretra">Ver mais</a>
-            </div>
-        </div>
-        <div>
-            <img class="imagens" src="https://static.escolakids.uol.com.br/2020/07/sistema-urinario.jpg" alt="Formação da Urina
+            <div>
+                <img class="imagens" src="https://static.escolakids.uol.com.br/2020/07/sistema-urinario.jpg" alt="Formação da Urina
             Arteriola aferente
             Arteriola eferente
             Glomérulo
@@ -158,78 +199,109 @@
             3
             4- Excreção
             Urina">
-            <div class="basedasimagens">
-                <h1>Uretra</h1>
-                <p>A uretra é um órgão que garante a eliminação da urina para o meio externo. A uretra
-                    tem 20 cm e pode ser dividida em três porções: prostática,
-                    membranosa e cavernosa. A prostática passa próxima à bexiga e no interior da
-                    próstata, a membranosa conecta-se com a cavernosa,
-                    que se localiza no interior do corpo cavernoso do pênis. A uretra da mulher apresenta cerca
-                    de 4 cm de comprimento.
-                </p>
-                <a target="_blank" href="https://mundoeducacao.uol.com.br/biologia/uretra.htm">Ver mais</a>
+                <div class="basedasimagens">
+                    <h1>Uretra</h1>
+                    <p>A uretra é um órgão que garante a eliminação da urina para o meio externo. A uretra
+                        tem 20 cm e pode ser dividida em três porções: prostática,
+                        membranosa e cavernosa. A prostática passa próxima à bexiga e no interior da
+                        próstata, a membranosa conecta-se com a cavernosa,
+                        que se localiza no interior do corpo cavernoso do pênis. A uretra da mulher apresenta cerca
+                        de 4 cm de comprimento.
+                    </p>
+                    <a target="_blank" href="https://mundoeducacao.uol.com.br/biologia/uretra.htm">Ver mais</a>
+                </div>
             </div>
-        </div>
-        <div>
-            <img id="urina" class="imagens" src="https://s3.static.brasilescola.uol.com.br/img/2019/06/formacao-da-urina.jpg"
-                alt="- Rim
+            <div>
+                <img id="urina" class="imagens"
+                    src="https://s3.static.brasilescola.uol.com.br/img/2019/06/formacao-da-urina.jpg" alt="- Rim
                 Ureter
                 Bexiga
                 Próstata
                 Uretra
                 Mulher
                 Homem">
-            <div class="basedasimagens">
-                <h1>Urina</h1>
-                <p>A formação da urina ocorre na região dos rins chamadas de néfrons. O sangue que chega aos glomérulos
-                    está em alta pressão e o glomérulo atua como uma membrana semipermeável, garantindo que
-                    parte do plasma passe para o interior da cápsula (filtração). O filtrado formado é
-                    semelhante ao plasma sanguíneo, porém não possui proteínas.
-                </p>
-                <a target="_blank" href="https://pt.wikipedia.org/wiki/Urina">Ver mais
-                </a>
+                <div class="basedasimagens">
+                    <h1>Urina</h1>
+                    <p>A formação da urina ocorre na região dos rins chamadas de néfrons. O sangue que chega aos
+                        glomérulos
+                        está em alta pressão e o glomérulo atua como uma membrana semipermeável, garantindo que
+                        parte do plasma passe para o interior da cápsula (filtração). O filtrado formado é
+                        semelhante ao plasma sanguíneo, porém não possui proteínas.
+                    </p>
+                    <a target="_blank" href="https://pt.wikipedia.org/wiki/Urina">Ver mais
+                    </a>
+                </div>
             </div>
-        </div>
-        <div>
-            <img id="excretorvsurinario" class="imagens"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin6VXoBfi-rAIEoqW2hHUBvDuBl-HjtnWHOUbStSQP6IHxV2pSpEC5-hUbNjeifQATL9SzlaV9u-tbRdgXxW_PkB3A8fYWyYla5pwYcyYaPP6r8T2wYs2In6TDFTzpUOhzi9DDtRi8LHM/s400/Asset+22-100.jpg"
-                alt="">
-            <div class="basedasimagens">
-                <h1>Diferenças</h1>
-                <p>
-                    O sistema urinário masculino e feminino apresentam os mesmos órgãos. Portanto, se você
-                    avaliar esse sistema em pessoas de sexos diferentes encontrará: dois rins, dois ureteres,
-                    uma bexiga urinária e uma uretra. Entretanto, algumas diferenças podem ser observadas.</p>
-                <a target="_blank" href="https://anamma.com.br/diferenca-entre-o-sistema-urinario-masculino-e-feminino/">Ver mais</a>
+            <div>
+                <img id="excretorvsurinario" class="imagens"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin6VXoBfi-rAIEoqW2hHUBvDuBl-HjtnWHOUbStSQP6IHxV2pSpEC5-hUbNjeifQATL9SzlaV9u-tbRdgXxW_PkB3A8fYWyYla5pwYcyYaPP6r8T2wYs2In6TDFTzpUOhzi9DDtRi8LHM/s400/Asset+22-100.jpg"
+                    alt="">
+                <div class="basedasimagens">
+                    <h1>Diferenças</h1>
+                    <p>
+                        O sistema urinário masculino e feminino apresentam os mesmos órgãos. Portanto, se você
+                        avaliar esse sistema em pessoas de sexos diferentes encontrará: dois rins, dois ureteres,
+                        uma bexiga urinária e uma uretra. Entretanto, algumas diferenças podem ser observadas.</p>
+                    <a target="_blank"
+                        href="https://anamma.com.br/diferenca-entre-o-sistema-urinario-masculino-e-feminino/">Ver
+                        mais</a>
+                </div>
             </div>
-        </div>
-        <a href="outros-quizz/qurinario1.html" class="quiz">Fazer Quiz</a>
+            <a href="outros-quizz/qurinario1.html" class="quiz">Fazer Quiz</a>
         </div>
     </main>
     <footer>
         <div class="integrantes">
             <h1>Integrantes</h1>
-           <a href="https://github.com/Jean-Dalpra" target="_blank"><p id="pessoas">Jean Dalpra</p></a>
-           <a href="https://github.com/GABRIEL-AIROLDI" target="_blank"><p id="pessoas">Gabriel Airoldi</p></a>
-           <a href="https://github.com/Miguel-Naiba" target="_blank"><p id="pessoas">Miguel Naiba</p></a>
-           <a href="https://github.com/GUI-BK" target="_blank"><p id="pessoas">Guilherme Betch</p></a>
+            <a href="https://github.com/Jean-Dalpra" target="_blank">
+                <p id="pessoas">Jean Dalpra</p>
+            </a>
+            <a href="https://github.com/GABRIEL-AIROLDI" target="_blank">
+                <p id="pessoas">Gabriel Airoldi</p>
+            </a>
+            <a href="https://github.com/Miguel-Naiba" target="_blank">
+                <p id="pessoas">Miguel Naiba</p>
+            </a>
+            <a href="https://github.com/GUI-BK" target="_blank">
+                <p id="pessoas">Guilherme Betch</p>
+            </a>
         </div>
         <div class="fimagem">
             <h1>Imagens</h1>
-            <a href="https://brasilescola.uol.com.br/" target="_blank"><p id="supa">https://brasilescola.uol.com.br/</p></a>
-            <a href="https://www.todamateria.com.br/sistema-urinario/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistema-urinario/</p></a>
-            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank"><p id="supa">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p></a>
-            <a href="https://www.nephrocare.com.br/fileadmin/_processed_/5/3/csm_kidney-basics2_10cb5ecd87.jpg" target="_blank"><p id="supa">https://www.nephrocare.com.br/fileadmin/_processed_/5/3/csm_kidney-basics2_10cb5ecd87.jpg</p></a>
+            <a href="https://brasilescola.uol.com.br/" target="_blank">
+                <p id="supa">https://brasilescola.uol.com.br/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistema-urinario/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistema-urinario/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank">
+                <p id="supa">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p>
+            </a>
+            <a href="https://www.nephrocare.com.br/fileadmin/_processed_/5/3/csm_kidney-basics2_10cb5ecd87.jpg"
+                target="_blank">
+                <p id="supa">https://www.nephrocare.com.br/fileadmin/_processed_
+                    <br>/5/3/csm_kidney-basics2_10cb5ecd87.jpg
+                </p>
+            </a>
         </div>
         <div class="referencias">
             <h1>Referências</h1>
-            <a href="https://brasilescola.uol.com.br/" target="_blank"><p id="textos">https://brasilescola.uol.com.br/</p></a>
-            <a href="https://www.todamateria.com.br/sistema-urinario/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistema-urinario/</p></a>
-            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank"><p id="textos">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p></a>
-            <a href="" target="_blank"><p id="textos"></p></a>
+            <a href="https://brasilescola.uol.com.br/" target="_blank">
+                <p id="textos">https://brasilescola.uol.com.br/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistema-urinario/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistema-urinario/</p>
+            </a>
+            <a href="https://www.todamateria.com.br/sistemas-do-corpo-humano/" target="_blank">
+                <p id="textos">https://www.todamateria.com.br/sistemas-do-corpo-humano/</p>
+            </a>
+            <a href="" target="_blank">
+                <p id="textos"></p>
+            </a>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>
+
 </html>
