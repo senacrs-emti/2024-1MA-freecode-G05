@@ -105,7 +105,7 @@ document.addEventListener("keydown", (event) => {
 
 // Função para detectar quando a tecla ; é pressionada
 document.addEventListener("keydown", function (event) {
-    if (event.key === ";") {
+    if (event.key === "/") {
         btn2.click(); // Aciona o clique no botão btn2 quando a tecla Alt for pressionada
     }
 });

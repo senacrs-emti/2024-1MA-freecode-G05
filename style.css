@@ -9,6 +9,11 @@ html {
     cursor: url(./imagens/my-mouse-pointerindex.cur), auto;
 }
 
+*::selection {
+    background-color: #8ec554;
+    color: rgb(250, 250, 250);
+}
+
 a {
     cursor: url(./imagens/my-mouse-pointerindexpointer.cur), pointer;
 }
@@ -19,6 +24,14 @@ p {
 
 h1 {
     cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+}
+
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.indexlupa.nova.transparentev3.cur), zoom-in;
+}
+
+.sistemasfoto {
+    cursor: url(./imagens/my-mouse-pointer.indexlupa.nova.transparentev3.cur), zoom-in;
 }
 
 input {
@@ -707,7 +720,7 @@ header a:hover:after {
 /*maior parte do site e maindepois, para quando o botão ser apertado o site permanecer estático*/
 .main {
     display: grid;
-    height: 7600px;
+    height: 8350px;
     background-color: rgb(233, 235, 235);
     width: 100%;
 }
@@ -723,7 +736,7 @@ header a:hover:after {
 /*descrição da feira, link pros githubs*/
 footer {
     height: 450px;
-    background-color: rgb(52, 109, 52);
+    background-color: #c9e3ae;
     display: grid;
 }
 
@@ -768,34 +781,36 @@ footer ul li {
 }
 
 #pessoas {
-    text-align: center;
+    text-align: left;
     color: white;
     margin-top: 20px;
     text-decoration: underline white;
-
 }
 
 .integrantes {
-    width: 400px;
     height: 400px;
     position: absolute;
+    text-align: left;
+    width: 33.3333333%;
 }
 
 .fimagem {
-    width: 400px;
     height: 400px;
     float: left;
     margin-left: 400px;
     margin-top: -105px;
+    width: 33.3333333%;
 }
 
 .referencias {
     position: absolute;
     margin-left: 800px;
+    width: 33.3333333%;
+    text-align: left;
 }
 
 #supa {
-    text-align: center;
+    text-align: left;
     margin-right: 30px;
     color: white;
     margin-top: 21px;
@@ -813,7 +828,7 @@ footer ul li {
 /*Dentro da main*/
 .base {
     width: 1000px;
-    height: 7500px;
+    height: 8250px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: 174.5px;
@@ -832,22 +847,22 @@ footer ul li {
 .base .textoinicial {
     font-size: 26px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100px;
+    height: 120px;
     width: 1000px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 35px;
 }
 
 /*apresenta todos os sistemas, debaixo da imagem dos sistemas*/
 main .introducao {
-    color: #000000;
+    color: #222222;
     font-size: 48px;
-    margin-left: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 50px;
     background-color: #ffffff;
     letter-spacing: 2px;
-    text-decoration: underline double;
+    text-align: center;
+    margin-top: 5px;
 }
 
 /*cada uma das imagens de cada sistema*/
@@ -858,6 +873,7 @@ main .introducao {
     margin-left: 20px;
     box-shadow: 0px 0px 3px 1px black;
     margin-top: 100px;
+    z-index: 1;
 }
 
 /*tudo que acompanha as imagens de cada sistema*/
@@ -1112,4 +1128,82 @@ main .introducao {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: white;
+}
+
+.jeanfoto {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.jeannome {
+    margin-left: 78px;
+    font-size: 20px;
+    margin-top: -51px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jeanembaixo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 78px;
+}
+
+td {
+    border: 2px solid #b6b6b6;
+    word-wrap: inherit;
+    font-size: 20px;
+    cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+}
+
+td strong {
+    cursor: url(./imagens/my-mouse-pointerpoitertext.cur), text;
+}
+
+tr {
+    border: 1px solid #04a31e;
+    word-wrap: inherit;
+}
+
+table {
+    margin-top: 50px;
+    height: 300px;
+    width: 950px;
+    border-spacing: 0px;
+    margin-left: 25px;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #eaf5de;
+}
+
+table td {
+    padding: 5px;
+}
+
+.FunçõesdosSistemasdoCorpoHumano {
+    color: #222222;
+    font-size: 46px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.anatoguia {
+    margin-top: -40px;
+    font-size: 54px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #04a31e;
+    padding-top: 3px;
+    padding-bottom: 19px;
+    padding-left: 10px;
+    margin-left: 326px;
+    padding-right: 2px;
+    border-radius: 9px;
+    border-top-left-radius: 0px;
+    background-color: #def1ca;
+    height: 50px;
+    width: 345px;
 }
