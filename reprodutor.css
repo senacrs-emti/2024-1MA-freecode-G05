@@ -19,7 +19,9 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerbasetextreprodutor.cur), text;
 }
-
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.reprodutorlupa.cur), zoom-in;
+}
 body::-webkit-scrollbar {
     width: 17px;
     /* width of the entire scrollbar */

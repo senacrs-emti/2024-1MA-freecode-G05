@@ -19,7 +19,9 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerbasetext\ nervoso.cur), text;
 }
-
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.nervosolupa.cur), zoom-in;
+}
 body::-webkit-scrollbar {
     width: 17px;
     /* width of the entire scrollbar */

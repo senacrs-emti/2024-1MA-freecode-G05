@@ -18,6 +18,9 @@ h1 {
 
 input {
     cursor: url(./imagens/my-mouse-pointerbasetextnovo.cur), text;
+} 
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.baselupa.cur), zoom-in;
 }
 
 body::-webkit-scrollbar {

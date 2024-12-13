@@ -19,7 +19,9 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerbasetextimuno.cur), text;
 }
-
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.imunologicolupa.cur), zoom-in;
+}
 body::-webkit-scrollbar {
     width: 17px;
     /* width of the entire scrollbar */

@@ -19,6 +19,9 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerresptext\ .cur), text;
 }
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.respiratoriolupa.cur), zoom-in;
+}
 
 body::-webkit-scrollbar {
     width: 17px;

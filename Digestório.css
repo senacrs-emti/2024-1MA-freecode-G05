@@ -19,6 +19,9 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerdigestoriotext.cur), text;
 }
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.digestoriolupa.cur), zoom-in;
+}
 
 body::-webkit-scrollbar {
     width: 17px;

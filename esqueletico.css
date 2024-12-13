@@ -19,7 +19,9 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerbasetextesqueletico.cur), text;
 }
-
+.imagens {
+    cursor: url(./imagens/my-mouse-pointer.esqueleticolupa.cur), zoom-in;
+}
 body::-webkit-scrollbar {
     width: 17px;
     /* width of the entire scrollbar */
