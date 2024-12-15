@@ -9,13 +9,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #222;
+    background-color: #006300;
     flex-direction: column;
 }
 
 canvas {
     border: 2px solid #fff;
-    background-color: #111;
+    background-color: #111111;
 }
 
 #info {

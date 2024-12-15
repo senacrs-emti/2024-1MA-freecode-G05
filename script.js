@@ -820,3 +820,4 @@ document.addEventListener('click', (e) => {
         hideSuggestions(searchInputHeader, suggestionsBoxHeader);
     }
 });
+/**----------------------------------------------- */

@@ -10,7 +10,7 @@ const player = {
     y: canvas.height / 2,
     radius: 20,
     speed: 6,
-    color: "#FFD700", // Amarelo ouro
+    color: "#04a31e", // Amarelo ouro
     health: 100
 };
 

@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.userway.org/widget.js" data-account="lqELz1dV9X"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnatoGuia</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./imagens/pixil-frame-0.png" type="image/x-icon">
-  
 </head>
 
 <body>
@@ -59,8 +59,10 @@
         </ul>
     </div>
     <main id="main" class="main">
+
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate" src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png" alt=""></button>
             <div vw class="enabled">
                 <div vw-access-button class="active"></div>
                 <div vw-plugin-wrapper>
@@ -294,7 +296,8 @@
                     <p>
                         É o sistema responsável por produzir, armazenar
                         temporariamente e eliminar a urina, um composto que garante a eliminação de substâncias que
-                        estão em excesso no organismo e resíduos oriundos do metabolismo. É essencial para garantir a manutenção do equilíbrio interno do
+                        estão em excesso no organismo e resíduos oriundos do metabolismo. É essencial para garantir a
+                        manutenção do equilíbrio interno do
                         nosso corpo.
                     </p>
                     <a href="./urinario.html">Ver tudo sobre o Sistema Urinário</a>
@@ -615,6 +618,59 @@
             </a>
         </div>
     </footer>
+    <script>
+ (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
+
+
     <script src="script.js"></script>
 </body>
 
