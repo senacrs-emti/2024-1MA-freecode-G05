@@ -72,6 +72,9 @@
         <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
             data-account="lqELz1dV9X"></script>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
+                    src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
+                    alt=""></button>
             <div class="Nomedosistema">
                 <h1>Sistema Muscular</h1>
             </div>
@@ -204,8 +207,7 @@
                     Cabeça longa do músculo tríceps do braço
                     Cabeça lateral do músculo tríceps do braço
                     Músculo grande dorsal
-                    Processo espinhoso de T12"
-                    onclick="window.open('./imagens/musculodotorax-0-cke.jpg', '_blank');">
+                    Processo espinhoso de T12" onclick="window.open('./imagens/musculodotorax-0-cke.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Músculos do Tórax e do Abdômen</h1>
                         <p>Os músculos do grupo do tórax e abdômen permitem a respiração, impedem o corpo de se curvar e
@@ -231,7 +233,7 @@
                     Músculo extensor do indicador-
                     Tendões dos extensores dos- dedos e extensro do dedo mínimo (seccionados)
                     Músculo abdutor longo do polegar Músculo extensro curto do polegar Músculo extensro longo do polegar"
-                    onclick="window.open('./imagens/musculosmembroinferiorantebraco-0-cke.jpg', '_blank');">
+                        onclick="window.open('./imagens/musculosmembroinferiorantebraco-0-cke.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Músculos dos Membros Superiores</h1>
                         <p>
@@ -260,7 +262,7 @@
                     Cabeça lateral do gastrocnêmio
                     Extensor longo dos dedos
                     Tendão do tibial anterior"
-                    onclick="window.open('./imagens/musculosdosmembrosinferioresrevisado-cke.jpg', '_blank');">
+                        onclick="window.open('./imagens/musculosdosmembrosinferioresrevisado-cke.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Músculos dos Membros Inferiores</h1>
                         <p>São os mais fortes do corpo. Graças aos músculos das
@@ -290,7 +292,7 @@
                 </div>
                 <div>
                     <img id="musculoestriadocardiaco" class="imagens" src="./imagens/1.jpg" alt=""
-                    onclick="window.open('./imagens/1.jpg', '_blank');">
+                        onclick="window.open('./imagens/1.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Músculo Estriado Cardíaco</h1>
                         <p>São músculos de contração involuntária e estão presentes no coração (miocárdio).
@@ -305,7 +307,7 @@
                     Fasciculo muscular (constituido por fibras musculares)
                     Fibra muscular (constituida por miofibrilas)
                     Músculo"
-                    onclick="window.open('https://www.coladaweb.com/wp-content/uploads/tecido-muscular-estriado.jpg', '_blank');">
+                        onclick="window.open('https://www.coladaweb.com/wp-content/uploads/tecido-muscular-estriado.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Músculo Estriado Esquelético</h1>
                         <p>São músculos de contração voluntária, ou seja, os movimentos são controlados pela vontade do
@@ -367,6 +369,57 @@
             </a>
         </div>
     </footer>
+    <script>
+        (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>

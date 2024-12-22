@@ -72,6 +72,9 @@
         <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
             data-account="lqELz1dV9X"></script>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
+                    src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
+                    alt=""></button>
             <div class="Nomedosistema">
                 <h1>Sistema Sensorial</h1>
             </div>
@@ -147,7 +150,8 @@
                     </div>
                 </div>
                 <div>
-                    <img id="visao" class="imagens imageminicial" src="./imagens/visao-normal-2.jpg" alt="">
+                    <img id="visao" class="imagens imageminicial" src="./imagens/visao-normal-2.jpg" alt=""
+                        onclick="window.open('./imagens/visao-normal-2.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Visão</h1>
                         <p>
@@ -162,7 +166,8 @@
                 <div>
                     <img id="audicao" class="imagens"
                         src="https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg"
-                        alt="">
+                        alt=""
+                        onclick="window.open('https://static.biologianet.com/conteudo/images/a-orelha-traduz-estimulos-mecanicos-em-impulsos-nervosos-59525358211ef.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Audição</h1>
                         <p>
@@ -179,7 +184,8 @@
                 <div>
                     <img id="olfato" class="imagens"
                         src="https://i0.wp.com/sanar-hub.s3.amazonaws.com/docx-imgs/SM-Vias-A-reas-docx-media/media/image1.png?resize=640%2C823&ssl=1"
-                        alt="">
+                        alt=""
+                        onclick="window.open('https://i0.wp.com/sanar-hub.s3.amazonaws.com/docx-imgs/SM-Vias-A-reas-docx-media/media/image1.png?resize=640%2C823&ssl=1', '_blank');">
                     <div class="basedasimagens">
                         <h1>Olfato</h1>
                         <p>
@@ -204,7 +210,8 @@
                     DOCE
                     SALGADO
                     Papilas gustativas captam todos
-                    os sabores">
+                    os sabores"
+                        onclick="window.open('https://static.todamateria.com.br/upload/an/at/anatomiadalinguapercepcaodesabores03-cke.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Paladar</h1>
                         <p>
@@ -230,7 +237,8 @@
                     Hipoderme
                     Músculo
                     Órgão terminal
-                    do pelo">
+                    do pelo"
+                        onclick="window.open('https://s2.static.brasilescola.uol.com.br/be/2020/10/receptores-tateis.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Tato</h1>
                         <p>
@@ -252,7 +260,8 @@
                 Control limbs
                 PROPRIOCEPTION
                 Sense of force
-                or of heaviness">
+                or of heaviness"
+                        onclick="window.open('https://media.istockphoto.com/vectors/illustration-of-human-senses-vector-id948490802?k=20&m=948490802&s=612x612&w=0&h=Jxz-hXn54CVZYofGbbq8vaJrybcihI5cCASRCoeg_nw=', '_blank');">
                     <div class="basedasimagens">
                         <h1>Sexto-Sentido</h1>
                         <p>
@@ -318,6 +327,57 @@
             </a>
         </div>
     </footer>
+    <script>
+        (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>

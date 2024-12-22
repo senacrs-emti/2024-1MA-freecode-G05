@@ -73,6 +73,9 @@
         <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
             data-account="lqELz1dV9X"></script>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
+                    src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
+                    alt=""></button>
             <div class="Nomedosistema">
                 <h1>Sistema Tegumentar</h1>
             </div>
@@ -149,7 +152,8 @@
                     Camada granulosa
                     Camada espinhosa
                     Camada
-                    Basal">
+                    Basal"
+                        onclick="window.open('https://static.todamateria.com.br/upload/ce/lu/celulasdaepiderme.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Epiderme</h1>
                         <p>A epiderme é composta pelo epitélio de revestimento que é um tecido estratificado,
@@ -167,7 +171,8 @@
                         src="https://d1xe7tfg0uwul9.cloudfront.net/sbd-portal-2024/wp-content/uploads/2021/10/istock-525211834_0-3.jpg.webp"
                         alt="Epiderme
                     Derme
-                    Hipoderme">
+                    Hipoderme"
+                        onclick="window.open('https://d1xe7tfg0uwul9.cloudfront.net/sbd-portal-2024/wp-content/uploads/2021/10/istock-525211834_0-3.jpg.webp', '_blank');">
                     <div class="basedasimagens">
                         <h1>Derme</h1>
                         <p>A derme é formada de tecido conjuntivo denso. Sua composição é essencialmente de colágeno
@@ -185,7 +190,8 @@
                     <img id="hipoderme" class="imagens"
                         src="https://www.vuelopharma.com/wp-content/uploads/2024/05/estrutura-detalhada-da-pele-humana-ilustracao-medica_88653-868.jpg"
                         alt="Hypodermis
-                    Dermis Epidermis">
+                    Dermis Epidermis"
+                        onclick="window.open('https://www.vuelopharma.com/wp-content/uploads/2024/05/estrutura-detalhada-da-pele-humana-ilustracao-medica_88653-868.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Hipoderme</h1>
                         <p>Localizada logo abaixo da derme encontra-se a tela subcutânea ou hipoderme, que é uma camada
@@ -199,7 +205,8 @@
                 <div>
                     <img id="glandulassebaceas" class="imagens"
                         src="https://static.preparaenem.com/conteudo_legenda/2b18f656bf0afbd3416d63a276e61c91.jpg"
-                        alt="Glândula sebácea">
+                        alt="Glândula sebácea"
+                        onclick="window.open('https://static.preparaenem.com/conteudo_legenda/2b18f656bf0afbd3416d63a276e61c91.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Glândulas Sebáceas</h1>
                         <p>A atividade dessas glândulas é controlada principalmente por hormônios masculinos, e são mais
@@ -227,7 +234,8 @@
                     Pelo
                     Glândula sudorípara
                     Representação esquemática da pele humana.
-                    Derme">
+                    Derme"
+                        onclick="window.open('https://www.unifal-mg.edu.br/histologiainterativa/wp-content/uploads/sites/38/2020/07/Captura-de-Tela-2020-07-24-%C3%A0s-19.18.27.png', '_blank');">
                     <div class="basedasimagens">
                         <h1>Glândulas Sudoríparas</h1>
                         <p>Essas glândulas têm forma de espiral, são formadas por células epidérmicas, mas se encontram
@@ -294,6 +302,57 @@
             </a>
         </div>
     </footer>
+    <script>
+        (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>

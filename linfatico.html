@@ -74,6 +74,9 @@
         <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
             data-account="lqELz1dV9X"></script>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
+                    src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
+                    alt=""></button>
             <div class="Nomedosistema">
                 <h1>Sistema Linfático</h1>
             </div>
@@ -116,9 +119,11 @@
                     <div class="modelo3d">
                         <h1>Sistema Linfático</h1>
                         <p>
-                            O sistema linfático é uma rede complexa de vasos e pequenas estruturas chamadas de nódulos
-                            linfáticos que transportam o fluido linfático dos tecidos de volta para o sistema
-                            circulatório.</p>
+                            O sistema linfático é um sistema do nosso corpo formado por capilares linfáticos, vasos
+                            linfáticos, ductos linfáticos e linfonodos. Associado a ele, temos as tonsilas, o baço e o
+                            timo, conhecidos como órgãos linfáticos. O sistema linfático promove o retorno do fluido
+                            presente nos espaços intersticiais para o sangue, atua na defesa do organismo e também na
+                            absorção de lipídios.</p>
                         <a target="_blank" href="https://www.todamateria.com.br/sistema-linfatico/">Veja mais sobre no
                             Todamatéria</a>
                     </div>
@@ -135,7 +140,8 @@
                     Coração
                     Capilares linfáticos
                     Capilares sanguíneos
-                    Fluido intersticial">
+                    Fluido intersticial"
+                        onclick="window.open('https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/circulacao-linfatica.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Linfa</h1>
                         <p>Linfa é o nome dado ao líquido perdido pelos capilares para os tecidos circundantes.
@@ -151,7 +157,8 @@
                 <div>
                     <img id="edema" class="imagens"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo8AQ195izhFm9qCalTulVGqA80lIhMWsgZ8UmKSYe-kZXZ4ZxrV920fnOcP6-YF7h_fo&usqp=CAU"
-                        alt="">
+                        alt=""
+                        onclick="window.open('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo8AQ195izhFm9qCalTulVGqA80lIhMWsgZ8UmKSYe-kZXZ4ZxrV920fnOcP6-YF7h_fo&usqp=CAU', '_blank');">
                     <div class="basedasimagens">
                         <h1>Edema</h1>
                         <p>Em algumas situações, a quantidade de líquido nos tecidos ultrapassa a capacidade do sistema
@@ -166,7 +173,8 @@
                 <div>
                     <img id="orgãoslinfaticos" class="imagens"
                         src="https://img.freepik.com/fotos-premium/diagrama-sistema-linfatico-humano-nodos-vasos-linfaticos_905033-16081.jpg"
-                        alt="">
+                        alt=""
+                        onclick="window.open('https://img.freepik.com/fotos-premium/diagrama-sistema-linfatico-humano-nodos-vasos-linfaticos_905033-16081.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Órgãos relacionados</h1>
                         <p>
@@ -194,10 +202,12 @@
                     Parotic
                     Tonsilia jugulod
                     Subment Lower mouth, ap
-                    Submandibular Cheek, side of co Sp, gums, anterior">
+                    Submandibular Cheek, side of co Sp, gums, anterior"
+                        onclick="window.open('https://stecine.azureedge.net/repositorio/drenagem_linfatica_manual/img/img02.png', '_blank');">
                     <div class="basedasimagens">
                         <h1>Linfonodos</h1>
-                        <p>No interior dos linfonodos, encontra-se uma grande quantidade de células responsáveis pela
+                        <p class="linfonodoscima">No interior dos linfonodos, encontra-se uma grande quantidade de
+                            células responsáveis pela
                             nossa defesa, tais como macrófagos e linfócitos. Quando a linfa passa no interior dos
                             linfonodos, micro-organismos e partículas são atacados pelo sistema imune. No
                             momento em que nosso corpo está lutando contra uma infecção, os linfonodos
@@ -216,7 +226,8 @@
                 linfático
                 eferente
                 Córtex
-                Medula">
+                Medula"
+                        onclick="window.open('https://s5.static.brasilescola.uol.com.br/img/2018/09/linfonodo.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>linfa</h1>
                         <p>A linfa circula no interior do linfonodo por uma via unidirecional. Ela entra no órgão por
@@ -229,7 +240,8 @@
                 </div>
                 <div>
                     <img id="filarioselinfatica" class="imagens"
-                        src="https://thumbs.dreamstime.com/b/lymphedema-54399607.jpg" alt="">
+                        src="https://thumbs.dreamstime.com/b/lymphedema-54399607.jpg" alt=""
+                        onclick="window.open('https://thumbs.dreamstime.com/b/lymphedema-54399607.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Filariose Linfática</h1>
                         <p>
@@ -294,6 +306,57 @@
             </a>
         </div>
     </footer>
+    <script>
+        (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>

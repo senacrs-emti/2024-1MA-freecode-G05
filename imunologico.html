@@ -74,6 +74,9 @@
         <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
             data-account="lqELz1dV9X"></script>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
+                    src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
+                    alt=""></button>
             <div class="Nomedosistema">
                 <h1>Sistema Imunológico</h1>
             </div>
@@ -157,7 +160,7 @@
                     src="https://sketchfab.com/models/f5649189c75b476da4a823a3c050e08e/embed?camera=0&ui_theme=dark">
                 </iframe>
                 <div class="ladodomodelo3d">
-                    <p>O processo de defesa do corpo através do sistema imunológico é chamado de resposta imune.
+                    <p> O processo de defesa do corpo através do sistema imunológico é chamado de resposta imune.
                         Existem dois tipos: inata, natural e a adquirida,
                         adaptativa ou específica.
                         A imunidade inata já nasce
@@ -192,7 +195,8 @@
                     Células T efetoras
                     1
                     Tempo após infecção
-                    Dias 8">
+                    Dias 8"
+                    onclick="window.open('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvbCM0MSyKXvCAjjc81fnsEZpL8KtCcZ6MxcxLrQ7hvHtjACQFZ-tRG7dF5M78OkGQtDbmzDLH1BsHh5xGP8wbuyI86RD4Hp2xVaj02pvBZ3kAzEWlzaBfaSdbhBvhbC-N3dfTNuPjJQ3y2yfNCNORXKTX2rwnK0i9IbqeblFKghoi7xch9SNmYYln/s498/2.png', '_blank');">
                 <div class="basedasimagens">
                     <h1>Imunidade adquirida/adaptativa</h1>
                     <p>A imunidade adaptativa é a defesa adquirida ao longo da vida, tais como anticorpos e vacinas.
@@ -210,7 +214,8 @@
                         Imunitários primários
                         Órgãos
                         Imunitários
-                        secundários">
+                        secundários"
+                        onclick="window.open('./imagens/celulaseorgaossistemalinfatico1-cke.jpg', '_blank');">
                     <div class="basedasimagens">
                         <h1>Células e Órgãos</h1>
                         <p>O sistema imunológico humano é formado por diversos tipos de células e órgãos, que são
@@ -221,7 +226,8 @@
                     <div>
                         <img id="leucocitos" class="imagens"
                             src="https://img.freepik.com/vetores-premium/globulos-brancos-de-leucocitos-neutrofilos_521900-1124.jpg"
-                            alt="">
+                            alt=""
+                            onclick="window.open('https://img.freepik.com/vetores-premium/globulos-brancos-de-leucocitos-neutrofilos_521900-1124.jpg', '_blank');">
                         <div class="basedasimagens">
                             <h1>Leucócitos</h1>
                             <p>Os leucócitos ou glóbulos brancos são células produzidas pela medula óssea e linfonodos.
@@ -233,7 +239,8 @@
                     <div>
                         <img id="linfocito" class="imagens"
                             src="https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/4fc74c0c61079f4c36b0e82db8dd0a63.jpg"
-                            alt="">
+                            alt=""
+                            onclick="window.open('https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/4fc74c0c61079f4c36b0e82db8dd0a63.jpg', '_blank');">
                         <div class="basedasimagens">
                             <h1>Linfócito</h1>
                             <p>Os linfócitos são um tipo de leucócito ou glóbulo branco do sangue, responsáveis pelo
@@ -246,7 +253,8 @@
                     <div>
                         <img id="macrofagos" class="imagens"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Giemsa_Stain_Macrophage_Illustration.png/300px-Giemsa_Stain_Macrophage_Illustration.png"
-                            alt="">
+                            alt=""
+                            onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Giemsa_Stain_Macrophage_Illustration.png/300px-Giemsa_Stain_Macrophage_Illustration.png', '_blank');">
                         <div class="basedasimagens">
                             <h1>Macrófagos</h1>
                             <p>Os macrófagos são células derivadas dos monócitos. Sua função principal é fagocitar
@@ -309,6 +317,57 @@
             </a>
         </div>
     </footer>
+    <script>
+        (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>

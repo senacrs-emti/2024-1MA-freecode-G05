@@ -4,6 +4,11 @@
     cursor: url(./imagens/my-mouse-pointersens.cur), auto;
 }
 
+*::selection {
+    background-color: #b366b0;
+    color: rgb(250, 250, 250);
+}
+
 a {
     cursor: url(./imagens/my-mouse-pointersensorialpoter.cur), pointer;
 }
@@ -19,9 +24,11 @@ h1 {
 input {
     cursor: url(./imagens/my-mouse-pointerbasetextsensorial.cur), text;
 }
+
 .imagens {
     cursor: url(./imagens/my-mouse-pointer.sensoriallupa.cur), zoom-in;
 }
+
 body::-webkit-scrollbar {
     width: 17px;
     /* width of the entire scrollbar */
@@ -994,7 +1001,7 @@ main .introducao {
     display: grid;
     height: 350px;
     width: 660px;
-    margin-top: -1200px;
+    margin-top: -1250px;
     margin-left: 470px;
     background-color: #e4e4e4;
 }
@@ -1652,4 +1659,65 @@ main .introducao {
 
 footer a p {
     cursor: url(./imagens/my-mouse-pointersensorialpoter.cur), pointer;
+}
+
+.selected-text {
+    background-color: #ffff99;
+    /* Leve tom de destaque */
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button.active {
+    background-color: #28a745;
+    /* Verde quando ativado */
+}
+
+.custom-button.active:hover {
+    background-color: #24923d;
+    /* Verde quando ativado */
+}
+
+.leitordetextoativate:hover {
+    #leitordetexto {
+        opacity: 100%;
+        background-color: #000000;
+    }
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+#activateButton {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    margin-left: 1223px;
+    margin-top: 46px;
+    border-radius: 40%;
+}
+
+#activateButton img {
+    height: 48px;
+    width: 48px;
+    margin-left: -24px;
+    margin-top: -13px;
+    pointer-events: none;
+}
+
+#leitordetexto {
+    height: 60px;
+    width: 120px;
+    border-color: #0056b3;
+    opacity: 10%;
+    border: 2px solid;
 }

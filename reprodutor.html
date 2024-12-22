@@ -73,6 +73,9 @@
         <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
             data-account="lqELz1dV9X"></script>
         <div class="base">
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
+                    src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
+                    alt=""></button>
             <div class="Nomedosistema">
                 <h1>Sistema Reprodutor</h1>
             </div>
@@ -143,7 +146,8 @@
             <div>
                 <img id="glandulassexuais" class="imagens imageminicial"
                     src="https://static.todamateria.com.br/upload/ov/ar/ovariomicropolicistico-cke.jpg" alt="Ovário normal
-                    Ovário policístico">
+                    Ovário policístico"
+                    onclick="window.open('https://static.todamateria.com.br/upload/ov/ar/ovariomicropolicistico-cke.jpg', '_blank');">
                 <div class="basedasimagens">
                     <h1>Glândulas Sexuais</h1>
                     <p>
@@ -167,7 +171,8 @@
                     Progesterona
                     Ambos os sexos
                     Hormônio folículo estimulante (FHS)
-                    Hormônio Luteinizante (LH)">
+                    Hormônio Luteinizante (LH)"
+                    onclick="window.open('https://www.infoenem.com.br/wp-content/uploads/2019/05/h-1.jpg', '_blank');">
                 <div class="basedasimagens">
                     <h1>Hormônios Sexuais</h1>
                     <p>
@@ -192,7 +197,8 @@
                     Canal deferente
                     Epididimo
                     Pênis
-                    Testículos">
+                    Testículos"
+                    onclick="window.open('https://static.todamateria.com.br/upload/si/st/sistemareprodutormasculinoanatomia-cke.jpg', '_blank');">
                 <div class="basedasimagens">
                     <h1>Orgãos Sexuais</h1>
                     <p>
@@ -215,7 +221,8 @@
                     mitocondria
                     cabeça
                     peça
-                    intermediária">
+                    intermediária"
+                    onclick="window.open('https://s1.static.brasilescola.uol.com.br/be/conteudo/images/cf86a989eeecc4c38ea3257f5ef90d01.jpg', '_blank');">
                 <div class="basedasimagens">
                     <h1>Células Reprodutoras</h1>
                     <p>
@@ -260,7 +267,8 @@
                     11
                     12
                     15 14 13
-                    Ovulação">
+                    Ovulação"
+                    onclick="window.open('https://static.todamateria.com.br/upload/56/21/56210a0bde6b0-como-ocorre-a-fecundacao-humana-large.jpg', '_blank');">
                 <div class="basedasimagens">
                     <h1>Gestação</h1>
                     <p>
@@ -274,7 +282,8 @@
             </div>
             <div>
                 <img id="menstruacao" class="imagens"
-                    src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/02/ciclo-menstrual.jpg" alt="">
+                    src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/02/ciclo-menstrual.jpg" alt=""
+                    onclick="window.open('https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/02/ciclo-menstrual.jpg', '_blank');">
                 <div class="basedasimagens">
                     <h1>Ciclo Menstrual</h1>
                     <p>
@@ -338,6 +347,57 @@
             </a>
         </div>
     </footer>
+    <script>
+        (function () {
+            let isReadingActive = false;
+
+            // Garante que as vozes estejam carregadas
+            const synth = window.speechSynthesis;
+            let voicesReady = false;
+
+            synth.addEventListener('voiceschanged', () => {
+                voicesReady = true;
+            });
+
+            function announceState(message) {
+                if (!voicesReady) {
+                    console.error("As vozes ainda não estão prontas.");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(message);
+                utterance.lang = 'pt-BR';
+
+                const voices = synth.getVoices();
+                utterance.voice = voices.find(voice => voice.lang === 'pt-BR') || voices[0];
+
+                synth.speak(utterance);
+            }
+
+            document.getElementById('activateButton').addEventListener('click', function () {
+                if (isReadingActive) {
+                    synth.cancel();
+                    announceState("Leitor de texto desativado");
+                } else {
+                    announceState("Leitor de texto ativado");
+                }
+
+                isReadingActive = !isReadingActive;
+                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.classList.toggle('active', isReadingActive);
+                this.setAttribute('aria-pressed', isReadingActive);
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                if (isReadingActive) {
+                    const selectedText = window.getSelection().toString().trim();
+                    if (selectedText) {
+                        announceState(selectedText);
+                    }
+                }
+            });
+        })();
+    </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </body>
