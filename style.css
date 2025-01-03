@@ -738,6 +738,7 @@ footer {
     height: 450px;
     background-color: #c9e3ae;
     display: grid;
+    width: 100%;
 }
 
 footer a p {

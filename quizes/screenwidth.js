@@ -1,1 +1,0 @@
-window.alert(`Width: ${screen.width}, Height: ${screen.height}`);

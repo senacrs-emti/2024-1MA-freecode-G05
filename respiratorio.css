@@ -953,6 +953,7 @@ main .introducao {
     height: 480px;
     margin-top: -370px;
     margin-left: 310px;
+    pointer-events: none;
 }
 
 .imageminicial {
@@ -1077,7 +1078,7 @@ main .introducao {
     margin-top: 100px;
     margin-left: 420px;
     color: white;
-    text-shadow: 0px 0px 2px black;
+   
     text-decoration: none;
     padding-left: 60px;
     padding-top: 10px;
@@ -1087,12 +1088,12 @@ main .introducao {
 }
 
 .quiz:hover {
-    width: 310px;
-    height: 82px;
+    width: 300px;
+    height: 80px;
     background-color: #81b8ce;
     font-size: 56px;
-    margin-top: 90px;
-    margin-left: 410px;
+    margin-top: 100px;
+    margin-left: 420px;
     color: white;
     text-decoration: none;
     padding-left: 60px;

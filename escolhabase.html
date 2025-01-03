@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>
+    <link rel="stylesheet" href="escolhabase.css">
+    <link rel="shortcut icon" href="./imagens/images.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <h1>Modelos</h1>
+
+        <div class="RA">
+            <p>RA</p>
+        </div>
+        <video class="video1" id="meuVideo" autoplay muted loop>
+            <source id="A" src="./imagens/videodocoracaoporra.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <div class="escolher">
+            <button id="play" class="button">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="26px">
+                    <path
+                        d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+                        fill="currentColor"></path>
+                </svg>
+            </button>
+            <div class="info">
+                <p id="P">i</p>
+                <div id="informacoes">
+                    <p>O modelo por Realidade Aumentada funciona clicando em qualquer local da tela podendo ser ajustado
+                        em qualquer ambiente de acordo com os ângulos desejados</p>
+                </div>
+            </div>
+        </div>
+        <div class="videodolado">  <div class="RA maisdecima">
+            <p>RA</p>
+        </div>
+        <video class="video1" id="meuVideo" autoplay muted loop>
+            <source id="A" src="./imagens/videodocoracaoporra.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <div class="escolher maisdecima">
+            <button id="play" class="button">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="26px">
+                    <path
+                        d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"
+                        fill="currentColor"></path>
+                </svg>
+            </button>
+            <div class="info">
+                <p id="P">i</p>
+                <div id="informacoes">
+                    <p>O modelo por Realidade Aumentada funciona clicando em qualquer local da tela podendo ser ajustado
+                        em qualquer ambiente de acordo com os ângulos desejados</p>
+                </div>
+            </div>
+        </div></div>
+        </div>
+</body>
+<script>
+    // Adiciona um evento para executar quando o DOM for carregado
+    document.addEventListener('DOMContentLoaded', function () {
+        // Seleciona o vídeo pelo ID
+        const video = document.getElementById('meuVideo');
+
+        // Dá play no vídeo
+        video.play().catch(error => {
+            console.error('Erro ao tentar reproduzir o vídeo:', error);
+        });
+
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("play"); // Substitua "play" pelo ID do seu elemento
+        const url = "https://mywebar.com/p/Project_3_1qyr0p8bdy?_ga=2.150402804.33307150.1735755003-673446742.1734812634https://mywebar.com/p/Project_3_1qyr0p8bdy?_ga=2.187571562.33307150.1735755003-673446742.1734812634"; // Substitua pela URL desejada
+
+        elemento.addEventListener("click", function () {
+            window.open(url, "_blank"); // Abre a URL em uma nova aba
+        });
+    });
+</script>
+
+
+</html>

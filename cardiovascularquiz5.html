@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardio Quiz 5 </title>
+    <link rel="stylesheet" href="cardiovascularquiz.css">
+    <link rel="shortcut icon" href="./imagens/images.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>5</h1>
+        </div>
+        <h1 class="pergunta">O que ocorre durante a pulsação do sistema cardiovascular?</h1>
+        <div class="alternativas">
+            <a href="falhacardio.html"><button class="alternativa">O sangue é filtrado pelos rins antes de ser bombeado</button></a>
+            <a href="vencecardio.html"><button class="alternativa" > Os ventrículos do coração se contraem, impulsionando o sangue para as artérias</button></a>
+          <a href="falhacardio.html"><button class="alternativa">As válvulas do coração se abrem, permitindo a entrada de sangue nos átrios</button></a>
+          <a href="falhacardio.html"><button class="alternativa">O sangue é armazenado nos capilares</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falhacardio.html';
+        }, 10000);
+    });
+</script>
+</html>

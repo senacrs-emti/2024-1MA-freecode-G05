@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoplay de Vídeo</title>
+</head>
+<body>
+    <video id="meuVideo" width="640" height="360" controls autoplay muted>
+        <source src="./imagens/Vídeo sem títuloFeito com o Clipchamp.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <script>
+        // Adiciona um evento para executar quando o DOM for carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona o vídeo pelo ID
+            const video = document.getElementById('meuVideo');
+            
+            // Dá play no vídeo
+            video.play().catch(error => {
+                console.error('Erro ao tentar reproduzir o vídeo:', error);
+            });
+        });
+    </script>
+</body>
+</html>
