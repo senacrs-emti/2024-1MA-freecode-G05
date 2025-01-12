@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digestório Quiz 2 </title>
+    <link rel="stylesheet" href="digesquiz.css">
+    <link rel="shortcut icon"
+    href="https://pnghq.com/wp-content/uploads/free-intestines-png-images-download-now-24579-1402x1536.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>2</h1>
+        </div>
+        <h1 class="pergunta">Quais estruturas fazem parte da porção respiratória do sistema respiratório?</h1>
+        <div class="alternativas">
+            <a href="falhadiges.html"><button class="alternativa">Fossas nasais, laringe e traqueia</button></a>
+            <a href="falhadiges.html"><button class="alternativa" >Brônquios primários, secundários e terciários</button></a>
+          <a href="digesquiz3.html"><button class="alternativa">Bronquíolos respiratórios, ductos alveolares e alvéolos</button></a>
+          <a href="falhadiges.html"><button class="alternativa">Diafragma e pleura</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falhadiges.html';
+        }, 10000);
+    });
+</script>
+</html>

@@ -25,6 +25,7 @@ body {
     background-color: white;
     display: grid;
     margin-left: 33px;
+    text-align: center;
     margin-top: 16.5px;
 }
 
@@ -34,7 +35,7 @@ h1 {
     width: 260px;
     height: 70px;
     margin-top: -20px;
-    margin-left: 520px;
+    margin-left: 500px;
     color: rgb(187, 0, 0);
     border: 20px solid rgb(187, 0, 0);
     border-radius: 30px;
@@ -138,10 +139,26 @@ position: fixed;
     
   }
   .videodolado{
-margin-left: 742px;
-margin-top: -487px;
+margin-left: 700px;
+margin-top: -485px;
   }
   .maisdecima{
     z-index: 1000;
     position: fixed;
   }
+.umpoucoprabaixo{
+    margin-top: 50px;
+    display: grid;
+}
+.maisumpouquinho{
+    margin-top: 23px;
+}
+.brancodovideo{
+   background-color: rgb(255, 255, 255);
+   z-index: 3;
+   position: fixed;
+   height: 20px;
+   width: 400px;
+   margin-top: 100px;
+   margin-left: 100px; 
+}

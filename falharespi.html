@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="falha.css">
+    <link rel="shortcut icon"
+    href="https://png.pngtree.com/png-clipart/20240614/original/pngtree-lung-cartoon-human-body-organs-png-image_15319870.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <h1>Fim de Jogo</h1>
+        <button id="votar" href="respiratorio.html#respiracao">
+            <div class="votar">Voltar</div>
+            <div class="inter">?</div>
+        </button>
+    </div>
+</body>
+<script>document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("votar"); // Substitua "meuElemento" pelo ID do seu elemento
+        const url = "respiratorio.html#respiracao"; // Substitua pela URL desejada
+
+        elemento.addEventListener("click", function () {
+            window.location.href = url;
+        });
+    });</script>
+</html>

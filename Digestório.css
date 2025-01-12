@@ -1078,22 +1078,13 @@ main .introducao {
     border-radius: 5px;
     border: 1px solid #c58000;
     display: grid;
+    transition: 0.3;
 }
 
 .quiz:hover {
-    width: 310px;
-    height: 82px;
-    background-color: #da8e02;
+    background-color: #c58000;
     font-size: 56px;
-    margin-top: 90px;
-    margin-left: 410px;
-    color: white;
-    text-decoration: none;
-    padding-left: 60px;
-    padding-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #a56b00;
-    display: grid;
+    border: 1px solid #c58000;
     transition: 0.3s;
 }
 

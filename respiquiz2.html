@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respiratório Quiz 2 </title>
+    <link rel="stylesheet" href="respiquiz.css">
+    <link rel="shortcut icon"
+    href="https://png.pngtree.com/png-clipart/20240614/original/pngtree-lung-cartoon-human-body-organs-png-image_15319870.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>2</h1>
+        </div>
+        <h1 class="pergunta">Quais estruturas fazem parte da porção respiratória do sistema respiratório?</h1>
+        <div class="alternativas">
+            <a href="falharespi.html"><button class="alternativa">Fossas nasais, laringe e traqueia</button></a>
+            <a href="falharespi.html"><button class="alternativa" >Brônquios primários, secundários e terciários</button></a>
+          <a href="respiquiz3.html"><button class="alternativa">Bronquíolos respiratórios, ductos alveolares e alvéolos</button></a>
+          <a href="falharespi.html"><button class="alternativa">Diafragma e pleura</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falharespi.html';
+        }, 10000);
+    });
+</script>
+</html>

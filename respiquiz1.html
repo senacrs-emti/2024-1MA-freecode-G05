@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respiratório Quiz 1 </title>
+    <link rel="stylesheet" href="respiquiz.css">
+    <link rel="shortcut icon"
+    href="https://png.pngtree.com/png-clipart/20240614/original/pngtree-lung-cartoon-human-body-organs-png-image_15319870.png"
+    type="image/x-icon">
+</head>
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>1</h1>
+        </div>
+        <h1 class="pergunta">Qual é a função principal da porção condutora do sistema respiratório?</h1>
+        <div class="alternativas">
+            <a href="falharespi.html"><button class="alternativa">Realizar trocas gasosas</button></a>
+            <a href="respiquiz2.html"><button class="alternativa" >Permitir a entrada e saída de ar, além de limpar, umedecer e aquecer o ar</button></a>
+          <a href="falharespi.html"><button class="alternativa">Produzir oxigênio para o corpo</button></a>
+          <a href="falharespi.html"><button class="alternativa">Controlar o ritmo respiratório</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falharespi.html';
+        }, 10000);
+    });
+</script>
+</html>
