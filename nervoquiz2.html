@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nervoso Quiz 2 </title>
+    <link rel="stylesheet" href="nervoquiz.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/12/33/nerve-cell-145909_960_720.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>2</h1>
+        </div>
+        <h1 class="pergunta">Quais órgãos compõem o Sistema Nervoso Central?</h1>
+        <div class="alternativas">
+            <a href="falhanervo.html"><button class="alternativa">Encéfalo e nervos cranianos</button></a>
+            <a href="falhanervo.html"><button class="alternativa" >Medula espinhal e nervos raquidianos</button></a>
+          <a href="falhanervo.html"><button class="alternativa">Tronco encefálico e terminais nervosos</button></a>
+          <a href="nervoquiz3.html"><button class="alternativa">Encéfalo e medula espinhal</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falhanervo.html';
+        }, 10000);
+    });
+</script>
+</html>

@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdn.userway.org/widget.js" data-account="lqELz1dV9X"></script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnatoGuia</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./imagens/pixil-frame-0.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="">
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
         <div class="header-search">
@@ -62,7 +60,9 @@
 
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div class="base">
-            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate" src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png" alt=""></button>
+        
+            <button id="activateButtonescuro" class="modo-escuro" aria-pressed="false"><img class="leitordetextoativate" src="imagens/sol.png" alt=""></button>
+            <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate" src="imagens/livro1.png" alt=""></button>
             <div vw class="enabled">
                 <div vw-access-button class="active"></div>
                 <div vw-plugin-wrapper>
@@ -483,7 +483,7 @@
                 </div>
             </div>
             <h1 class="FunçõesdosSistemasdoCorpoHumano">Funções dos Sistemas do Corpo Humano</h1>
-            <table>
+            <table id="tablefunções">
                 <tr>
                     <td>Cardiovascular</td>
                     <td>Faz o transporte dos nutrientes e gases pelo corpo através do sangue.</td>
@@ -654,7 +654,7 @@
                 }
 
                 isReadingActive = !isReadingActive;
-                this.querySelector('img').src = isReadingActive ? './imagens/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png' : 'https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png';
+                this.querySelector('img').src = isReadingActive ? './imagens/livro2.png' : './imagens/livro1.png';
                 this.classList.toggle('active', isReadingActive);
                 this.setAttribute('aria-pressed', isReadingActive);
             });
@@ -669,6 +669,72 @@
             });
         })();
     </script>
+  <script>
+    // Função para ativar/desativar o modo escuro
+    function toggleDarkMode(state = null) {
+        const body = document.body;
+        const button = document.getElementById('activateButtonescuro');
+        const img = button.querySelector('img');
+        const isDarkMode = state !== null ? state : !body.classList.contains('modoescuro');
+
+        // Atualiza o LocalStorage
+        localStorage.setItem('modoEscuro', isDarkMode ? 'enabled' : 'disabled');
+
+        // Atualiza o botão e o atributo aria-pressed
+        button.setAttribute('aria-pressed', isDarkMode);
+        img.alt = isDarkMode ? 'Desativar modo escuro' : 'Ativar modo escuro';
+
+        // Atualiza a imagem do botão
+        img.src = isDarkMode 
+            ? 'imagens/lua.png' // Imagem para modo escuro ativo
+            : 'imagens/sol.png'; // Imagem para modo escuro desativado
+
+        // Aplica ou remove a classe modoescuro
+        if (isDarkMode) {
+            body.classList.add('modoescuro');
+        } else {
+            body.classList.remove('modoescuro');
+        }
+    }
+
+    // Verifica o estado ao carregar a página e aplica sem alternar
+    document.addEventListener('DOMContentLoaded', () => {
+        let isDarkMode = localStorage.getItem('modoEscuro');
+
+        // Define o modo claro como padrão se não houver valor salvo
+        if (isDarkMode === null) {
+            isDarkMode = 'disabled';
+            localStorage.setItem('modoEscuro', isDarkMode);
+        }
+
+        // Aplica o estado baseado no valor salvo
+        const shouldEnableDarkMode = isDarkMode === 'enabled';
+        if (shouldEnableDarkMode) {
+            document.body.classList.add('modoescuro');
+            const button = document.getElementById('activateButtonescuro');
+            const img = button.querySelector('img');
+
+            // Atualiza o botão e a imagem
+            button.setAttribute('aria-pressed', true);
+            img.alt = 'Desativar modo escuro';
+            img.src = 'imagens/lua.png';
+        }
+    });
+
+    // Escuta cliques no botão
+    document.getElementById('activateButtonescuro').addEventListener('click', () => {
+        toggleDarkMode();
+    });
+
+    // Escuta mudanças no LocalStorage (sincronização entre abas)
+    window.addEventListener('storage', (event) => {
+        if (event.key === 'modoEscuro') {
+            const isDarkMode = event.newValue === 'enabled';
+            toggleDarkMode(isDarkMode);
+        }
+    });
+</script>
+
 
 
     <script src="script.js"></script>

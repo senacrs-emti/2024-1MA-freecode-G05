@@ -1081,17 +1081,17 @@ main .introducao {
     padding-left: 60px;
     padding-top: 10px;
     border-radius: 5px;
-    border: 1px solid darkmagenta;
+    border: 1px solid #7f5ac7;
     display: grid;
 }
 
 .quiz:hover {
-    width: 310px;
-    height: 82px;
+    width: 300px;
+    height: 80px;
     background-color: #845fce;
     font-size: 56px;
-    margin-top: 50px;
-    margin-left: 410px;
+    margin-top: 60px;
+    margin-left: 420px;
     color: white;
     text-decoration: none;
     padding-left: 60px;
@@ -1110,8 +1110,7 @@ main .introducao {
     margin-left: 290px;
     border: 3px solid #674d9c;
     border-radius: 6px;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
+  
 }
 
 .Porçãocondutora:hover {
@@ -1122,8 +1121,7 @@ main .introducao {
     margin-left: 290px;
     border: 3px solid #49366e;
     border-radius: 6px;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
+
     transition: 0.3s;
 
     #Porçãocondutora {

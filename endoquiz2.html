@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endócrino Quiz 2 </title>
+    <link rel="stylesheet" href="endoquiz.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4807/4807844.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>2</h1>
+        </div>
+        <h1 class="pergunta">Qual glândula é conhecida como "glândula mestre" e por quê?</h1>
+        <div class="alternativas">
+            <a href="endoquiz3.html"><button class="alternativa">A hipófise, porque coordena o funcionamento de outras glândulas</button></a>
+            <a href="falhaendo.html"><button class="alternativa" >A tireoide, porque regula o metabolismo</button></a>
+          <a href="falhaendo.html"><button class="alternativa">O timo, porque regula o sistema imunológico</button></a>
+          <a href="falhaendo.html"><button class="alternativa">O pâncreas, porque controla os níveis de glicose no sangue</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falhaendo.html';
+        }, 10000);
+    });
+</script>
+</html>

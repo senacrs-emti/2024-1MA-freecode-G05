@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns</title>
+    <link rel="stylesheet" href="vence.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/12/33/nerve-cell-145909_960_720.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <h1>Você Venceu!</h1>
+        <button id="votar" href="nervoso.html#sistemanervosoperiferico"> <div class="votar">Voltar</div><div class="inter">?</div></button>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const elemento = document.getElementById("votar"); // Substitua "meuElemento" pelo ID do seu elemento
+    const url = "nervoso.html#sistemanervosoperiferico"; // Substitua pela URL desejada
+
+    elemento.addEventListener("click", function () {
+        window.location.href = url;
+    });
+});
+</script>
+</html>

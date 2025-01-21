@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nervoso Quiz 4 </title>
+    <link rel="stylesheet" href="nervoquiz.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/12/33/nerve-cell-145909_960_720.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>4</h1>
+        </div>
+        <h1 class="pergunta">Qual é a função principal do tronco encefálico?</h1>
+        <div class="alternativas">
+            <a href="nervoquiz5.html"><button class="alternativa">Produzir estímulos nervosos que controlam atividades vitais, como respiração e batimentos cardíacos</button></a>
+            <a href="falhanervo.html"><button class="alternativa" >Realizar a conexão entre o sistema nervoso central e o periférico</button></a>
+          <a href="falhanervo.html"><button class="alternativa">Armazenar memórias e regular os sentidos</button></a>
+          <a href="falhanervo.html"><button class="alternativa">Coordenar os atos conscientes, como a fala e a escrita</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+       // Redireciona após 10 segundos
+       setTimeout(() => {
+            window.location.href = 'falhanervo.html';
+        }, 10000);
+    });
+</script>
+</html>

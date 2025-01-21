@@ -60,15 +60,16 @@
     <main id="main" class="main">
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div class="base">
+            <button id="activateButtonescuro" class="modo-escuro" aria-pressed="false"><img class="leitordetextoativate" src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png" alt=""></button>
             <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate"
                     src="https://png.pngtree.com/png-clipart/20240404/original/pngtree-cartoon-icon-of-a-book-opening-to-the-middle-page-png-image_14749313.png"
                     alt=""></button>
-                    <div vw class="enabled">
-                        <div vw-access-button class="active"></div>
-                        <div vw-plugin-wrapper>
-                            <div class="vw-plugin-top-wrapper"></div>
-                        </div>
-                    </div>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
 
 
             <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
@@ -110,11 +111,11 @@
             <h1 class="introducao">Partes do Sistema E Modelos 3D</h1>
             <div>
                 <div class=" sketchfab sketchfab-embed-wrapper"> <iframe title="Cardiovascular system" frameborder="0"
-                        allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
-                        allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-                        execution-while-out-of-viewport execution-while-not-rendered web-share width="550" height="550"
-                        src="https://sketchfab.com/models/b9f46a0f7b174283abc37649d12eaf60/embed?camera=0&ui_theme=dark">
-                    </iframe>
+                    allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                    allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                    execution-while-out-of-viewport execution-while-not-rendered web-share width="550" height="550"
+                    src="https://sketchfab.com/models/b9f46a0f7b174283abc37649d12eaf60/embed?camera=0&ui_theme=dark">
+                </iframe>
                     <div class="ladodomodelo3d">
                         <p>O sangue é um tecido líquido formado por diferentes tipos de células suspensas no plasma. Ele
                             circula por todo nosso corpo, através das veias e artérias.
@@ -417,6 +418,48 @@
                 }
             });
         })();
+    </script>
+     <script>
+        // Função para ativar/desativar o modo escuro
+        function toggleDarkMode(state = null) {
+            const body = document.body;
+            const button = document.getElementById('activateButtonescuro');
+            const isDarkMode = state !== null ? state : body.classList.toggle('modoescuro');
+            
+            // Atualiza o LocalStorage
+            localStorage.setItem('modoEscuro', isDarkMode ? 'enabled' : 'disabled');
+
+            // Atualiza o botão e o atributo aria-pressed
+            button.setAttribute('aria-pressed', isDarkMode);
+            button.querySelector('img').alt = isDarkMode ? 'Desativar modo escuro' : 'Ativar modo escuro';
+            
+            // Aplica ou remove a classe modoescuro
+            if (isDarkMode) {
+                body.classList.add('modoescuro');
+            } else {
+                body.classList.remove('modoescuro');
+            }
+        }
+
+        // Verifica o estado ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const isDarkMode = localStorage.getItem('modoEscuro') === 'enabled';
+            toggleDarkMode(isDarkMode);
+        });
+
+        // Escuta cliques no botão
+        document.getElementById('activateButtonescuro').addEventListener('click', () => {
+            const isDarkMode = !document.body.classList.contains('modoescuro');
+            toggleDarkMode(isDarkMode);
+        });
+
+        // Escuta mudanças no LocalStorage (sincronização entre abas)
+        window.addEventListener('storage', (event) => {
+            if (event.key === 'modoEscuro') {
+                const isDarkMode = event.newValue === 'enabled';
+                toggleDarkMode(isDarkMode);
+            }
+        });
     </script>
     <script src="script.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>

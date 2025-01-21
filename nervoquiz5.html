@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nervoso Quiz 5 </title>
+    <link rel="stylesheet" href="nervoquiz.css">
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/12/33/nerve-cell-145909_960_720.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="area">
+        <div class="numerodapergunta">
+            <h1>5</h1>
+        </div>
+        <h1 class="pergunta">Qual é o papel da medula espinhal no sistema nervoso?</h1>
+        <div class="alternativas">
+            <a href="falhanervo.html"><button class="alternativa">Conectar o cérebro ao tronco encefálico e aos gânglios simpáticos</button></a>
+            <a href="falhanervo.html"><button class="alternativa" >Controlar diretamente os movimentos voluntários do corpo</button></a>
+          <a href="vencenervo.html"><button class="alternativa">Conduzir impulsos nervosos entre o corpo e o cérebro, além de coordenar reflexos</button></a>
+          <a href="falhanervo.html"><button class="alternativa">Produzir estímulos nervosos responsáveis pelos sentidos</button></a>
+          <div id="barradetempo" class="barradetempo"></div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elemento = document.getElementById("barradetempo");
+
+        // Altera a classe para iniciar a transição
+        setTimeout(() => {
+            elemento.className = "barradetempo2";
+        }, 50); // Pequeno atraso para garantir que o DOM foi carregado completamente
+
+        // Redireciona após 10 segundos
+        setTimeout(() => {
+            window.location.href = 'falhanervo.html';
+        }, 10000);
+    });
+</script>
+</html>
