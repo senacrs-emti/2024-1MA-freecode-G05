@@ -212,7 +212,7 @@ function showSuggestionsHeader() {
         { name: 'Hipoderme', url: 'tegumentar.html#hipoderme' },
         { name: 'Glândulas Sebáceas', url: 'tegumentar.html#glandulassebaceas' },
         { name: 'Glândulas Sudorípadas', url: 'tegumentar.html#glandulassudoripadas' },
-        { name: 'Game', url: 'undertale.html' },
+        { name: 'Game', url: 'game.html' },
     ];
     if (query.length > 0) {
         const filteredSystems = systems.filter(system => system.name.toLowerCase().includes(query));
@@ -342,7 +342,7 @@ function showSuggestionsBranco() {
         { name: 'Hipoderme', url: 'tegumentar.html#hipoderme' },
         { name: 'Glândulas Sebáceas', url: 'tegumentar.html#glandulassebaceas' },
         { name: 'Glândulas Sudorípadas', url: 'tegumentar.html#glandulassudoripadas' },
-        { name: 'Game', url: 'undertale.html' },
+        { name: 'Game', url: 'game.html' },
     ];
 
     if (query.length > 0) {
@@ -483,7 +483,7 @@ function navigateSuggestionsBranco(event) {
                     { name: 'Hipoderme', url: 'tegumentar.html#hipoderme' },
                     { name: 'Glândulas Sebáceas', url: 'tegumentar.html#glandulassebaceas' },
                     { name: 'Glândulas Sudorípadas', url: 'tegumentar.html#glandulassudoripadas' },
-                    { name: 'Game', url: 'undertale.html' },
+                    { name: 'Game', url: 'game.html' },
                 ];
                 const selectedSystem = systems.find(system => system.name === selectedText);
 
@@ -629,7 +629,7 @@ function navigateSuggestionsHeader(event) {
                     { name: 'Hipoderme', url: 'tegumentar.html#hipoderme' },
                     { name: 'Glândulas Sebáceas', url: 'tegumentar.html#glandulassebaceas' },
                     { name: 'Glândulas Sudorípadas', url: 'tegumentar.html#glandulassudoripadas' },
-                    { name: 'Game', url: 'undertale.html' },
+                    { name: 'Game', url: 'game.html' },
                 ];
                 const selectedSystem = systems.find(system => system.name === selectedText);
 
