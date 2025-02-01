@@ -1398,3 +1398,69 @@ header{
         margin-top: -8px;
     }
 }
+#respiratorio{
+    width: 268px;
+}
+#respiratorio:hover{
+    width: 279px;
+}
+#digestivo{
+    width: 250px;
+}
+#nervoso{
+    width: 225px;
+}
+#sensitivo{
+    width: 230px;
+}
+#sensitivo:hover{
+    width: 240px;
+}
+#endocrino{
+    width: 240px;
+}
+#endocrino:hover{
+    width: 250px;
+}
+#excretor{
+    width: 230px;
+}
+#urinario{
+    width: 230px;
+}
+#reprodutor{
+    width: 260px;
+}
+#reprodutor:hover{
+    width: 268px;
+}
+#esqueletico{
+    width: 260px;
+}
+#esqueletico:hover{
+    width: 265px;
+}
+#muscular{
+    width: 230px;
+}
+#muscular:hover{
+    width: 235px;
+}
+#imunologico{
+    width: 270px;
+}
+#imunologico:hover{
+    width: 276px;
+}
+#linfa{
+    width: 220px;
+}
+#linfa:hover{
+    width: 230px;
+}
+#tegumentar{
+    width: 260px;
+}
+#tegumentar:hover{
+    width: 270px;
+}

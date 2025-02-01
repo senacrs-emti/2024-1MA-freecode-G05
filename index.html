@@ -6,8 +6,18 @@
     <title>AnatoGuia</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./imagens/pixil-frame-0.png" type="image/x-icon">
+    
 </head>
-
+<style>
+/* Estiliza a caixa do Webchat quando estiver aberta */
+#bp-web-widget iframe {
+    width: 400px !important;  /* Ajusta a largura */
+    height: 600px !important; /* Ajusta a altura */
+    border-radius: 15px !important; /* Deixa os cantos arredondados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important; /* Adiciona sombra */
+    margin-right: 400px !important; /* Ajusta a margem direita */
+}
+</style>
 <body class="">
     <header id="meuElemento" class="header2">
         <a href="index.html" class="Siste">Sistemas Do Corpo Humano</a>
@@ -60,7 +70,7 @@
 
         <button id="btn2"><img src="https://cdn-icons-png.flaticon.com/512/833/833408.png" alt=""></button>
         <div class="base">
-        
+
             <button id="activateButtonescuro" class="modo-escuro" aria-pressed="false"><img class="leitordetextoativate" src="imagens/sol.png" alt=""></button>
             <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate" src="imagens/livro1.png" alt=""></button>
             <div vw class="enabled">
@@ -73,6 +83,10 @@
             <script>
                 new window.VLibras.Widget('https://vlibras.gov.br/app');
             </script>
+   
+   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+   <script src="https://files.bpcontent.cloud/2025/01/24/23/20250124232333-9U4V13HJ.js"></script>
+       
             <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
                 data-account="lqELz1dV9X"></script>
             <img class="jeanfoto" src="./imagens/file.enc" alt="">
