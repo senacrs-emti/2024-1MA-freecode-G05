@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnatoGuia Mobile</title>
     <link rel="stylesheet" href="stylemobi.css">
+    <link rel="shortcut icon" href="./imagens/pixil-frame-0.png" type="image/x-icon">
 </head>
+
 <body>
-        <header id="meuElemento" class="header2">
-            <a href="indexmobi.html" class="Siste"> <bold>AnatoGuia</bold></a>
-            <div class="header-search">
-                <input type="text" autocomplete="off" placeholder="Pesquisar..." id="search-input-header" oninput="showSuggestionsHeader()">
-                <div id="suggestions-header" class="suggestions-box"></div>
-            </div>
+    <header id="meuElemento" class="header2">
+        <a href="indexmobi.html" class="Siste"><b>AnatoGuia</b></a>
+        <div class="header-search">
+            <input type="text" autocomplete="off" placeholder="Pesquisar..." id="search-input-header"
+                oninput="showSuggestionsHeader()">
+            <div id="suggestions-header" class="suggestions-box"></div>
+        </div>
     </header>
     <main>
+        <h1 class="sistema">Sistemas do Corpo Humano</h1>
 
-
+        <ul class="menusistemas">
+            <li class="bordaleft"><a href="./base.html" class="card"><b>Cardiovascular</b></a></li>
+            <li class="bordaright"><a href="./respiratorio.html" class="resp"><b>Respiratório</b></a></li>
+            <li><a href="./Digestório.html" class="dige"><b>Digestório</b></a></li>
+            <li><a href="./nervoso.html" class="nerv"><b>Nervoso</b></a></li>
+            <li><a href="./endocrino.html" class="endo"><b>Endócrino</b></a></li>
+            <li><a href="./Excretor.html" class="excr"><b>Excretor</b></a></li>
+            <li><a href="./urinario.html" class="urin"><b>Urinário</b></a></li>
+            <li><a href="./esqueletico.html" class="esqu"><b>Esquelético</b></a></li>
+            <li><a href="./muscular.html" class="musc"><b>Muscular</b></a></li>
+            <li><a href="./imunologico.html" class="imun"><b>Imunológico</b></a></li>
+            <li><a href="./linfatico.html" class="linf"><b>Linfático</b></a></li>
+            <li><a href="./sensorial.html" class="sens"><b>Sensorial</b></a></li>
+            <li class="bordabottomleft"><a href="./reprodutor.html" class="repr"><b>Reprodutor</b></a></li>
+            <li class="bordabottomright"><a href="./tegumentar.html" class="tegu"><b>Tegumentar</b></a></li>
+        </ul>
+        <div class="jeans">
+            <img class="jeanfoto" src="./imagens/file.enc" alt="">
+            <p class="jeannome"><b>Jean Dalpra Zarbieri</b></p>
+            <p class="jeanembaixo">Cursando Senac</p>
+        </div>
+            <p class="textoinicial">O <b>corpo humano</b> é formado pelos sistemas: cardiovascular, respiratório, digestório,
+                nervoso sensorial,
+                endócrino, excretor, urinário, reprodutor, esquelético, muscular,imunológico, linfático tegumentar.
+                Cada um deles envolve órgãos que atuam para a realização das funções vitais do organismo.</p>
     </main>
     <footer></footer>
 </body>
 <script src="scriptmobi.js"></script>
+<script>
+    let installPromptEvent;
+
+    window.addEventListener('beforeinstallprompt', (event) => {
+        event.preventDefault();
+        installPromptEvent = event;
+
+        const installButton = document.createElement("button");
+        installButton.innerText = "Instalar AnatoGuia";
+        installButton.style.position = "fixed";
+        installButton.style.bottom = "20px";
+        installButton.style.right = "20px";
+        installButton.style.padding = "10px";
+        installButton.style.background = "#008CBA";
+        installButton.style.color = "#fff";
+        installButton.style.border = "none";
+        installButton.style.borderRadius = "5px";
+        installButton.style.cursor = "pointer";
+        document.body.appendChild(installButton);
+
+        installButton.addEventListener('click', () => {
+            installPromptEvent.prompt();
+            installPromptEvent.userChoice.then((choice) => {
+                if (choice.outcome === 'accepted') {
+                    console.log('Usuário aceitou instalar o PWA');
+                } else {
+                    console.log('Usuário recusou instalar o PWA');
+                }
+                installButton.remove();
+            });
+        });
+    });
+
+</script>
+
 </html>

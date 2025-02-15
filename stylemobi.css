@@ -1,47 +1,47 @@
-*{
-   margin: 0;
-   padding: 0;
-
-}
-/* Para navegadores como Chrome, Edge e Safari */
-::-webkit-scrollbar {
-    display: none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Garante que o conteúdo ainda possa ser rolado */
-html, body {
+html,
+body {
     overflow: auto;
 }
-header{
+
+header {
     background-color: #c9e3ae;
-    width: 100% ;
+    width: 100%;
     height: 16vh;
     display: grid;
 }
-main{
+
+main {
     background-color: rgb(255, 255, 255);
-    width: 100% ;
+    width: 100%;
     height: 200vh;
     display: grid;
 }
-footer{
+
+footer {
     background-color: #c9e3ae;
-    width: 100% ;
+    width: 100%;
     height: 10vh;
     display: grid;
 }
+
 .Siste {
     position: relative;
-    /* Torna o elemento pai um contexto de posicionamento */
     color: #04a31e;
     font-size: 5vh;
     margin-left: 3%;
     margin-top: 1.5vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 4vh;
-    width: 48%;
+    width: fit-content;
     padding-bottom: 1.5vh;
     padding-left: 3px;
+    padding-right: 3px;
     background-color: #ffffff;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -86,7 +86,7 @@ footer{
     display: none;
     position: absolute;
     /* Altere para 'absolute' para que fique dentro do container */
-    top: 110px;
+    top: 120px;
     /* Ajuste conforme necessário */
 }
 
@@ -241,4 +241,106 @@ footer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: white;
+}
+
+.sistema {
+    font-size: 7vw;
+    white-space: nowrap;
+    margin-left: 4.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 4vh;
+    margin-top: 4vh;
+    text-align: center;
+    letter-spacing: -0.5px;
+    width: 90%;
+    z-index: 1;
+    color: #222222;
+}
+
+.menusistemas {
+    width: 90%;
+    background-color: #6e8556;
+    display: grid;
+    height: fit-content;
+    margin-left: 4.5%;
+    margin-top: -44vh;
+    border-radius: 8px;
+    float: left;
+    gap: 1px 3px;
+    padding: 0%;
+    border: 2px solid #6e8556;
+    border-right: 4px solid #6e8556;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas de tamanho igual */
+
+}
+
+.bordaleft {
+    border-top-left-radius: 7px;
+}
+
+.bordaright{
+    border-top-right-radius: 7px;
+}
+
+.bordabottomleft{
+    border-bottom-left-radius: 7px;
+}
+.bordabottomright{
+    border-bottom-right-radius: 7px;
+}
+.menusistemas li {
+    height: 5.4vh;
+    background-color: #c9e3ae;
+    width: 100%;
+    float: left;
+    display: grid;
+    border: 1px solid #6e8556;
+}
+
+.menusistemas li a {
+    float: left;
+    text-align: center;
+    margin-top: 1.4vh;
+    font-size: 18px;
+    display: grid;
+    color: #222222;
+    text-decoration: none;
+    font: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textoinicial {
+    margin-top: -87vh;
+    display: inline;
+    width: 93%;
+    height: 20vh;
+    font-size: 2vh;
+    margin-left: 4%;
+    line-height: 150%;
+    background-color: rgb(255, 255, 255);
+}
+
+.jeans {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    height: 5vh;
+    width: 60vw;
+    margin-top: -47vh;
+    margin-left: 5%;
+}
+
+.jeanfoto {
+    height: 5vh;
+    border-radius: 100%;
+}
+
+.jeannome {
+    margin-left: 6vh;
+    margin-top: -5vh;
+}
+
+.jeanembaixo {
+    margin-left: 6vh;
+    margin-top: -2.5vh;
 }
