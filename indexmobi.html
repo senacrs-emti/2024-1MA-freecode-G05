@@ -18,6 +18,14 @@
             <div id="suggestions-header" class="suggestions-box"></div>
         </div>
     </header>
+    <div id="branco" class="headerdefundo">
+        <a href="indexmobi.html" class="Siste"><b>AnatoGuia</b></a>
+        <div class="header-search">
+            <input type="text" placeholder="Pesquisar..." id="search-input-branco" oninput="showSuggestionsBranco()">
+            <div id="suggestions-branco" class="suggestions-branco"></div>
+        </div>
+    </div>
+
     <main>
         <h1 class="sistema">Sistemas do Corpo Humano</h1>
 
@@ -42,44 +50,128 @@
             <p class="jeannome"><b>Jean Dalpra Zarbieri</b></p>
             <p class="jeanembaixo">Cursando Senac</p>
         </div>
-            <p class="textoinicial">O <b>corpo humano</b> é formado pelos sistemas: cardiovascular, respiratório, digestório,
-                nervoso sensorial,
-                endócrino, excretor, urinário, reprodutor, esquelético, muscular,imunológico, linfático tegumentar.
-                Cada um deles envolve órgãos que atuam para a realização das funções vitais do organismo.</p>
+        <p class="textoinicial">O <b>corpo humano</b> é formado pelos sistemas: cardiovascular, respiratório,
+            digestório,
+            nervoso sensorial,
+            endócrino, excretor, urinário, reprodutor, esquelético, muscular,imunológico, linfático tegumentar.
+            Cada um deles envolve órgãos que atuam para a realização das funções vitais do organismo.</p>
+
+        <img class="sistemasfoto" src="https://static.todamateria.com.br/img/dossier/sistemas-do-corpo-humano.png"
+            alt="Sistemas cardiovascular, respiratório, digestório,
+                nervoso, sensorial,
+                endócrino, excretor, urinário, reprodutor, esquelético, muscular,imunológico, linfático tegumentar"></img>
+        <h1 class="todosistema"><b>Todos os Sistemas</b></h1>
+       
+        <div class="opçõessistema">
+            <img class="imagens" src="https://static.todamateria.com.br/img/dossier/sistema-cardiovascular-small.png"
+                alt="Coração, 
+                    Tronco arterial braquiocefálico
+                    Vela Cava superior
+                    Artéria pulmonar, direita
+                    Veias pulmonares, direitas
+                    Artéria carótida comum esquerda
+                    Artéria subclávia esquerda Aorta
+                    Artéria pulmonar esquerda
+                    Velas pulmonares esquerdas
+                    Átrio esquerdo
+                    Átrio direito
+                    Válvula tricúspide
+                    Ventriculo direito
+                    Veia cava inferior
+                    Válvula mitral
+                    Septo
+                    Ventrículo esquerdo"
+                onclick="window.open('https://static.todamateria.com.br/img/dossier/sistema-cardiovascular-small.png', '_blank');">
+                <div class="areadotexto">
+
+                </div>
+        </div>
+
     </main>
     <footer></footer>
 </body>
 <script src="scriptmobi.js"></script>
 <script>
-    let installPromptEvent;
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScroll = window.pageYOffset;
+        const headerOriginal = document.getElementById("meuElemento");
+        const headerFundo = document.getElementById("branco");
+        let isScrollingUp = false;
+        let scrollThreshold = 3; // Quantidade de pixels para ativar o headerdefundo
 
-    window.addEventListener('beforeinstallprompt', (event) => {
-        event.preventDefault();
-        installPromptEvent = event;
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset;
+            let headerVisible = headerOriginal.getBoundingClientRect().top >= 0;
 
-        const installButton = document.createElement("button");
-        installButton.innerText = "Instalar AnatoGuia";
-        installButton.style.position = "fixed";
-        installButton.style.bottom = "20px";
-        installButton.style.right = "20px";
-        installButton.style.padding = "10px";
-        installButton.style.background = "#008CBA";
-        installButton.style.color = "#fff";
-        installButton.style.border = "none";
-        installButton.style.borderRadius = "5px";
-        installButton.style.cursor = "pointer";
-        document.body.appendChild(installButton);
-
-        installButton.addEventListener('click', () => {
-            installPromptEvent.prompt();
-            installPromptEvent.userChoice.then((choice) => {
-                if (choice.outcome === 'accepted') {
-                    console.log('Usuário aceitou instalar o PWA');
-                } else {
-                    console.log('Usuário recusou instalar o PWA');
+            if (headerVisible) {
+                // Se o header2 estiver visível, esconder o headerdefundo e restaurar opacidade
+                headerFundo.classList.remove("show");
+                headerOriginal.classList.remove("oculto");
+            } else if (currentScroll > lastScroll) {
+                // Rolando para baixo -> esconder o headerdefundo e restaurar opacidade do header2
+                headerFundo.classList.remove("show");
+                headerOriginal.classList.remove("oculto");
+                isScrollingUp = false;
+            } else if (currentScroll < lastScroll) {
+                // Só exibe o headerdefundo se o usuário rolou pelo menos 'scrollThreshold' px para cima
+                if (!headerVisible && !isScrollingUp && (lastScroll - currentScroll) > scrollThreshold) {
+                    headerFundo.classList.add("show");
+                    headerOriginal.classList.add("oculto");
+                    isScrollingUp = true;
                 }
-                installButton.remove();
-            });
+            }
+
+            lastScroll = currentScroll;
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        let lastScroll = window.pageYOffset;
+        const headerOriginal = document.getElementById("meuElemento");
+        const headerFundo = document.getElementById("branco");
+        const searchInputHeader = document.getElementById("search-input-header");
+        const searchInputBranco = document.getElementById("search-input-branco");
+        const suggestionsHeader = document.getElementById("suggestions-header");
+        const suggestionsBranco = document.getElementById("suggestions-branco");
+
+        let isScrollingUp = false;
+        let scrollThreshold = 5; // Quantidade de pixels para ativar o headerdefundo
+
+        function resetHeaderStates() {
+            // Reseta os campos de pesquisa
+            searchInputHeader.value = "";
+            searchInputBranco.value = "";
+
+            // Oculta as sugestões de pesquisa
+            suggestionsHeader.style.display = "none";
+            suggestionsBranco.style.display = "none";
+        }
+
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset;
+            let headerVisible = headerOriginal.getBoundingClientRect().top >= 0;
+
+            if (headerVisible) {
+                // Se o header2 estiver visível, esconder o headerdefundo e restaurar opacidade
+                headerFundo.classList.remove("show");
+                headerOriginal.classList.remove("oculto");
+                resetHeaderStates(); // Reseta os status quando o header2 volta
+            } else if (currentScroll > lastScroll) {
+                // Rolando para baixo -> esconder o headerdefundo e restaurar opacidade do header2
+                headerFundo.classList.remove("show");
+                headerOriginal.classList.remove("oculto");
+                resetHeaderStates(); // Reseta os status quando o header2 volta
+                isScrollingUp = false;
+            } else if (currentScroll < lastScroll) {
+                // Só exibe o headerdefundo se o usuário rolou pelo menos 'scrollThreshold' px para cima
+                if (!headerVisible && !isScrollingUp && (lastScroll - currentScroll) > scrollThreshold) {
+                    headerFundo.classList.add("show");
+                    headerOriginal.classList.add("oculto");
+                    resetHeaderStates(); // Reseta os status quando o headerdefundo aparece
+                    isScrollingUp = true;
+                }
+            }
+
+            lastScroll = currentScroll;
         });
     });
 

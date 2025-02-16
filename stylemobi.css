@@ -19,7 +19,7 @@ header {
 main {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 200vh;
+    height: 1000vh;
     display: grid;
 }
 
@@ -163,7 +163,7 @@ footer {
     display: none;
     position: absolute;
     /* Altere para 'absolute' para que fique dentro do container */
-    top: 60px;
+    top: 120px;
     /* Ajuste conforme necessário */
 }
 
@@ -263,7 +263,7 @@ footer {
     display: grid;
     height: fit-content;
     margin-left: 4.5%;
-    margin-top: -44vh;
+    margin-top: -138vh;
     border-radius: 8px;
     float: left;
     gap: 1px 3px;
@@ -311,7 +311,7 @@ footer {
 }
 
 .textoinicial {
-    margin-top: -87vh;
+    margin-top: -367vh;
     display: inline;
     width: 93%;
     height: 20vh;
@@ -326,7 +326,7 @@ footer {
     display: grid;
     height: 5vh;
     width: 60vw;
-    margin-top: -47vh;
+    margin-top: -234vh;
     margin-left: 5%;
 }
 
@@ -343,4 +343,64 @@ footer {
 .jeanembaixo {
     margin-left: 6vh;
     margin-top: -2.5vh;
+}
+.sistemasfoto{
+    width: 100%;
+    margin-top: -485vh;
+    display: grid;
+}
+.headerdefundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #c9e3ae;
+    width: 100%;
+    height: 16vh;
+    display: grid;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.headerdefundo.show {
+    transform: translateY(0);
+}
+#meuElemento {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#meuElemento.oculto {
+    opacity: 0;
+    pointer-events: none; /* Impede cliques quando invisível */
+}
+.todosistema{
+    white-space: nowrap;
+    margin-left: 4.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 4vh;
+    margin-top: -598vh;
+    text-align: center;
+    letter-spacing: -0.5px;
+    width: 90%;
+    z-index: 1;
+    color: #222222;
+}
+.imagens{
+    width: 100%;
+    border-top: 1px solid #dddddd;
+    box-shadow: #999999 0px 2px 2px ;
+    margin-top: -728vh;
+    display: grid;
+    position: relative;
+    z-index: 9999;
+}
+.areadotexto{
+    width: 95%;
+    background-color: rgb(238, 238, 238);
+    height: 38vh;
+    display: grid;
+    margin-left: 2.5%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
 }
