@@ -72,6 +72,37 @@
         <div class="base">
 
             <button id="activateButtonescuro" class="modo-escuro" aria-pressed="false"><img class="leitordetextoativate" src="imagens/sol.png" alt=""></button>
+            <button id="activatemusic" class="musiquinhashow" aria-pressed="false"><img class="leitordetextoativate" src="imagens/musicaimagemcorreta.png" alt=""></button>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("activatemusic");
+    const img = button.querySelector(".leitordetextoativate");
+    const originalSrc = img.src;
+    const newSrc = "imagens/pause.png"; // Altere para a nova imagem desejada
+    const musicas = [
+        "musica1.mp3", "musica2.mp3", "musica3.mp3", "musica4.mp3", "musica5.mp3",
+        "musica6.mp3", "musica7.mp3", "musica8.mp3", "musica9.mp3", "musica10.mp3"
+    ];
+    let currentMusicIndex = 0;
+    let audio = new Audio(musicas[currentMusicIndex]);
+
+    button.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.src = musicas[currentMusicIndex];
+            audio.play();
+            img.src = newSrc;
+            button.setAttribute("aria-pressed", "true");
+            currentMusicIndex = (currentMusicIndex + 1) % musicas.length;
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+            img.src = originalSrc;
+            button.setAttribute("aria-pressed", "false");
+        }
+    });
+});
+
+            </script>
             <button id="activateButton" class="custom-button" aria-pressed="false"><img class="leitordetextoativate" src="imagens/livro1.png" alt=""></button>
             <div vw class="enabled">
                 <div vw-access-button class="active"></div>
@@ -84,9 +115,7 @@
                 new window.VLibras.Widget('https://vlibras.gov.br/app');
             </script>
    
-   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-   <script src="https://files.bpcontent.cloud/2025/01/24/23/20250124232333-9U4V13HJ.js"></script>
-       
+   
             <script class="widgetdeacessibilidade" src="https://cdn.userway.org/widget.js"
                 data-account="lqELz1dV9X"></script>
             <img class="jeanfoto" src="./imagens/file.enc" alt="">

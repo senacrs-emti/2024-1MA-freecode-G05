@@ -1260,7 +1260,7 @@ table td {
     width: 40px;
     position: fixed;
     margin-left: 1123px;
-    margin-top: 46px;
+    margin-top: 35px;
     border-radius: 40%;
 }
 
@@ -1279,8 +1279,58 @@ table td {
     opacity: 10%;
     border: 2px solid;
 }
+/*----------------------------------------------------------/*/
+.musiquinhashow {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.musiquinhashow.active {
+    background-color: #28a745;
+    /* Verde quando ativado */
+}
+
+.musiquinhashow.active:hover {
+    background-color: #24923d;
+    /* Verde quando ativado */
+}
+.musiquinhashow:hover{
+    #leitordetexto {
+        opacity: 100%;
+        background-color: #000000;
+    }
+}
+.musiquinhashow:hover {
+    background-color: #0056b3;
+}
+
+#activatemusic {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    margin-left: 1123px;
+    margin-top: -104px;
+    border-radius: 40%;
+    position: fixed;
+    z-index: 999;
+}
+
+#activatemusic img {
+    height: 32px;
+    width: 32px;
+    margin-left: -16.5px;
+    margin-top: -6px;
+    pointer-events: none;
+}
 
 
+
+/*---------------------Musica--------------------------*/
 
 
 
@@ -1318,8 +1368,10 @@ table td {
     width: 40px;
     position: fixed;
     margin-left: 1123px;
-    margin-top: -13px;
+    margin-top: -33px;
     border-radius: 40%;
+    z-index: 999;
+    position: fixed;
 }
 
 #activateButtonescuro img {
