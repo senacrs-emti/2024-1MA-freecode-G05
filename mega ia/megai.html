@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mini IA com OpenAI</title>
+</head>
+<body>
+  <h1>Pergunte algo:</h1>
+  <input id="pergunta" type="text" placeholder="Digite sua pergunta..." style="width: 300px;">
+  <button onclick="perguntar()">Enviar</button>
+  <pre id="resposta"></pre>
+
+  <script>
+    async function perguntar() {
+      const input = document.getElementById('pergunta').value;
+      const responseBox = document.getElementById('resposta');
+      responseBox.textContent = "Carregando...";
+
+      try {
+        const resposta = await fetch("/api/perguntar", { // Altere para seu endpoint backend
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ pergunta: input })
+        });
+
+        if (!resposta.ok) {
+          throw new Error("Erro na resposta da API");
+        }
+
+        const dados = await resposta.json();
+        responseBox.textContent = dados.resposta || "Sem resposta da IA.";
+      } catch (e) {
+        responseBox.textContent = "Erro: " + e.message;
+      }
+    }
+  </script>
+</body>
+</html>
