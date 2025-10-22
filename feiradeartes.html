@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira de Projetos de Artes</title>
+    <style>
+        /* Estilos CSS OTIMIZADOS PARA MOBILE (Paleta Mona Lisa: Amarelo Queimado e Marrom) */
+        :root {
+            /* Cores inspiradas na Mona Lisa */
+            --cor-fundo-1: #E0C06A; /* Amarelo Queimado Claro (Topo) */
+            --cor-fundo-2: #C7A855; /* Amarelo Queimado Médio (Base) */
+            --cor-texto-principal: #4A3C2A; /* Marrom Escuro (Texto) */
+            --cor-texto-destaque: #7A5B30; /* Marrom Médio Dourado (Títulos) */
+            --cor-borda-quadro: #5C4026; /* Marrom Clássico (Bordas) */
+            --cor-fundo-secao: rgba(255, 255, 255, 0.7); /* Branco Suave Transparente */
+        }
+
+        /* 1. Base Mobile-First */
+        body {
+            font-family: 'Georgia', serif; /* Fonte mais clássica */
+            margin: 0;
+            padding: 0;
+            color: var(--cor-texto-principal); /* Texto principal em marrom escuro */
+            /* Degradê Amarelo Queimado */
+            background-color: var(--cor-fundo-1);
+            background-image: linear-gradient(to bottom, var(--cor-fundo-1), var(--cor-fundo-2));
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 95%; 
+            margin: 20px auto;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo claro para o cabeçalho */
+            border-bottom: 3px solid var(--cor-borda-quadro);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil */
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: var(--cor-texto-destaque); /* Título em marrom dourado */
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1em;
+            margin-top: 5px;
+            color: var(--cor-texto-principal);
+        }
+
+        h2 {
+            color: var(--cor-texto-destaque); /* Títulos de seção em marrom dourado */
+            border-bottom: 2px solid var(--cor-borda-quadro);
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        /* 2. Seção Principal da Obra de Arte (Destaque em Mobile) */
+        #obra-principal {
+            background-color: var(--cor-fundo-secao); /* Fundo branco suave transparente */
+            padding: 20px;
+            margin-bottom: 40px;
+            border: 2px solid var(--cor-borda-quadro); /* Borda como um quadro */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra mais pronunciada */
+            text-align: center;
+        }
+
+        #obra-principal h2 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        #obra-principal img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+            border: 4px solid var(--cor-borda-quadro); /* Borda da imagem como um quadro */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Sombra para a imagem */
+        }
+
+        #descricao-principal {
+            text-align: left;
+            font-size: 1em;
+            line-height: 1.6;
+            color: var(--cor-texto-principal); /* Descrição em marrom escuro */
+        }
+
+        /* 3. Galeria de Vídeos (Fica em Coluna Simples) */
+        .galeria-videos {
+            display: block; 
+            padding-top: 15px;
+        }
+
+        .video-item {
+            background-color: var(--cor-fundo-secao); /* Fundo branco suave transparente para vídeos */
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--cor-borda-quadro); /* Borda marrom */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: none;
+            color: var(--cor-texto-principal); /* Texto dos vídeos em marrom escuro */
+        }
+        
+        .video-item:hover {
+            transform: none;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        }
+
+        .video-item img {
+            width: 100%;
+            margin-bottom: 10px;
+            border: 2px solid var(--cor-borda-quadro); /* Borda da miniatura em marrom */
+        }
+
+        .video-item h3 {
+            font-size: 1.2em;
+            color: var(--cor-texto-destaque); /* Título do vídeo em marrom dourado */
+        }
+
+        .video-item p {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .video-item a {
+            display: inline-block;
+            background-color: var(--cor-borda-quadro); /* Botão em marrom */
+            color: #FFFFFF; /* Texto do botão branco */
+            padding: 8px 15px; /* Botão um pouco maior para melhor toque */
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        
+        .video-item a:hover {
+            background-color: #7A5B30; /* Hover marrom mais claro/dourado */
+        }
+
+        footer {
+            padding: 20px; /* Mais padding para o footer */
+            background-color: var(--cor-borda-quadro); /* Fundo do footer em marrom forte */
+            border-top: 1px solid var(--cor-texto-destaque);
+            margin-top: 50px; /* Mais espaço antes do footer */
+            font-size: 0.85em;
+            color: #FFFFFF; /* Texto do footer em branco */
+        }
+
+        /* 4. Mídia Query (Para telas MAIORES) */
+        @media (min-width: 768px) {
+            .container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 40px auto;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+            
+            #obra-principal {
+                padding: 40px;
+            }
+            
+            .galeria-videos {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+
+            .video-item {
+                margin-bottom: 0;
+                transition: transform 0.3s ease;
+            }
+            
+            .video-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Feira de Artes 2025</h1>
+        <p>Feito Por Jean, Guilherme, Leonardo, Gabriel Airoldi e Miguel</p>
+    </header>
+
+    <div class="container">
+
+        <section id="obra-principal">
+            <h2>Obra em Destaque: BOHEMIAN RHAPSODY LIPSYNC</h2>
+            
+            <img src="./imagens/sddefault (3).jpg" alt="Obra de Arte Principal: BOHEMIAN RHAPSODY LIPSYNC" id="imagem-principal">
+            
+            <div id="descricao-principal">
+                <p>
+                    Um Lipsync artístico que combina elementos visuais e sonoros para recriar o sucesso da banda de rock Queen, melhor com fones de Ouvidos 😉
+                   
+                </p>
+                <a href="LINK_DO_SEU_VIDEO_1_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+            </div>
+        </section>
+
+        <h2>Galeria de Vídeos e Projetos Audiovisuais</h2>
+
+        <section class="galeria-videos">
+            
+            <div class="video-item">
+                <img src="./imagens/Captura de tela 2025-10-22 155253.png" alt="Miniatura do Vídeo 1">
+                <h3>OVERDOSE</h3>
+                <p>Um Curta sobre um Adolescente que, ao quebrar uma garrafa de cerveja, consegue ver seus erros do passado, e resolve mudar a sua vida, custe oque custar...</p>
+                <a href="https://youtu.be/0-FOJWISc8Y">Assistir Vídeo</a>
+            </div>
+
+            <div class="video-item">
+                <img src="./imagens/podcast1.png" alt="Miniatura do Vídeo 2">
+                <h3>[TÍTULO DO VÍDEO 2]</h3>
+                <p>Breve descrição do Vídeo 2: Documentário sobre o processo criativo e a evolução da arte na era digital. Analisa [Conceito Principal].</p>
+                <a href="LINK_DO_SEU_VIDEO_2_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+            </div>
+
+            <div class="video-item">
+                <img src="./imagens/podcast2.jpg" alt="Miniatura do Vídeo 3">
+                <h3>[TÍTULO DO VÍDEO 3]</h3>
+                <p>Breve descrição do Vídeo 3: Curta-metragem experimental que utiliza iluminação e sombras para criar atmosferas. Filmado em [Local].</p>
+                <a href="LINK_DO_SEU_VIDEO_3_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+            </div>
+
+            <div class="video-item">
+                <img src="./imagens/Captura de tela 2025-10-22 160727.png" alt="Miniatura do Vídeo 4">
+                <h3>[TÍTULO DO VÍDEO 4]</h3>
+                <p>Breve descrição do Vídeo 4: Vídeo de performance focado em movimento e expressão corporal, representando [Ideia Central].</p>
+                <a href="LINK_DO_SEU_VIDEO_4_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Jean Dalpra. Todos os direitos reservados. | Contato: jeandalpra2111@gmail.com</p>
+    </footer>
+
+</body>
+</html>
