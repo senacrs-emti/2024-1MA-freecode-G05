@@ -14,6 +14,10 @@
             --cor-texto-destaque: #7A5B30; /* Marrom Médio Dourado (Títulos) */
             --cor-borda-quadro: #5C4026; /* Marrom Clássico (Bordas) */
             --cor-fundo-secao: rgba(255, 255, 255, 0.7); /* Branco Suave Transparente */
+            
+            /* Cores Auxiliares para Efeito de Moldura */
+            --cor-moldura-clara: #D9B87B; /* Tom mais claro para destaque */
+            --cor-moldura-escura: #3D2C1B; /* Tom mais escuro para sombra */
         }
 
         /* 1. Base Mobile-First */
@@ -26,6 +30,21 @@
             background-color: var(--cor-fundo-1);
             background-image: linear-gradient(to bottom, var(--cor-fundo-1), var(--cor-fundo-2));
             background-attachment: fixed;
+            
+            /* NOVO: Efeito de Moldura Mais Elaborada */
+            /* Borda fina principal */
+            border: 4px solid var(--cor-borda-quadro); 
+            
+            /* Múltiplas sombras para simular o chanfro/profundidade: */
+            box-shadow: 
+                /* 1. Sombra interna clara (destaque) */
+                inset 0 0 0 3px var(--cor-moldura-clara),
+                /* 2. Sombra interna escura (profundidade) */
+                inset 0 0 0 7px var(--cor-moldura-escura),
+                /* 3. Borda externa suave */
+                0 0 10px rgba(0, 0, 0, 0.4); 
+                
+            padding: 8px; /* Espaçamento interno menor, mais elegante */
         }
 
         .container {
@@ -88,10 +107,16 @@
         }
 
         #descricao-principal {
-            text-align: left;
+            text-align: center; /* Centraliza o botão */
             font-size: 1em;
             line-height: 1.6;
             color: var(--cor-texto-principal); /* Descrição em marrom escuro */
+        }
+
+        /* Força o texto da descrição a ficar alinhado à esquerda */
+        #descricao-principal p {
+            text-align: left; 
+            margin-bottom: 10px;
         }
 
         /* 3. Galeria de Vídeos (Fica em Coluna Simples) */
@@ -131,20 +156,23 @@
             margin-bottom: 10px;
         }
 
-        .video-item a {
+        /* ESTILOS UNIFICADOS PARA TODOS OS BOTÕES (GALERIA E PRINCIPAL) */
+        .video-item a, #descricao-principal a {
             display: inline-block;
             background-color: var(--cor-borda-quadro); /* Botão em marrom */
             color: #FFFFFF; /* Texto do botão branco */
             padding: 8px 15px; /* Botão um pouco maior para melhor toque */
             text-decoration: none;
             border-radius: 4px;
-            font-size: 0.9em;
+            font-size: 0.9em; /* Mesma fonte da galeria */
             transition: background-color 0.3s;
+            margin-top: 15px; /* Adiciona espaçamento acima do botão */
         }
         
-        .video-item a:hover {
+        .video-item a:hover, #descricao-principal a:hover {
             background-color: #7A5B30; /* Hover marrom mais claro/dourado */
         }
+        /* FIM DOS ESTILOS UNIFICADOS */
 
         footer {
             padding: 20px; /* Mais padding para o footer */
@@ -206,7 +234,7 @@
             <div id="descricao-principal">
                 <p>
                     Um Lipsync artístico que combina elementos visuais e sonoros para recriar o sucesso da banda de rock Queen, melhor com fones de Ouvidos 😉
-                   
+                    
                 </p>
                 <a href="https://youtu.be/X6agDSFJKQA?si=wQFaII1-sTtXAE6T" target="_blank">Assistir Vídeo</a>
             </div>
@@ -220,28 +248,28 @@
                 <img src="./imagens/Captura de tela 2025-10-22 155253.png" alt="Miniatura do Vídeo 1">
                 <h3>OVERDOSE</h3>
                 <p>Um Curta sobre um Adolescente que, ao quebrar uma garrafa de cerveja, consegue ver seus erros do passado, e resolve mudar a sua vida, custe oque custar...</p>
-                <a href="https://youtu.be/0-FOJWISc8Y">Assistir Vídeo</a>
+                <a href="https://youtu.be/0-FOJWISc8Y?si=2vEKjR6cgfen1S8-">Assistir Vídeo</a>
             </div>
 
             <div class="video-item">
                 <img src="./imagens/podcast1.png" alt="Miniatura do Vídeo 2">
-                <h3>[TÍTULO DO VÍDEO 2]</h3>
-                <p>Breve descrição do Vídeo 2: Documentário sobre o processo criativo e a evolução da arte na era digital. Analisa [Conceito Principal].</p>
-                <a href="LINK_DO_SEU_VIDEO_2_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+                <h3>PODCAST: OS Supridores </h3>
+                <p>Um breve podcast sobre o Livro Os Supridores de José Falero</p>
+                <a href="https://youtu.be/o4RtM_0l0OY?si=mVlZgHM5gYHzMLpV" target="_blank">Assistir Vídeo</a>
             </div>
 
             <div class="video-item">
                 <img src="./imagens/podcast2.jpg" alt="Miniatura do Vídeo 3">
-                <h3>[TÍTULO DO VÍDEO 3]</h3>
-                <p>Breve descrição do Vídeo 3: Curta-metragem experimental que utiliza iluminação e sombras para criar atmosferas. Filmado em [Local].</p>
-                <a href="LINK_DO_SEU_VIDEO_3_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+                <h3>PODCAST: O Cortiço</h3>
+                <p>Um breve podcast sobre o Livro O Cortiço de Aluísio Azevedo</p>
+                <a href="https://youtu.be/iaPUlJa-Djo?si=B7WmjN3pFXqvJaYl" target="_blank">Assistir Vídeo</a>
             </div>
 
             <div class="video-item">
                 <img src="./imagens/Captura de tela 2025-10-22 160727.png" alt="Miniatura do Vídeo 4">
-                <h3>[TÍTULO DO VÍDEO 4]</h3>
-                <p>Breve descrição do Vídeo 4: Vídeo de performance focado em movimento e expressão corporal, representando [Ideia Central].</p>
-                <a href="LINK_DO_SEU_VIDEO_4_YOUTUBE_OU_VIMEO" target="_blank">Assistir Vídeo</a>
+                <h3>PODCAST: O Quarto De Despejo</h3>
+                <p>Um breve podcast sobre o Livro O Quarto De Despejo de Carolina Maria de Jesus</p>
+                <a href="https://youtu.be/sbKBdhD6SpI?si=TcVw0JfGZf3I6n1N" target="_blank">Assistir Vídeo</a>
             </div>
 
         </section>
